@@ -1,0 +1,2 @@
+var e=("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequire77dd;(0,e.register)("aZ7vh",function(d,o){var l,i=e("5aRSq");Object.defineProperty(d.exports,"__esModule",{value:!0}),d.exports.default=void 0,(l=e("4Iuzv"))&&l.__esModule,d.exports.default=()=>(0,i.jsx)("div",{children:"contact us"})});
+//# sourceMappingURL=Contact.293d4e40.js.map

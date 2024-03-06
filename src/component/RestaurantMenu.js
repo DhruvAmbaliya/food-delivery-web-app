@@ -1,3 +1,4 @@
+import Logo from "../assets/img/Logo.png"
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"; // import useParams for read `resId`
 import {
@@ -8,11 +9,23 @@ import {
   RESTAURANT_TYPE_KEY,
 } from "./constant";
 import {MenuShimmer} from "./Shimmer";
+import { addItem } from "../utils/cartSlice";
+import { useDispatch } from "react-redux";
 
 const RestaurantMenu = () => {
   const { resId } = useParams(); // call useParams and get value of restaurant id using object destructuring
   const [restaurant, setRestaurant] = useState(null); // call useState to store the api data in res
   const [menuItems, setMenuItems] = useState([]);
+  const dispatch = useDispatch();
+
+  // const handleAddItem=()=>{
+  //   dispatch(addItem("Grapes")) // {payload:"Grapes"}
+  // };
+
+  const addFoodItem=(item)=>{
+    dispatch(addItem(item)); 
+  };
+
   useEffect(() => {
     getRestaurantInfo(); // call getRestaurantInfo function so it fetch api data and set data in restaurant state variable
   }, []);
@@ -51,8 +64,8 @@ const RestaurantMenu = () => {
   return !restaurant ? (
     <MenuShimmer />
   ) : (
-    <div className="restaurant-menu">
-      <div className="restaurant-summary">
+    <div className="flex ">
+      <div className="">
         <img
           className="restaurant-img"
           src={IMG_CDN_URL + restaurant?.cloudinaryImageId}
@@ -88,7 +101,7 @@ const RestaurantMenu = () => {
               {menuItems.length} ITEMS
             </p>
           </div>
-          <div className="menu-items-list">
+          <div className="grid grid-cols-2">
             {menuItems.map((item) => (
               <div className="menu-item" key={item?.id}>
                 <div className="menu-item-details">
@@ -103,15 +116,17 @@ const RestaurantMenu = () => {
                   </p>
                   <p className="item-desc">{item?.description}</p>
                 </div>
-                <div className="menu-img-wrapper">
+                <div className="grid grid-cols">
                   {item?.imageId && (
                     <img
                       className="menu-item-img"
                       src={ITEM_IMG_CDN_URL + item?.imageId}
                       alt={item?.name}
-                    />
+                    />  
                   )}
-                  <button className="add-btn"> ADD +</button>
+                  <button 
+                  className="p-2 m-5 bg-green-300" 
+                  onClick={()=>addFoodItem(item)}> ADD Item</button>
                 </div>
               </div>
             ))}

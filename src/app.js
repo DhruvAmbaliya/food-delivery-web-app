@@ -1,4 +1,8 @@
-import React from "react";  
+import Cart from "./component/Cart.js";
+import store from "./utils/store.js";
+import { Provider } from "react-redux";
+import UserContext from "./utils/UserContext.js";
+import React,{lazy,Suspense, useState} from "react";  
 // import { createElement as ce } from "react"; 
 import ReactDOM from "react-dom/client"; 
 // default import
@@ -7,12 +11,26 @@ import Header from "./component/Header.js";
 // import { Title } from "./component/Header.js";
 import Body from "./component/Body.js"; 
 import Footer from "./component/Footer.js"
-import Aboutclass from "./component/About.js";
-import Contact from "./component/contact.js";
+// import Aboutclass from "./component/About.js";
+// import Contact from "./component/contact.js";
 import Error from "./component/Error.js";
 import RestaurantMenu from "./component/RestaurantMenu.js";
 import Profile from "./component/Profile.js";
+import Shimmer from "./component/Shimmer.js"
 import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
+
+// import Instamart from "./component/Instamart.js";
+//chunking
+//code spliting
+//dynamic bundling
+//on demand loading
+//lazy loading
+//dynamic import
+const Instamart = lazy(() => import("./component/Instamart.js"));
+const Contact = lazy(() => import("./component/Contact.js"));
+const Aboutclass = lazy(() => import("./component/About.js"));
+
+//upon on demand loading -> upon render -> suspend loading (beacuse code is not thier)
 
 // React.createElement => object =>html (render to DOM)
 // const Heading = ()=>React.createElement(
@@ -75,15 +93,27 @@ import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
 // use React.Fragment <React.Fragment></React.Fragment> = <></>
 
 const AppLayout = ()=>{
+    
+    const [user,setUser] = useState({
+        name:"Dhruv Ambaliya",
+        email:"real@gmail.com",
+    });
+
     return(
-        <> 
+        <Provider store={store}>
+        <UserContext.Provider 
+        value={{
+            user : user,
+            setUser : setUser,
+        }}> 
         <Header/>
         <Outlet/>
         {/* <Body/>
         <About/>
         <Contact/> */}
         <Footer/>
-        </>
+        </UserContext.Provider>
+        </Provider>
     );
 };
 
@@ -95,11 +125,17 @@ const appRouter = createBrowserRouter([
         children:[
             {
                 path:"/",
-                element:<Body/>,
+                element:<Body 
+                // user={{ //props drilling
+                // name:"app to body to restaurant",
+                // email:"a@gmail.com",
+                //  } }
+
+                 />,
             },
             {
                 path:"/about",
-                element:<Aboutclass/>,
+                element:<Suspense><Aboutclass/></Suspense>,
                 children:[{
                     path:"profile", // not write /Profile
                     element:<Profile/>,
@@ -107,11 +143,23 @@ const appRouter = createBrowserRouter([
             },
             {
                 path:"/contact",
-                element:<Contact/>,
+                element:<Suspense>
+                <Contact/>
+                </Suspense>,
             },
             {
                 path:"restaurant/:resId",
                 element:<RestaurantMenu/>,
+            },
+            {
+                path:"/instamart",
+                element:<Suspense fallback={<Shimmer/>}>
+                <Instamart/>
+                </Suspense>,
+            },
+            {
+                path:"/cart",
+                element:<Cart/>
             },
         ],
     },

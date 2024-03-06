@@ -1,4 +1,6 @@
 import { IMG_CDN_URL } from "./constant";
+// import UserContext from "../utils/UserContext";
+// import { useContext } from "react";
 
 // Restaurant card component: Image, name, cuisine
 const RestaurantCard = ({
@@ -6,34 +8,27 @@ const RestaurantCard = ({
   name,
   cuisines,
   areaName,
+  avgRatingString,
   sla,
   costForTwo,
-  avgRatingString,
+  // user,
 }) => {
+
+  // const {user}= useContext(UserContext)
   return (
-    <div className="card">
+    
+    <div className="card p-2 m-2 h-96 shadow-lg bg-pink-50"> 
       <img src={IMG_CDN_URL + cloudinaryImageId} />
-      <h3>{name}</h3>
+      <h3 className="font-bold text-xl ">{name}</h3>
       <h5>{cuisines.join(", ")}</h5>
       <h5>{areaName}</h5>
+      {/* <h5>{user.name}</h5> */}
       <span>
-        <h4
-          style={
-            avgRatingString < 4
-              ? { backgroundColor: "var(--light-red)" }
-              : avgRatingString === "--"
-                ? { backgroundColor: "white", color: "black" }
-                : { color: "white" }
-          }
-        >
-          <i className="fa-solid fa-star"></i>
-          {avgRatingString}
-        </h4>
-        <h4>•</h4>
-        <h4>{sla?.lastMileTravelString ?? '2.0 km'}</h4>
-        <h4>•</h4>
-        <h4>{costForTwo ?? '₹200 for two'}</h4>
-      </span>
+        <h4> Rating : {avgRatingString} </h4>
+        <h4>Distance : {sla?.lastMileTravelString ?? '2.0 km'}</h4>
+        <h4>{costForTwo ?? '&#8377;200 for two'}</h4>
+      </span> 
+      {/* <h5 className="font-bold">{user.name}-{user.email}</h5> */}
     </div>
   );
 };

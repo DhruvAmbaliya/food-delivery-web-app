@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import UserContext from "../utils/UserContext.js";
 import { swiggy_api_URL } from "./constant.js";
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react"; /* This is named export */
 import Shimmer from "./Shimmer"; /* This is default export */
 import { Link } from "react-router-dom";
+import { filterData } from "../utils/helper.js"; 
+import useOnline from "../utils/useOnline.js";
 // import { restaurantList } from "./constant.js";
 
 // const BurgerKing = 
@@ -42,14 +46,10 @@ import { Link } from "react-router-dom";
 
 // const ResturentList = [ResturentCard,ResturentCard2];
 
-function filterData(searchText, restaurants) {
-  const resFilterData = restaurants.filter((restaurant) =>
-    restaurant?.info?.name.toLowerCase().includes(searchText.toLowerCase())
-  );
-  return resFilterData;
-}
 
-const Body = ()=>{
+const Body = (
+  // {user}
+  )=>{
     // create normal vriable in js
     // const searchTxt = "kfc";
 
@@ -60,6 +60,7 @@ const Body = ()=>{
     const [allRestaurants, setAllRestaurants] = useState([]);
     const [filteredRestaurants, setFilteredRestaurants] = useState([]);
     const [errorMessage, setErrorMessage] = useState("");
+    const {user,setUser} = useContext(UserContext)
 
     // empty dependency array => call once after render
     // dep arr [searchInput] => call once after initial render + everytime after render (my searchInput change)
@@ -115,14 +116,21 @@ const Body = ()=>{
       setFilteredRestaurants(restaurants);
     }
   };
+    
+const isOnline = useOnline();
+
+if(!isOnline){
+  return <h1>🔴 offline, please check your internet connection!!</h1>;
+}
 
   // if allRestaurants is empty don't render restaurants cards
   if (!allRestaurants) return null;
-    
+
   return (
     <>
-      <div className="search-container">
+      <div className="search-container p-5 bg-pink-50 my-5 ">
         <input
+        data-testid="search-input"
           type="text"
           className="search-input"
           placeholder="Search a restaurant you want..."
@@ -131,7 +139,8 @@ const Body = ()=>{
           onChange={(e) => setSearchText(e.target.value)}
         ></input>
         <button
-          className="search-btn"
+          data-testid="search-btn"
+          className="search-btn p-2 m-2 bg-purple-800 hover:bg-black text-white rounded-md"
           onClick={() => {
             // user click on button searchData function is called
             searchData(searchText, allRestaurants);
@@ -139,6 +148,24 @@ const Body = ()=>{
         >
           Search
         </button>
+
+        <input value={user.name} onChange={
+          e=>setUser({
+            ...user,
+            name:e.target.value,
+          
+          })
+          }>
+        </input>
+
+        <input className="ml-2" value={user.email} onChange={
+          e=>setUser({
+           ...user,
+           email:e.target.value,
+          })
+          }>
+        </input>
+      
       </div>
       {errorMessage && <div className="error-container">{errorMessage}</div>}
 
@@ -146,7 +173,7 @@ const Body = ()=>{
       {allRestaurants?.length === 0 ? (
         <Shimmer />
       ) : (
-        <div className="restaurant-list">
+        <div className="grid grid-cols-5 " data-testid="res-list">
           {/* We are mapping restaurants array and passing JSON array data to RestaurantCard component as props with unique key as restaurant.data.id */}
           {filteredRestaurants.map((restaurant) => {
             return (
@@ -154,7 +181,9 @@ const Body = ()=>{
                 to={"/restaurant/" + restaurant?.info?.id}
                 key={restaurant?.info?.id}
               >
-                <RestaurantCard {...restaurant?.info} />
+                <RestaurantCard {...restaurant?.info} 
+                // user={user}
+                />
               </Link>
             );
           })}

@@ -2946,33 +2946,72 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$f79a.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-// import { createElement as ce } from "react"; 
-var _client = require("react-dom/client");
-var _clientDefault = parcelHelpers.interopDefault(_client);
+"use strict";
+var _Cart = _interopRequireDefault(require("5f5acfb867afc901"));
+var _store = _interopRequireDefault(require("f135d2ae4d810759"));
+var _reactRedux = require("1a5fcc9ced33ad07");
+var _UserContext = _interopRequireDefault(require("7a686d2ca5e80382"));
+var _react = _interopRequireWildcard(require("5df8ba2a41c8a9ec"));
+var _client = _interopRequireDefault(require("ba81b44823fa3110"));
+var _Header = _interopRequireDefault(require("fab4939f1fc89279"));
+var _Body = _interopRequireDefault(require("cbcef5878bb98cde"));
+var _Footer = _interopRequireDefault(require("305f74d47d12f3e"));
+var _Error = _interopRequireDefault(require("f11c0aca6dbc5b6f"));
+var _RestaurantMenu = _interopRequireDefault(require("c2947e52a72e9988"));
+var _Profile = _interopRequireDefault(require("dbc4d7393f1e3067"));
+var _Shimmer = _interopRequireDefault(require("df86f0b60ea0111"));
+var _reactRouterDom = require("86fb6e07723dcd01");
+var _jsxRuntime = require("1efd84cd67f32d27");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _getRequireWildcardCache(e) {
+    if ("function" != typeof WeakMap) return null;
+    var r = new WeakMap(), t = new WeakMap();
+    return (_getRequireWildcardCache = function(e) {
+        return e ? t : r;
+    })(e);
+}
+function _interopRequireWildcard(e, r) {
+    if (!r && e && e.__esModule) return e;
+    if (null === e || "object" != typeof e && "function" != typeof e) return {
+        default: e
+    };
+    var t = _getRequireWildcardCache(r);
+    if (t && t.has(e)) return t.get(e);
+    var n = {
+        __proto__: null
+    }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var u in e)if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) {
+        var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
+        i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
+    }
+    return n.default = e, t && t.set(e, n), n;
+} // import { createElement as ce } from "react"; 
 // default import
-var _headerJs = require("./component/Header.js");
-var _headerJsDefault = parcelHelpers.interopDefault(_headerJs);
 // name import
 // import { Title } from "./component/Header.js";
-var _bodyJs = require("./component/Body.js");
-var _bodyJsDefault = parcelHelpers.interopDefault(_bodyJs);
-var _footerJs = require("./component/Footer.js");
-var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
-var _aboutJs = require("./component/About.js");
-var _aboutJsDefault = parcelHelpers.interopDefault(_aboutJs);
-var _contactJs = require("./component/contact.js");
-var _contactJsDefault = parcelHelpers.interopDefault(_contactJs);
-var _errorJs = require("./component/Error.js");
-var _errorJsDefault = parcelHelpers.interopDefault(_errorJs);
-var _restaurantMenuJs = require("./component/RestaurantMenu.js");
-var _restaurantMenuJsDefault = parcelHelpers.interopDefault(_restaurantMenuJs);
-var _profileJs = require("./component/Profile.js");
-var _profileJsDefault = parcelHelpers.interopDefault(_profileJs);
-var _reactRouterDom = require("react-router-dom");
+// import Aboutclass from "./component/About.js";
+// import Contact from "./component/contact.js";
+// import Instamart from "./component/Instamart.js";
+//chunking
+//code spliting
+//dynamic bundling
+//on demand loading
+//lazy loading
+//dynamic import
+const Instamart = /*#__PURE__*/ (0, _react.lazy)(()=>Promise.resolve().then(function() {
+        return require("be49789bd62de57b");
+    }).then((res)=>_interopRequireWildcard(res)));
+const Contact = /*#__PURE__*/ (0, _react.lazy)(()=>Promise.resolve().then(function() {
+        return require("85c37fe8b5fc8567");
+    }).then((res)=>_interopRequireWildcard(res)));
+const Aboutclass = /*#__PURE__*/ (0, _react.lazy)(()=>Promise.resolve().then(function() {
+        return require("2a08f9c37fbcffa9");
+    }).then((res)=>_interopRequireWildcard(res)));
+//upon on demand loading -> upon render -> suspend loading (beacuse code is not thier)
 // React.createElement => object =>html (render to DOM)
 // const Heading = ()=>React.createElement(
 //     "h1",
@@ -3022,83 +3061,69 @@ var _reactRouterDom = require("react-router-dom");
 // jsx only one parent that why get error <Title/><Body/><Footer/> 
 // use React.Fragment <React.Fragment></React.Fragment> = <></>
 const AppLayout = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsDefault.default), {}, void 0, false, {
-                fileName: "src/app.js",
-                lineNumber: 72,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-                fileName: "src/app.js",
-                lineNumber: 73,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsDefault.default), {}, void 0, false, {
-                fileName: "src/app.js",
-                lineNumber: 77,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true);
+    const [user, setUser] = (0, _react.useState)({
+        name: "Dhruv Ambaliya",
+        email: "real@gmail.com"
+    });
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRedux.Provider, {
+        store: _store.default,
+        children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_UserContext.default.Provider, {
+            value: {
+                user: user,
+                setUser: setUser
+            },
+            children: [
+                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Header.default, {}),
+                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Outlet, {}),
+                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Footer.default, {})
+            ]
+        })
+    });
 };
 _c = AppLayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
-            fileName: "src/app.js",
-            lineNumber: 82,
-            columnNumber: 12
-        }, undefined),
-        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsDefault.default), {}, void 0, false, {
-            fileName: "src/app.js",
-            lineNumber: 83,
-            columnNumber: 17
-        }, undefined),
+        element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(AppLayout, {}),
+        errorElement: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Error.default, {}),
         children: [
             {
                 path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsDefault.default), {}, void 0, false, {
-                    fileName: "src/app.js",
-                    lineNumber: 86,
-                    columnNumber: 14
-                }, undefined)
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Body.default, {})
             },
             {
                 path: "/about",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsDefault.default), {}, void 0, false, {
-                    fileName: "src/app.js",
-                    lineNumber: 89,
-                    columnNumber: 14
-                }, undefined),
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_react.Suspense, {
+                    children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(Aboutclass, {})
+                }),
                 children: [
                     {
                         path: "profile",
                         // not write /Profile
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileJsDefault.default), {}, void 0, false, {
-                            fileName: "src/app.js",
-                            lineNumber: 93,
-                            columnNumber: 16
-                        }, undefined)
+                        element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Profile.default, {})
                     }
                 ]
             },
             {
                 path: "/contact",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactJsDefault.default), {}, void 0, false, {
-                    fileName: "src/app.js",
-                    lineNumber: 97,
-                    columnNumber: 14
-                }, undefined)
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_react.Suspense, {
+                    children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(Contact, {})
+                })
             },
             {
                 path: "restaurant/:resId",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuJsDefault.default), {}, void 0, false, {
-                    fileName: "src/app.js",
-                    lineNumber: 100,
-                    columnNumber: 14
-                }, undefined)
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_RestaurantMenu.default, {})
+            },
+            {
+                path: "/instamart",
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_react.Suspense, {
+                    fallback: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}),
+                    children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(Instamart, {})
+                })
+            },
+            {
+                path: "/cart",
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Cart.default, {})
             }
         ]
     }
@@ -3114,15 +3139,11 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
 //     <h1>hiiii</h1>
 //     </div>
 // );
-const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
+const root = _client.default.createRoot(document.getElementById("root"));
 // root.render(<AppLayout/>);
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
+root.render(/*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.RouterProvider, {
     router: appRouter
-}, void 0, false, {
-    fileName: "src/app.js",
-    lineNumber: 124,
-    columnNumber: 13
-}, undefined)); // root.render(jsx);
+})); // root.render(jsx);
  // root.render(heading);
  // root.render(heading2);
  // const heading = React.createElement("h1",
@@ -3149,842 +3170,1273 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./component/Header.js":"knXDc","./component/Body.js":"iizf5","./component/Footer.js":"4ifUV","./component/contact.js":"jR9xM","./component/Error.js":"cosKY","./component/RestaurantMenu.js":"kMuXm","./component/Profile.js":"7kLfj","react-router-dom":"9xmpe","./component/About.js":"94Koj"}],"iTorj":[function(require,module,exports) {
+},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","be49789bd62de57b":"4EFS6","85c37fe8b5fc8567":"64WpD","2a08f9c37fbcffa9":"3UZbe","5f5acfb867afc901":"dclnc","f135d2ae4d810759":"k2jPV","1a5fcc9ced33ad07":"62sf7","7a686d2ca5e80382":"c5vgB","5df8ba2a41c8a9ec":"21dqq","ba81b44823fa3110":"lOjBx","fab4939f1fc89279":"knXDc","cbcef5878bb98cde":"iizf5","305f74d47d12f3e":"4ifUV","f11c0aca6dbc5b6f":"cosKY","c2947e52a72e9988":"kMuXm","dbc4d7393f1e3067":"7kLfj","df86f0b60ea0111":"l5rS0","86fb6e07723dcd01":"9xmpe","1efd84cd67f32d27":"6AEwr"}],"km3Ru":[function(require,module,exports) {
 "use strict";
-module.exports = require("ee51401569654d91");
-
-},{"ee51401569654d91":"48uCM"}],"48uCM":[function(require,module,exports) {
-/**
- * @license React
- * react-jsx-dev-runtime.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-(function() {
-    "use strict";
-    var React = require("58362d9d82be395f");
-    // ATTENTION
-    // When adding new symbols to this file,
-    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
-    // The Symbol used to tag the ReactElement-like types.
-    var REACT_ELEMENT_TYPE = Symbol.for("react.element");
-    var REACT_PORTAL_TYPE = Symbol.for("react.portal");
-    var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-    var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
-    var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
-    var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
-    var REACT_CONTEXT_TYPE = Symbol.for("react.context");
-    var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
-    var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
-    var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
-    var REACT_MEMO_TYPE = Symbol.for("react.memo");
-    var REACT_LAZY_TYPE = Symbol.for("react.lazy");
-    var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
-    var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
-    var FAUX_ITERATOR_SYMBOL = "@@iterator";
-    function getIteratorFn(maybeIterable) {
-        if (maybeIterable === null || typeof maybeIterable !== "object") return null;
-        var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
-        if (typeof maybeIterator === "function") return maybeIterator;
-        return null;
-    }
-    var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function error(format) {
-        for(var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++)args[_key2 - 1] = arguments[_key2];
-        printWarning("error", format, args);
-    }
-    function printWarning(level, format, args) {
-        var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
-        var stack = ReactDebugCurrentFrame.getStackAddendum();
-        if (stack !== "") {
-            format += "%s";
-            args = args.concat([
-                stack
-            ]);
-        } // eslint-disable-next-line react-internal/safe-string-coercion
-        var argsWithFormat = args.map(function(item) {
-            return String(item);
-        }); // Careful: RN currently depends on this prefix
-        argsWithFormat.unshift("Warning: " + format); // We intentionally don't use spread (or .apply) directly because it
-        // breaks IE9: https://github.com/facebook/react/issues/13610
-        // eslint-disable-next-line react-internal/no-production-logging
-        Function.prototype.apply.call(console[level], console, argsWithFormat);
-    }
-    // -----------------------------------------------------------------------------
-    var enableScopeAPI = false; // Experimental Create Event Handle API.
-    var enableCacheElement = false;
-    var enableTransitionTracing = false; // No known bugs, but needs performance testing
-    var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
-    // stuff. Intended to enable React core members to more easily debug scheduling
-    // issues in DEV builds.
-    var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
-    var REACT_MODULE_REFERENCE;
-    REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
-    function isValidElementType(type) {
-        if (typeof type === "string" || typeof type === "function") return true;
-         // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
-        if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) return true;
-        if (typeof type === "object" && type !== null) {
-            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
-            // types supported by any Flight configuration anywhere since
-            // we don't know which Flight build this will end up being used
-            // with.
-            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) return true;
-        }
-        return false;
-    }
-    function getWrappedName(outerType, innerType, wrapperName) {
-        var displayName = outerType.displayName;
-        if (displayName) return displayName;
-        var functionName = innerType.displayName || innerType.name || "";
-        return functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName;
-    } // Keep in sync with react-reconciler/getComponentNameFromFiber
-    function getContextName(type) {
-        return type.displayName || "Context";
-    } // Note that the reconciler package should generally prefer to use getComponentNameFromFiber() instead.
-    function getComponentNameFromType(type) {
-        if (type == null) // Host root, text node or just invalid type.
-        return null;
-        if (typeof type.tag === "number") error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
-        if (typeof type === "function") return type.displayName || type.name || null;
-        if (typeof type === "string") return type;
-        switch(type){
-            case REACT_FRAGMENT_TYPE:
-                return "Fragment";
-            case REACT_PORTAL_TYPE:
-                return "Portal";
-            case REACT_PROFILER_TYPE:
-                return "Profiler";
-            case REACT_STRICT_MODE_TYPE:
-                return "StrictMode";
-            case REACT_SUSPENSE_TYPE:
-                return "Suspense";
-            case REACT_SUSPENSE_LIST_TYPE:
-                return "SuspenseList";
-        }
-        if (typeof type === "object") switch(type.$$typeof){
-            case REACT_CONTEXT_TYPE:
-                var context = type;
-                return getContextName(context) + ".Consumer";
-            case REACT_PROVIDER_TYPE:
-                var provider = type;
-                return getContextName(provider._context) + ".Provider";
-            case REACT_FORWARD_REF_TYPE:
-                return getWrappedName(type, type.render, "ForwardRef");
-            case REACT_MEMO_TYPE:
-                var outerName = type.displayName || null;
-                if (outerName !== null) return outerName;
-                return getComponentNameFromType(type.type) || "Memo";
-            case REACT_LAZY_TYPE:
-                var lazyComponent = type;
-                var payload = lazyComponent._payload;
-                var init = lazyComponent._init;
-                try {
-                    return getComponentNameFromType(init(payload));
-                } catch (x) {
-                    return null;
-                }
-        }
-        return null;
-    }
-    var assign = Object.assign;
-    // Helpers to patch console.logs to avoid logging during side-effect free
-    // replaying on render function. This currently only patches the object
-    // lazily which won't cover if the log function was extracted eagerly.
-    // We could also eagerly patch the method.
-    var disabledDepth = 0;
-    var prevLog;
-    var prevInfo;
-    var prevWarn;
-    var prevError;
-    var prevGroup;
-    var prevGroupCollapsed;
-    var prevGroupEnd;
-    function disabledLog() {}
-    disabledLog.__reactDisabledLog = true;
-    function disableLogs() {
-        if (disabledDepth === 0) {
-            /* eslint-disable react-internal/no-production-logging */ prevLog = console.log;
-            prevInfo = console.info;
-            prevWarn = console.warn;
-            prevError = console.error;
-            prevGroup = console.group;
-            prevGroupCollapsed = console.groupCollapsed;
-            prevGroupEnd = console.groupEnd; // https://github.com/facebook/react/issues/19099
-            var props = {
-                configurable: true,
-                enumerable: true,
-                value: disabledLog,
-                writable: true
-            }; // $FlowFixMe Flow thinks console is immutable.
-            Object.defineProperties(console, {
-                info: props,
-                log: props,
-                warn: props,
-                error: props,
-                group: props,
-                groupCollapsed: props,
-                groupEnd: props
-            });
-        /* eslint-enable react-internal/no-production-logging */ }
-        disabledDepth++;
-    }
-    function reenableLogs() {
-        disabledDepth--;
-        if (disabledDepth === 0) {
-            /* eslint-disable react-internal/no-production-logging */ var props = {
-                configurable: true,
-                enumerable: true,
-                writable: true
-            }; // $FlowFixMe Flow thinks console is immutable.
-            Object.defineProperties(console, {
-                log: assign({}, props, {
-                    value: prevLog
-                }),
-                info: assign({}, props, {
-                    value: prevInfo
-                }),
-                warn: assign({}, props, {
-                    value: prevWarn
-                }),
-                error: assign({}, props, {
-                    value: prevError
-                }),
-                group: assign({}, props, {
-                    value: prevGroup
-                }),
-                groupCollapsed: assign({}, props, {
-                    value: prevGroupCollapsed
-                }),
-                groupEnd: assign({}, props, {
-                    value: prevGroupEnd
-                })
-            });
-        /* eslint-enable react-internal/no-production-logging */ }
-        if (disabledDepth < 0) error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
-    }
-    var ReactCurrentDispatcher = ReactSharedInternals.ReactCurrentDispatcher;
-    var prefix;
-    function describeBuiltInComponentFrame(name, source, ownerFn) {
-        if (prefix === undefined) // Extract the VM specific prefix used by each line.
-        try {
-            throw Error();
-        } catch (x) {
-            var match = x.stack.trim().match(/\n( *(at )?)/);
-            prefix = match && match[1] || "";
-        }
-         // We use the prefix to ensure our stacks line up with native stack frames.
-        return "\n" + prefix + name;
-    }
-    var reentry = false;
-    var componentFrameCache;
-    var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map;
-    componentFrameCache = new PossiblyWeakMap();
-    function describeNativeComponentFrame(fn, construct) {
-        // If something asked for a stack inside a fake render, it should get ignored.
-        if (!fn || reentry) return "";
-        var frame = componentFrameCache.get(fn);
-        if (frame !== undefined) return frame;
-        var control;
-        reentry = true;
-        var previousPrepareStackTrace = Error.prepareStackTrace; // $FlowFixMe It does accept undefined.
-        Error.prepareStackTrace = undefined;
-        var previousDispatcher;
-        previousDispatcher = ReactCurrentDispatcher.current; // Set the dispatcher in DEV because this might be call in the render function
-        // for warnings.
-        ReactCurrentDispatcher.current = null;
-        disableLogs();
-        try {
-            // This should throw.
-            if (construct) {
-                // Something should be setting the props in the constructor.
-                var Fake = function() {
-                    throw Error();
-                }; // $FlowFixMe
-                Object.defineProperty(Fake.prototype, "props", {
-                    set: function() {
-                        // We use a throwing setter instead of frozen or non-writable props
-                        // because that won't throw in a non-strict mode function.
-                        throw Error();
-                    }
-                });
-                if (typeof Reflect === "object" && Reflect.construct) {
-                    // We construct a different control for this case to include any extra
-                    // frames added by the construct call.
-                    try {
-                        Reflect.construct(Fake, []);
-                    } catch (x) {
-                        control = x;
-                    }
-                    Reflect.construct(fn, [], Fake);
-                } else {
-                    try {
-                        Fake.call();
-                    } catch (x) {
-                        control = x;
-                    }
-                    fn.call(Fake.prototype);
-                }
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
             } else {
-                try {
-                    throw Error();
-                } catch (x) {
-                    control = x;
-                }
-                fn();
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
             }
-        } catch (sample) {
-            // This is inlined manually because closure doesn't do it for us.
-            if (sample && control && typeof sample.stack === "string") {
-                // This extracts the first frame from the sample that isn't also in the control.
-                // Skipping one frame that we assume is the frame that calls the two.
-                var sampleLines = sample.stack.split("\n");
-                var controlLines = control.stack.split("\n");
-                var s = sampleLines.length - 1;
-                var c = controlLines.length - 1;
-                while(s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c])// We expect at least one stack frame to be shared.
-                // Typically this will be the root most one. However, stack frames may be
-                // cut off due to maximum stack limits. In this case, one maybe cut off
-                // earlier than the other. We assume that the sample is longer or the same
-                // and there for cut off earlier. So we should find the root most frame in
-                // the sample somewhere in the control.
-                c--;
-                for(; s >= 1 && c >= 0; s--, c--)// Next we find the first one that isn't the same which should be the
-                // frame that called our sample function and the control.
-                if (sampleLines[s] !== controlLines[c]) {
-                    // In V8, the first line is describing the message but other VMs don't.
-                    // If we're about to return the first line, and the control is also on the same
-                    // line, that's a pretty good indicator that our sample threw at same line as
-                    // the control. I.e. before we entered the sample frame. So we ignore this result.
-                    // This can happen if you passed a class to function component, or non-function.
-                    if (s !== 1 || c !== 1) do {
-                        s--;
-                        c--; // We may still have similar intermediate frames from the construct call.
-                        // The next one that isn't the same should be our match though.
-                        if (c < 0 || sampleLines[s] !== controlLines[c]) {
-                            // V8 adds a "new" prefix for native classes. Let's remove it to make it prettier.
-                            var _frame = "\n" + sampleLines[s].replace(" at new ", " at "); // If our component frame is labeled "<anonymous>"
-                            // but we have a user-provided "displayName"
-                            // splice it in to make the stack more readable.
-                            if (fn.displayName && _frame.includes("<anonymous>")) _frame = _frame.replace("<anonymous>", fn.displayName);
-                            if (typeof fn === "function") componentFrameCache.set(fn, _frame);
-                            return _frame;
-                        }
-                    }while (s >= 1 && c >= 0);
-                    break;
-                }
-            }
-        } finally{
-            reentry = false;
-            ReactCurrentDispatcher.current = previousDispatcher;
-            reenableLogs();
-            Error.prepareStackTrace = previousPrepareStackTrace;
-        } // Fallback to just using the name if we couldn't make it throw.
-        var name = fn ? fn.displayName || fn.name : "";
-        var syntheticFrame = name ? describeBuiltInComponentFrame(name) : "";
-        if (typeof fn === "function") componentFrameCache.set(fn, syntheticFrame);
-        return syntheticFrame;
+        };
     }
-    function describeFunctionComponentFrame(fn, source, ownerFn) {
-        return describeNativeComponentFrame(fn, false);
-    }
-    function shouldConstruct(Component) {
-        var prototype = Component.prototype;
-        return !!(prototype && prototype.isReactComponent);
-    }
-    function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
-        if (type == null) return "";
-        if (typeof type === "function") return describeNativeComponentFrame(type, shouldConstruct(type));
-        if (typeof type === "string") return describeBuiltInComponentFrame(type);
-        switch(type){
-            case REACT_SUSPENSE_TYPE:
-                return describeBuiltInComponentFrame("Suspense");
-            case REACT_SUSPENSE_LIST_TYPE:
-                return describeBuiltInComponentFrame("SuspenseList");
-        }
-        if (typeof type === "object") switch(type.$$typeof){
-            case REACT_FORWARD_REF_TYPE:
-                return describeFunctionComponentFrame(type.render);
-            case REACT_MEMO_TYPE:
-                // Memo may contain any component type so we recursively resolve it.
-                return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
-            case REACT_LAZY_TYPE:
-                var lazyComponent = type;
-                var payload = lazyComponent._payload;
-                var init = lazyComponent._init;
-                try {
-                    // Lazy may contain any component type so we recursively resolve it.
-                    return describeUnknownElementTypeFrameInDEV(init(payload), source, ownerFn);
-                } catch (x) {}
-        }
-        return "";
-    }
-    var hasOwnProperty = Object.prototype.hasOwnProperty;
-    var loggedTypeFailures = {};
-    var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
-    function setCurrentlyValidatingElement(element) {
-        if (element) {
-            var owner = element._owner;
-            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
-            ReactDebugCurrentFrame.setExtraStackFrame(stack);
-        } else ReactDebugCurrentFrame.setExtraStackFrame(null);
-    }
-    function checkPropTypes(typeSpecs, values, location, componentName, element) {
-        // $FlowFixMe This is okay but Flow doesn't know it.
-        var has = Function.call.bind(hasOwnProperty);
-        for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
-            var error$1 = void 0; // Prop type validation may throw. In case they do, we don't want to
-            // fail the render phase where it didn't fail before. So we log it.
-            // After these have been cleaned up, we'll let them throw.
-            try {
-                // This is intentionally an invariant that gets caught. It's the same
-                // behavior as without this statement except with a better message.
-                if (typeof typeSpecs[typeSpecName] !== "function") {
-                    // eslint-disable-next-line react-internal/prod-error-codes
-                    var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`." + "This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                    err.name = "Invariant Violation";
-                    throw err;
-                }
-                error$1 = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (ex) {
-                error$1 = ex;
-            }
-            if (error$1 && !(error$1 instanceof Error)) {
-                setCurrentlyValidatingElement(element);
-                error("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", componentName || "React class", location, typeSpecName, typeof error$1);
-                setCurrentlyValidatingElement(null);
-            }
-            if (error$1 instanceof Error && !(error$1.message in loggedTypeFailures)) {
-                // Only monitor this failure once because there tends to be a lot of the
-                // same error.
-                loggedTypeFailures[error$1.message] = true;
-                setCurrentlyValidatingElement(element);
-                error("Failed %s type: %s", location, error$1.message);
-                setCurrentlyValidatingElement(null);
-            }
-        }
-    }
-    var isArrayImpl = Array.isArray; // eslint-disable-next-line no-redeclare
-    function isArray(a) {
-        return isArrayImpl(a);
-    }
-    /*
- * The `'' + value` pattern (used in in perf-sensitive code) throws for Symbol
- * and Temporal.* types. See https://github.com/facebook/react/pull/22064.
- *
- * The functions in this module will throw an easier-to-understand,
- * easier-to-debug exception with a clear errors message message explaining the
- * problem. (Instead of a confusing exception thrown inside the implementation
- * of the `value` object).
- */ // $FlowFixMe only called in DEV, so void return is not possible.
-    function typeName(value) {
-        // toStringTag is needed for namespaced types like Temporal.Instant
-        var hasToStringTag = typeof Symbol === "function" && Symbol.toStringTag;
-        var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
-        return type;
-    } // $FlowFixMe only called in DEV, so void return is not possible.
-    function willCoercionThrow(value) {
-        try {
-            testStringCoercion(value);
-            return false;
-        } catch (e) {
-            return true;
-        }
-    }
-    function testStringCoercion(value) {
-        // If you ended up here by following an exception call stack, here's what's
-        // happened: you supplied an object or symbol value to React (as a prop, key,
-        // DOM attribute, CSS property, string ref, etc.) and when React tried to
-        // coerce it to a string using `'' + value`, an exception was thrown.
-        //
-        // The most common types that will cause this exception are `Symbol` instances
-        // and Temporal objects like `Temporal.Instant`. But any object that has a
-        // `valueOf` or `[Symbol.toPrimitive]` method that throws will also cause this
-        // exception. (Library authors do this to prevent users from using built-in
-        // numeric operators like `+` or comparison operators like `>=` because custom
-        // methods are needed to perform accurate arithmetic or comparison.)
-        //
-        // To fix the problem, coerce this object or symbol value to a string before
-        // passing it to React. The most reliable way is usually `String(value)`.
-        //
-        // To find which value is throwing, check the browser or debugger console.
-        // Before this exception was thrown, there should be `console.error` output
-        // that shows the type (Symbol, Temporal.PlainDate, etc.) that caused the
-        // problem and how that type was used: key, atrribute, input value prop, etc.
-        // In most cases, this console output also shows the component and its
-        // ancestor components where the exception happened.
-        //
-        // eslint-disable-next-line react-internal/safe-string-coercion
-        return "" + value;
-    }
-    function checkKeyStringCoercion(value) {
-        if (willCoercionThrow(value)) {
-            error("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", typeName(value));
-            return testStringCoercion(value); // throw (to help callers find troubleshooting comments)
-        }
-    }
-    var ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
-    var RESERVED_PROPS = {
-        key: true,
-        ref: true,
-        __self: true,
-        __source: true
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
     };
-    var specialPropKeyWarningShown;
-    var specialPropRefWarningShown;
-    var didWarnAboutStringRefs;
-    didWarnAboutStringRefs = {};
-    function hasValidRef(config) {
-        if (hasOwnProperty.call(config, "ref")) {
-            var getter = Object.getOwnPropertyDescriptor(config, "ref").get;
-            if (getter && getter.isReactWarning) return false;
-        }
-        return config.ref !== undefined;
-    }
-    function hasValidKey(config) {
-        if (hasOwnProperty.call(config, "key")) {
-            var getter = Object.getOwnPropertyDescriptor(config, "key").get;
-            if (getter && getter.isReactWarning) return false;
-        }
-        return config.key !== undefined;
-    }
-    function warnIfStringRefCannotBeAutoConverted(config, self) {
-        if (typeof config.ref === "string" && ReactCurrentOwner.current && self && ReactCurrentOwner.current.stateNode !== self) {
-            var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
-            if (!didWarnAboutStringRefs[componentName]) {
-                error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', getComponentNameFromType(ReactCurrentOwner.current.type), config.ref);
-                didWarnAboutStringRefs[componentName] = true;
-            }
-        }
-    }
-    function defineKeyPropWarningGetter(props, displayName) {
-        var warnAboutAccessingKey = function() {
-            if (!specialPropKeyWarningShown) {
-                specialPropKeyWarningShown = true;
-                error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
-            }
-        };
-        warnAboutAccessingKey.isReactWarning = true;
-        Object.defineProperty(props, "key", {
-            get: warnAboutAccessingKey,
-            configurable: true
-        });
-    }
-    function defineRefPropWarningGetter(props, displayName) {
-        var warnAboutAccessingRef = function() {
-            if (!specialPropRefWarningShown) {
-                specialPropRefWarningShown = true;
-                error("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
-            }
-        };
-        warnAboutAccessingRef.isReactWarning = true;
-        Object.defineProperty(props, "ref", {
-            get: warnAboutAccessingRef,
-            configurable: true
-        });
-    }
-    /**
- * Factory method to create a new React element. This no longer adheres to
- * the class pattern, so do not use new to call it. Also, instanceof check
- * will not work. Instead test $$typeof field against Symbol.for('react.element') to check
- * if something is a React Element.
- *
- * @param {*} type
- * @param {*} props
- * @param {*} key
- * @param {string|object} ref
- * @param {*} owner
- * @param {*} self A *temporary* helper to detect places where `this` is
- * different from the `owner` when React.createElement is called, so that we
- * can warn. We want to get rid of owner and replace string `ref`s with arrow
- * functions, and as long as `this` and owner are the same, there will be no
- * change in behavior.
- * @param {*} source An annotation object (added by a transpiler or otherwise)
- * indicating filename, line number, and/or other information.
- * @internal
- */ var ReactElement = function(type, key, ref, self, source, owner, props) {
-        var element = {
-            // This tag allows us to uniquely identify this as a React Element
-            $$typeof: REACT_ELEMENT_TYPE,
-            // Built-in properties that belong on the element
-            type: type,
-            key: key,
-            ref: ref,
-            props: props,
-            // Record the component responsible for creating this element.
-            _owner: owner
-        };
-        // The validation flag is currently mutative. We put it on
-        // an external backing store so that we can freeze the whole object.
-        // This can be replaced with a WeakMap once they are implemented in
-        // commonly used development environments.
-        element._store = {}; // To make comparing ReactElements easier for testing purposes, we make
-        // the validation flag non-enumerable (where possible, which should
-        // include every environment we run tests in), so the test framework
-        // ignores it.
-        Object.defineProperty(element._store, "validated", {
-            configurable: false,
-            enumerable: false,
-            writable: true,
-            value: false
-        }); // self and source are DEV only properties.
-        Object.defineProperty(element, "_self", {
-            configurable: false,
-            enumerable: false,
-            writable: false,
-            value: self
-        }); // Two elements created in two different places should be considered
-        // equal for testing purposes and therefore we hide it from enumeration.
-        Object.defineProperty(element, "_source", {
-            configurable: false,
-            enumerable: false,
-            writable: false,
-            value: source
-        });
-        if (Object.freeze) {
-            Object.freeze(element.props);
-            Object.freeze(element);
-        }
-        return element;
-    };
-    /**
- * https://github.com/reactjs/rfcs/pull/107
- * @param {*} type
- * @param {object} props
- * @param {string} key
- */ function jsxDEV(type, config, maybeKey, source, self) {
-        var propName; // Reserved names are extracted
-        var props = {};
-        var key = null;
-        var ref = null; // Currently, key can be spread in as a prop. This causes a potential
-        // issue if key is also explicitly declared (ie. <div {...props} key="Hi" />
-        // or <div key="Hi" {...props} /> ). We want to deprecate key spread,
-        // but as an intermediary step, we will use jsxDEV for everything except
-        // <div {...props} key="Hi" />, because we aren't currently able to tell if
-        // key is explicitly declared to be undefined or not.
-        if (maybeKey !== undefined) {
-            checkKeyStringCoercion(maybeKey);
-            key = "" + maybeKey;
-        }
-        if (hasValidKey(config)) {
-            checkKeyStringCoercion(config.key);
-            key = "" + config.key;
-        }
-        if (hasValidRef(config)) {
-            ref = config.ref;
-            warnIfStringRefCannotBeAutoConverted(config, self);
-        } // Remaining properties are added to a new props object
-        for(propName in config)if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) props[propName] = config[propName];
-         // Resolve default props
-        if (type && type.defaultProps) {
-            var defaultProps = type.defaultProps;
-            for(propName in defaultProps)if (props[propName] === undefined) props[propName] = defaultProps[propName];
-        }
-        if (key || ref) {
-            var displayName = typeof type === "function" ? type.displayName || type.name || "Unknown" : type;
-            if (key) defineKeyPropWarningGetter(props, displayName);
-            if (ref) defineRefPropWarningGetter(props, displayName);
-        }
-        return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
-    }
-    var ReactCurrentOwner$1 = ReactSharedInternals.ReactCurrentOwner;
-    var ReactDebugCurrentFrame$1 = ReactSharedInternals.ReactDebugCurrentFrame;
-    function setCurrentlyValidatingElement$1(element) {
-        if (element) {
-            var owner = element._owner;
-            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
-            ReactDebugCurrentFrame$1.setExtraStackFrame(stack);
-        } else ReactDebugCurrentFrame$1.setExtraStackFrame(null);
-    }
-    var propTypesMisspellWarningShown;
-    propTypesMisspellWarningShown = false;
-    /**
- * Verifies the object is a ReactElement.
- * See https://reactjs.org/docs/react-api.html#isvalidelement
- * @param {?object} object
- * @return {boolean} True if `object` is a ReactElement.
- * @final
- */ function isValidElement(object) {
-        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-    }
-    function getDeclarationErrorAddendum() {
-        if (ReactCurrentOwner$1.current) {
-            var name = getComponentNameFromType(ReactCurrentOwner$1.current.type);
-            if (name) return "\n\nCheck the render method of `" + name + "`.";
-        }
-        return "";
-    }
-    function getSourceInfoErrorAddendum(source) {
-        if (source !== undefined) {
-            var fileName = source.fileName.replace(/^.*[\\\/]/, "");
-            var lineNumber = source.lineNumber;
-            return "\n\nCheck your code at " + fileName + ":" + lineNumber + ".";
-        }
-        return "";
-    }
-    /**
- * Warn if there's no key explicitly set on dynamic arrays of children or
- * object keys are not valid. This allows us to keep track of children between
- * updates.
- */ var ownerHasKeyUseWarning = {};
-    function getCurrentComponentErrorInfo(parentType) {
-        var info = getDeclarationErrorAddendum();
-        if (!info) {
-            var parentName = typeof parentType === "string" ? parentType : parentType.displayName || parentType.name;
-            if (parentName) info = "\n\nCheck the top-level render call using <" + parentName + ">.";
-        }
-        return info;
-    }
-    /**
- * Warn if the element doesn't have an explicit key assigned to it.
- * This element is in an array. The array could grow and shrink or be
- * reordered. All children that haven't already been validated are required to
- * have a "key" property assigned to it. Error statuses are cached so a warning
- * will only be shown once.
- *
- * @internal
- * @param {ReactElement} element Element that requires a key.
- * @param {*} parentType element's parent's type.
- */ function validateExplicitKey(element, parentType) {
-        if (!element._store || element._store.validated || element.key != null) return;
-        element._store.validated = true;
-        var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
-        if (ownerHasKeyUseWarning[currentComponentErrorInfo]) return;
-        ownerHasKeyUseWarning[currentComponentErrorInfo] = true; // Usually the current owner is the offender, but if it accepts children as a
-        // property, it may be the creator of the child that's responsible for
-        // assigning it a key.
-        var childOwner = "";
-        if (element && element._owner && element._owner !== ReactCurrentOwner$1.current) // Give the component that originally created this child.
-        childOwner = " It was passed a child from " + getComponentNameFromType(element._owner.type) + ".";
-        setCurrentlyValidatingElement$1(element);
-        error('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', currentComponentErrorInfo, childOwner);
-        setCurrentlyValidatingElement$1(null);
-    }
-    /**
- * Ensure that every element either is passed in a static location, in an
- * array with an explicit keys property defined, or in an object literal
- * with valid key property.
- *
- * @internal
- * @param {ReactNode} node Statically passed child of any type.
- * @param {*} parentType node's parent's type.
- */ function validateChildKeys(node, parentType) {
-        if (typeof node !== "object") return;
-        if (isArray(node)) for(var i = 0; i < node.length; i++){
-            var child = node[i];
-            if (isValidElement(child)) validateExplicitKey(child, parentType);
-        }
-        else if (isValidElement(node)) // This element was passed in a valid location.
-        {
-            if (node._store) node._store.validated = true;
-        } else if (node) {
-            var iteratorFn = getIteratorFn(node);
-            if (typeof iteratorFn === "function") // Entry iterators used to provide implicit keys,
-            // but now we print a separate warning for them later.
-            {
-                if (iteratorFn !== node.entries) {
-                    var iterator = iteratorFn.call(node);
-                    var step;
-                    while(!(step = iterator.next()).done)if (isValidElement(step.value)) validateExplicitKey(step.value, parentType);
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
                 }
-            }
+                enqueueUpdate();
+            });
         }
     }
-    /**
- * Given an element, validate that its props follow the propTypes definition,
- * provided by the type.
- *
- * @param {ReactElement} element
- */ function validatePropTypes(element) {
-        var type = element.type;
-        if (type === null || type === undefined || typeof type === "string") return;
-        var propTypes;
-        if (typeof type === "function") propTypes = type.propTypes;
-        else if (typeof type === "object" && (type.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
-        // Inner props are checked in the reconciler.
-        type.$$typeof === REACT_MEMO_TYPE)) propTypes = type.propTypes;
-        else return;
-        if (propTypes) {
-            // Intentionally inside to avoid triggering lazy initializers:
-            var name = getComponentNameFromType(type);
-            checkPropTypes(propTypes, element.props, "prop", name, element);
-        } else if (type.PropTypes !== undefined && !propTypesMisspellWarningShown) {
-            propTypesMisspellWarningShown = true; // Intentionally inside to avoid triggering lazy initializers:
-            var _name = getComponentNameFromType(type);
-            error("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", _name || "Unknown");
-        }
-        if (typeof type.getDefaultProps === "function" && !type.getDefaultProps.isReactClassApproved) error("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
     }
-    /**
- * Given a fragment, validate that it can only be provided with fragment props
- * @param {ReactElement} fragment
- */ function validateFragmentProps(fragment) {
-        var keys = Object.keys(fragment.props);
-        for(var i = 0; i < keys.length; i++){
-            var key = keys[i];
-            if (key !== "children" && key !== "key") {
-                setCurrentlyValidatingElement$1(fragment);
-                error("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", key);
-                setCurrentlyValidatingElement$1(null);
-                break;
-            }
-        }
-        if (fragment.ref !== null) {
-            setCurrentlyValidatingElement$1(fragment);
-            error("Invalid attribute `ref` supplied to `React.Fragment`.");
-            setCurrentlyValidatingElement$1(null);
-        }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
     }
-    function jsxWithValidation(type, props, key, isStaticChildren, source, self) {
-        var validType = isValidElementType(type); // We warn in this case but don't throw. We expect the element creation to
-        // succeed and there will likely be errors in render.
-        if (!validType) {
-            var info = "";
-            if (type === undefined || typeof type === "object" && type !== null && Object.keys(type).length === 0) info += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
-            var sourceInfo = getSourceInfoErrorAddendum(source);
-            if (sourceInfo) info += sourceInfo;
-            else info += getDeclarationErrorAddendum();
-            var typeString;
-            if (type === null) typeString = "null";
-            else if (isArray(type)) typeString = "array";
-            else if (type !== undefined && type.$$typeof === REACT_ELEMENT_TYPE) {
-                typeString = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />";
-                info = " Did you accidentally export a JSX literal instead of a component?";
-            } else typeString = typeof type;
-            error("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
-        }
-        var element = jsxDEV(type, props, key, source, self); // The result can be nullish if a mock or a custom function is used.
-        // TODO: Drop this when these are no longer allowed as the type argument.
-        if (element == null) return element;
-         // Skip key warning if the type isn't valid since our key validation logic
-        // doesn't expect a non-string/function type and can throw confusing errors.
-        // We don't want exception behavior to differ between dev and prod.
-        // (Rendering will throw with a helpful message and as soon as the type is
-        // fixed, the key warnings will appear.)
-        if (validType) {
-            var children = props.children;
-            if (children !== undefined) {
-                if (isStaticChildren) {
-                    if (isArray(children)) {
-                        for(var i = 0; i < children.length; i++)validateChildKeys(children[i], type);
-                        if (Object.freeze) Object.freeze(children);
-                    } else error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
-                } else validateChildKeys(children, type);
-            }
-        }
-        if (type === REACT_FRAGMENT_TYPE) validateFragmentProps(element);
-        else validatePropTypes(element);
-        return element;
-    } // These two functions exist to still get child warnings in dev
-    var jsxDEV$1 = jsxWithValidation;
-    exports.Fragment = REACT_FRAGMENT_TYPE;
-    exports.jsxDEV = jsxDEV$1;
-})();
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
 
-},{"58362d9d82be395f":"21dqq"}],"21dqq":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"4EFS6":[function(require,module,exports) {
+module.exports = require("58e361d82ea135b")(require("f3ffe91b294acba3").getBundleURL("lPpKD") + "Instamart.add16a2c.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("5aN6S"));
+
+},{"58e361d82ea135b":"61B45","f3ffe91b294acba3":"lgJ39"}],"61B45":[function(require,module,exports) {
+"use strict";
+var cacheLoader = require("ca2a84f7fa4a3bb0");
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName("script");
+        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var preloadLink = document.createElement("link");
+        preloadLink.href = bundle;
+        preloadLink.rel = "preload";
+        preloadLink.as = "script";
+        document.head.appendChild(preloadLink);
+        var script = document.createElement("script");
+        script.async = true;
+        script.type = "text/javascript";
+        script.src = bundle;
+        script.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script.onerror = script.onload = null;
+            script.remove();
+            reject(error);
+        };
+        script.onload = function() {
+            script.onerror = script.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    });
+});
+
+},{"ca2a84f7fa4a3bb0":"j49pS"}],"j49pS":[function(require,module,exports) {
+"use strict";
+var cachedBundles = {};
+var cachedPreloads = {};
+var cachedPrefetches = {};
+function getCache(type) {
+    switch(type){
+        case "preload":
+            return cachedPreloads;
+        case "prefetch":
+            return cachedPrefetches;
+        default:
+            return cachedBundles;
+    }
+}
+module.exports = function(loader, type) {
+    return function(bundle) {
+        var cache = getCache(type);
+        if (cache[bundle]) return cache[bundle];
+        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
+            delete cache[bundle];
+            throw e;
+        });
+    };
+};
+
+},{}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"64WpD":[function(require,module,exports) {
+module.exports = require("2a8ebe3219d5ad2c")(require("11fe4add0eda00a0").getBundleURL("lPpKD") + "Contact.2274df8b.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("3He1d"));
+
+},{"2a8ebe3219d5ad2c":"61B45","11fe4add0eda00a0":"lgJ39"}],"3UZbe":[function(require,module,exports) {
+module.exports = require("86d22f0a9311825f")(require("294b19ebd6a9cdd4").getBundleURL("lPpKD") + "About.f8621144.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("94Koj"));
+
+},{"86d22f0a9311825f":"61B45","294b19ebd6a9cdd4":"lgJ39"}],"dclnc":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7fd8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7fd8.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _reactRedux = require("bb88f8b1cb882718");
+var _store = _interopRequireDefault(require("b698ea7c88ddbf34"));
+var _Fooditem = _interopRequireDefault(require("861cf1bb192b3935"));
+var _cartSlice = require("4a439ca8652bb0c2");
+var _jsxRuntime = require("da43b679e7e70f41");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+const Cart = ()=>{
+    const dispatch = (0, _reactRedux.useDispatch)();
+    const handleClearCart = ()=>{
+        dispatch((0, _cartSlice.clearCart)());
+    };
+    const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
+    // const store = useSelector((store)=>store);
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h1", {
+                className: "font-bold text-3xl",
+                children: [
+                    "Cart Item -",
+                    cartItems.length
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                className: "p-2 m-5 bg-green-300",
+                onClick: ()=>handleClearCart(),
+                children: "clearCart"
+            }),
+            cartItems.map((item)=>/*#__PURE__*/ (0, _jsxRuntime.jsx)(_Fooditem.default, {
+                    ...item
+                }, item.id))
+        ]
+    });
+};
+_c = Cart;
+var _default = exports.default = Cart;
+var _c;
+$RefreshReg$(_c, "Cart");
+
+  $parcel$ReactRefreshHelpers$7fd8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"bb88f8b1cb882718":"62sf7","b698ea7c88ddbf34":"k2jPV","861cf1bb192b3935":"7pbKz","4a439ca8652bb0c2":"5RXlr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","da43b679e7e70f41":"6AEwr"}],"62sf7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Provider", ()=>Provider_default);
+parcelHelpers.export(exports, "ReactReduxContext", ()=>ReactReduxContext);
+parcelHelpers.export(exports, "batch", ()=>batch);
+parcelHelpers.export(exports, "connect", ()=>connect_default);
+parcelHelpers.export(exports, "createDispatchHook", ()=>createDispatchHook);
+parcelHelpers.export(exports, "createSelectorHook", ()=>createSelectorHook);
+parcelHelpers.export(exports, "createStoreHook", ()=>createStoreHook);
+parcelHelpers.export(exports, "shallowEqual", ()=>shallowEqual);
+parcelHelpers.export(exports, "useDispatch", ()=>useDispatch);
+parcelHelpers.export(exports, "useSelector", ()=>useSelector);
+parcelHelpers.export(exports, "useStore", ()=>useStore);
+// src/index.ts
+var _react = require("react");
+var _withSelectorJs = require("use-sync-external-store/with-selector.js");
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value)=>key in obj ? __defProp(obj, key, {
+        enumerable: true,
+        configurable: true,
+        writable: true,
+        value
+    }) : obj[key] = value;
+var __spreadValues = (a, b)=>{
+    for(var prop in b || (b = {}))if (__hasOwnProp.call(b, prop)) __defNormalProp(a, prop, b[prop]);
+    if (__getOwnPropSymbols) {
+        for (var prop of __getOwnPropSymbols(b))if (__propIsEnum.call(b, prop)) __defNormalProp(a, prop, b[prop]);
+    }
+    return a;
+};
+var __spreadProps = (a, b)=>__defProps(a, __getOwnPropDescs(b));
+var __objRest = (source, exclude)=>{
+    var target = {};
+    for(var prop in source)if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0) target[prop] = source[prop];
+    if (source != null && __getOwnPropSymbols) {
+        for (var prop of __getOwnPropSymbols(source))if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop)) target[prop] = source[prop];
+    }
+    return target;
+};
+var React = // prettier-ignore
+// @ts-ignore
+"default" in _react ? _react["default"] : _react;
+// src/components/Context.ts
+var ContextKey = Symbol.for(`react-redux-context`);
+var gT = typeof globalThis !== "undefined" ? globalThis : /* fall back to a per-module scope (pre-8.1 behaviour) if `globalThis` is not available */ {};
+function getContext() {
+    var _a;
+    if (!React.createContext) return {};
+    const contextMap = (_a = gT[ContextKey]) != null ? _a : gT[ContextKey] = /* @__PURE__ */ new Map();
+    let realContext = contextMap.get(React.createContext);
+    if (!realContext) {
+        realContext = React.createContext(null);
+        realContext.displayName = "ReactRedux";
+        contextMap.set(React.createContext, realContext);
+    }
+    return realContext;
+}
+var ReactReduxContext = /* @__PURE__ */ getContext();
+// src/utils/useSyncExternalStore.ts
+var notInitialized = ()=>{
+    throw new Error("uSES not initialized!");
+};
+// src/hooks/useReduxContext.ts
+function createReduxContextHook(context = ReactReduxContext) {
+    return function useReduxContext2() {
+        const contextValue = React.useContext(context);
+        if (!contextValue) throw new Error("could not find react-redux context value; please ensure the component is wrapped in a <Provider>");
+        return contextValue;
+    };
+}
+var useReduxContext = /* @__PURE__ */ createReduxContextHook();
+// src/hooks/useSelector.ts
+var useSyncExternalStoreWithSelector = notInitialized;
+var initializeUseSelector = (fn)=>{
+    useSyncExternalStoreWithSelector = fn;
+};
+var refEquality = (a, b)=>a === b;
+function createSelectorHook(context = ReactReduxContext) {
+    const useReduxContext2 = context === ReactReduxContext ? useReduxContext : createReduxContextHook(context);
+    const useSelector2 = (selector, equalityFnOrOptions = {})=>{
+        const { equalityFn = refEquality, devModeChecks = {} } = typeof equalityFnOrOptions === "function" ? {
+            equalityFn: equalityFnOrOptions
+        } : equalityFnOrOptions;
+        if (!selector) throw new Error(`You must pass a selector to useSelector`);
+        if (typeof selector !== "function") throw new Error(`You must pass a function as a selector to useSelector`);
+        if (typeof equalityFn !== "function") throw new Error(`You must pass a function as an equality function to useSelector`);
+        const { store, subscription, getServerState, stabilityCheck, identityFunctionCheck } = useReduxContext2();
+        const firstRun = React.useRef(true);
+        const wrappedSelector = React.useCallback({
+            [selector.name] (state) {
+                const selected = selector(state);
+                {
+                    const { identityFunctionCheck: finalIdentityFunctionCheck, stabilityCheck: finalStabilityCheck } = __spreadValues({
+                        stabilityCheck,
+                        identityFunctionCheck
+                    }, devModeChecks);
+                    if (finalStabilityCheck === "always" || finalStabilityCheck === "once" && firstRun.current) {
+                        const toCompare = selector(state);
+                        if (!equalityFn(selected, toCompare)) {
+                            let stack = void 0;
+                            try {
+                                throw new Error();
+                            } catch (e) {
+                                ({ stack } = e);
+                            }
+                            console.warn("Selector " + (selector.name || "unknown") + " returned a different result when called with the same parameters. This can lead to unnecessary rerenders.\nSelectors that return a new reference (such as an object or an array) should be memoized: https://redux.js.org/usage/deriving-data-selectors#optimizing-selectors-with-memoization", {
+                                state,
+                                selected,
+                                selected2: toCompare,
+                                stack
+                            });
+                        }
+                    }
+                    if (finalIdentityFunctionCheck === "always" || finalIdentityFunctionCheck === "once" && firstRun.current) {
+                        if (selected === state) {
+                            let stack = void 0;
+                            try {
+                                throw new Error();
+                            } catch (e) {
+                                ({ stack } = e);
+                            }
+                            console.warn("Selector " + (selector.name || "unknown") + " returned the root state when called. This can lead to unnecessary rerenders.\nSelectors that return the entire state are almost certainly a mistake, as they will cause a rerender whenever *anything* in state changes.", {
+                                stack
+                            });
+                        }
+                    }
+                    if (firstRun.current) firstRun.current = false;
+                }
+                return selected;
+            }
+        }[selector.name], [
+            selector,
+            stabilityCheck,
+            devModeChecks.stabilityCheck
+        ]);
+        const selectedState = useSyncExternalStoreWithSelector(subscription.addNestedSub, store.getState, getServerState || store.getState, wrappedSelector, equalityFn);
+        React.useDebugValue(selectedState);
+        return selectedState;
+    };
+    Object.assign(useSelector2, {
+        withTypes: ()=>useSelector2
+    });
+    return useSelector2;
+}
+var useSelector = /* @__PURE__ */ createSelectorHook();
+// src/utils/react-is.ts
+var REACT_ELEMENT_TYPE = Symbol.for("react.element");
+var REACT_PORTAL_TYPE = Symbol.for("react.portal");
+var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
+var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
+var REACT_CONTEXT_TYPE = Symbol.for("react.context");
+var REACT_SERVER_CONTEXT_TYPE = Symbol.for("react.server_context");
+var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
+var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
+var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
+var REACT_MEMO_TYPE = Symbol.for("react.memo");
+var REACT_LAZY_TYPE = Symbol.for("react.lazy");
+var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
+var REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Memo = REACT_MEMO_TYPE;
+function isValidElementType(type) {
+    if (typeof type === "string" || typeof type === "function") return true;
+    if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_OFFSCREEN_TYPE) return true;
+    if (typeof type === "object" && type !== null) {
+        if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+        // types supported by any Flight configuration anywhere since
+        // we don't know which Flight build this will end up being used
+        // with.
+        type.$$typeof === REACT_CLIENT_REFERENCE || type.getModuleId !== void 0) return true;
+    }
+    return false;
+}
+function typeOf(object) {
+    if (typeof object === "object" && object !== null) {
+        const $$typeof = object.$$typeof;
+        switch($$typeof){
+            case REACT_ELEMENT_TYPE:
+                {
+                    const type = object.type;
+                    switch(type){
+                        case REACT_FRAGMENT_TYPE:
+                        case REACT_PROFILER_TYPE:
+                        case REACT_STRICT_MODE_TYPE:
+                        case REACT_SUSPENSE_TYPE:
+                        case REACT_SUSPENSE_LIST_TYPE:
+                            return type;
+                        default:
+                            {
+                                const $$typeofType = type && type.$$typeof;
+                                switch($$typeofType){
+                                    case REACT_SERVER_CONTEXT_TYPE:
+                                    case REACT_CONTEXT_TYPE:
+                                    case REACT_FORWARD_REF_TYPE:
+                                    case REACT_LAZY_TYPE:
+                                    case REACT_MEMO_TYPE:
+                                    case REACT_PROVIDER_TYPE:
+                                        return $$typeofType;
+                                    default:
+                                        return $$typeof;
+                                }
+                            }
+                    }
+                }
+            case REACT_PORTAL_TYPE:
+                return $$typeof;
+        }
+    }
+    return void 0;
+}
+function isContextConsumer(object) {
+    return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isMemo(object) {
+    return typeOf(object) === REACT_MEMO_TYPE;
+}
+// src/utils/warning.ts
+function warning(message) {
+    if (typeof console !== "undefined" && typeof console.error === "function") console.error(message);
+    try {
+        throw new Error(message);
+    } catch (e) {}
+}
+// src/connect/verifySubselectors.ts
+function verify(selector, methodName) {
+    if (!selector) throw new Error(`Unexpected value for ${methodName} in connect.`);
+    else if (methodName === "mapStateToProps" || methodName === "mapDispatchToProps") {
+        if (!Object.prototype.hasOwnProperty.call(selector, "dependsOnOwnProps")) warning(`The selector for ${methodName} of connect did not specify a value for dependsOnOwnProps.`);
+    }
+}
+function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps) {
+    verify(mapStateToProps, "mapStateToProps");
+    verify(mapDispatchToProps, "mapDispatchToProps");
+    verify(mergeProps, "mergeProps");
+}
+// src/connect/selectorFactory.ts
+function pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, { areStatesEqual, areOwnPropsEqual, areStatePropsEqual }) {
+    let hasRunAtLeastOnce = false;
+    let state;
+    let ownProps;
+    let stateProps;
+    let dispatchProps;
+    let mergedProps;
+    function handleFirstCall(firstState, firstOwnProps) {
+        state = firstState;
+        ownProps = firstOwnProps;
+        stateProps = mapStateToProps(state, ownProps);
+        dispatchProps = mapDispatchToProps(dispatch, ownProps);
+        mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+        hasRunAtLeastOnce = true;
+        return mergedProps;
+    }
+    function handleNewPropsAndNewState() {
+        stateProps = mapStateToProps(state, ownProps);
+        if (mapDispatchToProps.dependsOnOwnProps) dispatchProps = mapDispatchToProps(dispatch, ownProps);
+        mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+        return mergedProps;
+    }
+    function handleNewProps() {
+        if (mapStateToProps.dependsOnOwnProps) stateProps = mapStateToProps(state, ownProps);
+        if (mapDispatchToProps.dependsOnOwnProps) dispatchProps = mapDispatchToProps(dispatch, ownProps);
+        mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+        return mergedProps;
+    }
+    function handleNewState() {
+        const nextStateProps = mapStateToProps(state, ownProps);
+        const statePropsChanged = !areStatePropsEqual(nextStateProps, stateProps);
+        stateProps = nextStateProps;
+        if (statePropsChanged) mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+        return mergedProps;
+    }
+    function handleSubsequentCalls(nextState, nextOwnProps) {
+        const propsChanged = !areOwnPropsEqual(nextOwnProps, ownProps);
+        const stateChanged = !areStatesEqual(nextState, state, nextOwnProps, ownProps);
+        state = nextState;
+        ownProps = nextOwnProps;
+        if (propsChanged && stateChanged) return handleNewPropsAndNewState();
+        if (propsChanged) return handleNewProps();
+        if (stateChanged) return handleNewState();
+        return mergedProps;
+    }
+    return function pureFinalPropsSelector(nextState, nextOwnProps) {
+        return hasRunAtLeastOnce ? handleSubsequentCalls(nextState, nextOwnProps) : handleFirstCall(nextState, nextOwnProps);
+    };
+}
+function finalPropsSelectorFactory(dispatch, _a) {
+    var _b = _a, { initMapStateToProps, initMapDispatchToProps, initMergeProps } = _b, options = __objRest(_b, [
+        "initMapStateToProps",
+        "initMapDispatchToProps",
+        "initMergeProps"
+    ]);
+    const mapStateToProps = initMapStateToProps(dispatch, options);
+    const mapDispatchToProps = initMapDispatchToProps(dispatch, options);
+    const mergeProps = initMergeProps(dispatch, options);
+    verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps);
+    return pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, options);
+}
+// src/utils/bindActionCreators.ts
+function bindActionCreators(actionCreators, dispatch) {
+    const boundActionCreators = {};
+    for(const key in actionCreators){
+        const actionCreator = actionCreators[key];
+        if (typeof actionCreator === "function") boundActionCreators[key] = (...args)=>dispatch(actionCreator(...args));
+    }
+    return boundActionCreators;
+}
+// src/utils/isPlainObject.ts
+function isPlainObject(obj) {
+    if (typeof obj !== "object" || obj === null) return false;
+    const proto = Object.getPrototypeOf(obj);
+    if (proto === null) return true;
+    let baseProto = proto;
+    while(Object.getPrototypeOf(baseProto) !== null)baseProto = Object.getPrototypeOf(baseProto);
+    return proto === baseProto;
+}
+// src/utils/verifyPlainObject.ts
+function verifyPlainObject(value, displayName, methodName) {
+    if (!isPlainObject(value)) warning(`${methodName}() in ${displayName} must return a plain object. Instead received ${value}.`);
+}
+// src/connect/wrapMapToProps.ts
+function wrapMapToPropsConstant(getConstant) {
+    return function initConstantSelector(dispatch) {
+        const constant = getConstant(dispatch);
+        function constantSelector() {
+            return constant;
+        }
+        constantSelector.dependsOnOwnProps = false;
+        return constantSelector;
+    };
+}
+function getDependsOnOwnProps(mapToProps) {
+    return mapToProps.dependsOnOwnProps ? Boolean(mapToProps.dependsOnOwnProps) : mapToProps.length !== 1;
+}
+function wrapMapToPropsFunc(mapToProps, methodName) {
+    return function initProxySelector(dispatch, { displayName }) {
+        const proxy = function mapToPropsProxy(stateOrDispatch, ownProps) {
+            return proxy.dependsOnOwnProps ? proxy.mapToProps(stateOrDispatch, ownProps) : proxy.mapToProps(stateOrDispatch, void 0);
+        };
+        proxy.dependsOnOwnProps = true;
+        proxy.mapToProps = function detectFactoryAndVerify(stateOrDispatch, ownProps) {
+            proxy.mapToProps = mapToProps;
+            proxy.dependsOnOwnProps = getDependsOnOwnProps(mapToProps);
+            let props = proxy(stateOrDispatch, ownProps);
+            if (typeof props === "function") {
+                proxy.mapToProps = props;
+                proxy.dependsOnOwnProps = getDependsOnOwnProps(props);
+                props = proxy(stateOrDispatch, ownProps);
+            }
+            verifyPlainObject(props, displayName, methodName);
+            return props;
+        };
+        return proxy;
+    };
+}
+// src/connect/invalidArgFactory.ts
+function createInvalidArgFactory(arg, name) {
+    return (dispatch, options)=>{
+        throw new Error(`Invalid value of type ${typeof arg} for ${name} argument when connecting component ${options.wrappedComponentName}.`);
+    };
+}
+// src/connect/mapDispatchToProps.ts
+function mapDispatchToPropsFactory(mapDispatchToProps) {
+    return mapDispatchToProps && typeof mapDispatchToProps === "object" ? wrapMapToPropsConstant((dispatch)=>// @ts-ignore
+        bindActionCreators(mapDispatchToProps, dispatch)) : !mapDispatchToProps ? wrapMapToPropsConstant((dispatch)=>({
+            dispatch
+        })) : typeof mapDispatchToProps === "function" ? // @ts-ignore
+    wrapMapToPropsFunc(mapDispatchToProps, "mapDispatchToProps") : createInvalidArgFactory(mapDispatchToProps, "mapDispatchToProps");
+}
+// src/connect/mapStateToProps.ts
+function mapStateToPropsFactory(mapStateToProps) {
+    return !mapStateToProps ? wrapMapToPropsConstant(()=>({})) : typeof mapStateToProps === "function" ? // @ts-ignore
+    wrapMapToPropsFunc(mapStateToProps, "mapStateToProps") : createInvalidArgFactory(mapStateToProps, "mapStateToProps");
+}
+// src/connect/mergeProps.ts
+function defaultMergeProps(stateProps, dispatchProps, ownProps) {
+    return __spreadValues(__spreadValues(__spreadValues({}, ownProps), stateProps), dispatchProps);
+}
+function wrapMergePropsFunc(mergeProps) {
+    return function initMergePropsProxy(dispatch, { displayName, areMergedPropsEqual }) {
+        let hasRunOnce = false;
+        let mergedProps;
+        return function mergePropsProxy(stateProps, dispatchProps, ownProps) {
+            const nextMergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+            if (hasRunOnce) {
+                if (!areMergedPropsEqual(nextMergedProps, mergedProps)) mergedProps = nextMergedProps;
+            } else {
+                hasRunOnce = true;
+                mergedProps = nextMergedProps;
+                verifyPlainObject(mergedProps, displayName, "mergeProps");
+            }
+            return mergedProps;
+        };
+    };
+}
+function mergePropsFactory(mergeProps) {
+    return !mergeProps ? ()=>defaultMergeProps : typeof mergeProps === "function" ? wrapMergePropsFunc(mergeProps) : createInvalidArgFactory(mergeProps, "mergeProps");
+}
+// src/utils/batch.ts
+function defaultNoopBatch(callback) {
+    callback();
+}
+// src/utils/Subscription.ts
+function createListenerCollection() {
+    let first = null;
+    let last = null;
+    return {
+        clear () {
+            first = null;
+            last = null;
+        },
+        notify () {
+            defaultNoopBatch(()=>{
+                let listener = first;
+                while(listener){
+                    listener.callback();
+                    listener = listener.next;
+                }
+            });
+        },
+        get () {
+            const listeners = [];
+            let listener = first;
+            while(listener){
+                listeners.push(listener);
+                listener = listener.next;
+            }
+            return listeners;
+        },
+        subscribe (callback) {
+            let isSubscribed = true;
+            const listener = last = {
+                callback,
+                next: null,
+                prev: last
+            };
+            if (listener.prev) listener.prev.next = listener;
+            else first = listener;
+            return function unsubscribe() {
+                if (!isSubscribed || first === null) return;
+                isSubscribed = false;
+                if (listener.next) listener.next.prev = listener.prev;
+                else last = listener.prev;
+                if (listener.prev) listener.prev.next = listener.next;
+                else first = listener.next;
+            };
+        }
+    };
+}
+var nullListeners = {
+    notify () {},
+    get: ()=>[]
+};
+function createSubscription(store, parentSub) {
+    let unsubscribe;
+    let listeners = nullListeners;
+    let subscriptionsAmount = 0;
+    let selfSubscribed = false;
+    function addNestedSub(listener) {
+        trySubscribe();
+        const cleanupListener = listeners.subscribe(listener);
+        let removed = false;
+        return ()=>{
+            if (!removed) {
+                removed = true;
+                cleanupListener();
+                tryUnsubscribe();
+            }
+        };
+    }
+    function notifyNestedSubs() {
+        listeners.notify();
+    }
+    function handleChangeWrapper() {
+        if (subscription.onStateChange) subscription.onStateChange();
+    }
+    function isSubscribed() {
+        return selfSubscribed;
+    }
+    function trySubscribe() {
+        subscriptionsAmount++;
+        if (!unsubscribe) {
+            unsubscribe = parentSub ? parentSub.addNestedSub(handleChangeWrapper) : store.subscribe(handleChangeWrapper);
+            listeners = createListenerCollection();
+        }
+    }
+    function tryUnsubscribe() {
+        subscriptionsAmount--;
+        if (unsubscribe && subscriptionsAmount === 0) {
+            unsubscribe();
+            unsubscribe = void 0;
+            listeners.clear();
+            listeners = nullListeners;
+        }
+    }
+    function trySubscribeSelf() {
+        if (!selfSubscribed) {
+            selfSubscribed = true;
+            trySubscribe();
+        }
+    }
+    function tryUnsubscribeSelf() {
+        if (selfSubscribed) {
+            selfSubscribed = false;
+            tryUnsubscribe();
+        }
+    }
+    const subscription = {
+        addNestedSub,
+        notifyNestedSubs,
+        handleChangeWrapper,
+        isSubscribed,
+        trySubscribe: trySubscribeSelf,
+        tryUnsubscribe: tryUnsubscribeSelf,
+        getListeners: ()=>listeners
+    };
+    return subscription;
+}
+// src/utils/useIsomorphicLayoutEffect.ts
+var canUseDOM = !!(typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined");
+var useIsomorphicLayoutEffect = canUseDOM ? React.useLayoutEffect : React.useEffect;
+// src/utils/shallowEqual.ts
+function is(x, y) {
+    if (x === y) return x !== 0 || y !== 0 || 1 / x === 1 / y;
+    else return x !== x && y !== y;
+}
+function shallowEqual(objA, objB) {
+    if (is(objA, objB)) return true;
+    if (typeof objA !== "object" || objA === null || typeof objB !== "object" || objB === null) return false;
+    const keysA = Object.keys(objA);
+    const keysB = Object.keys(objB);
+    if (keysA.length !== keysB.length) return false;
+    for(let i = 0; i < keysA.length; i++){
+        if (!Object.prototype.hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) return false;
+    }
+    return true;
+}
+// src/utils/hoistStatics.ts
+var REACT_STATICS = {
+    childContextTypes: true,
+    contextType: true,
+    contextTypes: true,
+    defaultProps: true,
+    displayName: true,
+    getDefaultProps: true,
+    getDerivedStateFromError: true,
+    getDerivedStateFromProps: true,
+    mixins: true,
+    propTypes: true,
+    type: true
+};
+var KNOWN_STATICS = {
+    name: true,
+    length: true,
+    prototype: true,
+    caller: true,
+    callee: true,
+    arguments: true,
+    arity: true
+};
+var FORWARD_REF_STATICS = {
+    $$typeof: true,
+    render: true,
+    defaultProps: true,
+    displayName: true,
+    propTypes: true
+};
+var MEMO_STATICS = {
+    $$typeof: true,
+    compare: true,
+    defaultProps: true,
+    displayName: true,
+    propTypes: true,
+    type: true
+};
+var TYPE_STATICS = {
+    [ForwardRef]: FORWARD_REF_STATICS,
+    [Memo]: MEMO_STATICS
+};
+function getStatics(component) {
+    if (isMemo(component)) return MEMO_STATICS;
+    return TYPE_STATICS[component["$$typeof"]] || REACT_STATICS;
+}
+var defineProperty = Object.defineProperty;
+var getOwnPropertyNames = Object.getOwnPropertyNames;
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+var getPrototypeOf = Object.getPrototypeOf;
+var objectPrototype = Object.prototype;
+function hoistNonReactStatics(targetComponent, sourceComponent) {
+    if (typeof sourceComponent !== "string") {
+        if (objectPrototype) {
+            const inheritedComponent = getPrototypeOf(sourceComponent);
+            if (inheritedComponent && inheritedComponent !== objectPrototype) hoistNonReactStatics(targetComponent, inheritedComponent);
+        }
+        let keys = getOwnPropertyNames(sourceComponent);
+        if (getOwnPropertySymbols) keys = keys.concat(getOwnPropertySymbols(sourceComponent));
+        const targetStatics = getStatics(targetComponent);
+        const sourceStatics = getStatics(sourceComponent);
+        for(let i = 0; i < keys.length; ++i){
+            const key = keys[i];
+            if (!KNOWN_STATICS[key] && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
+                const descriptor = getOwnPropertyDescriptor(sourceComponent, key);
+                try {
+                    defineProperty(targetComponent, key, descriptor);
+                } catch (e) {}
+            }
+        }
+    }
+    return targetComponent;
+}
+// src/components/connect.tsx
+var useSyncExternalStore = notInitialized;
+var initializeConnect = (fn)=>{
+    useSyncExternalStore = fn;
+};
+var NO_SUBSCRIPTION_ARRAY = [
+    null,
+    null
+];
+var stringifyComponent = (Comp)=>{
+    try {
+        return JSON.stringify(Comp);
+    } catch (err) {
+        return String(Comp);
+    }
+};
+function useIsomorphicLayoutEffectWithArgs(effectFunc, effectArgs, dependencies) {
+    useIsomorphicLayoutEffect(()=>effectFunc(...effectArgs), dependencies);
+}
+function captureWrapperProps(lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, childPropsFromStoreUpdate, notifyNestedSubs) {
+    lastWrapperProps.current = wrapperProps;
+    renderIsScheduled.current = false;
+    if (childPropsFromStoreUpdate.current) {
+        childPropsFromStoreUpdate.current = null;
+        notifyNestedSubs();
+    }
+}
+function subscribeUpdates(shouldHandleStateChanges, store, subscription, childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, isMounted, childPropsFromStoreUpdate, notifyNestedSubs, additionalSubscribeListener) {
+    if (!shouldHandleStateChanges) return ()=>{};
+    let didUnsubscribe = false;
+    let lastThrownError = null;
+    const checkForUpdates = ()=>{
+        if (didUnsubscribe || !isMounted.current) return;
+        const latestStoreState = store.getState();
+        let newChildProps, error;
+        try {
+            newChildProps = childPropsSelector(latestStoreState, lastWrapperProps.current);
+        } catch (e) {
+            error = e;
+            lastThrownError = e;
+        }
+        if (!error) lastThrownError = null;
+        if (newChildProps === lastChildProps.current) {
+            if (!renderIsScheduled.current) notifyNestedSubs();
+        } else {
+            lastChildProps.current = newChildProps;
+            childPropsFromStoreUpdate.current = newChildProps;
+            renderIsScheduled.current = true;
+            additionalSubscribeListener();
+        }
+    };
+    subscription.onStateChange = checkForUpdates;
+    subscription.trySubscribe();
+    checkForUpdates();
+    const unsubscribeWrapper = ()=>{
+        didUnsubscribe = true;
+        subscription.tryUnsubscribe();
+        subscription.onStateChange = null;
+        if (lastThrownError) throw lastThrownError;
+    };
+    return unsubscribeWrapper;
+}
+function strictEqual(a, b) {
+    return a === b;
+}
+var hasWarnedAboutDeprecatedPureOption = false;
+function connect(mapStateToProps, mapDispatchToProps, mergeProps, { // The `pure` option has been removed, so TS doesn't like us destructuring this to check its existence.
+// @ts-ignore
+pure, areStatesEqual = strictEqual, areOwnPropsEqual = shallowEqual, areStatePropsEqual = shallowEqual, areMergedPropsEqual = shallowEqual, // use React's forwardRef to expose a ref of the wrapped component
+forwardRef = false, // the context consumer to use
+context = ReactReduxContext } = {}) {
+    if (pure !== void 0 && !hasWarnedAboutDeprecatedPureOption) {
+        hasWarnedAboutDeprecatedPureOption = true;
+        warning('The `pure` option has been removed. `connect` is now always a "pure/memoized" component');
+    }
+    const Context = context;
+    const initMapStateToProps = mapStateToPropsFactory(mapStateToProps);
+    const initMapDispatchToProps = mapDispatchToPropsFactory(mapDispatchToProps);
+    const initMergeProps = mergePropsFactory(mergeProps);
+    const shouldHandleStateChanges = Boolean(mapStateToProps);
+    const wrapWithConnect = (WrappedComponent)=>{
+        {
+            const isValid = /* @__PURE__ */ isValidElementType(WrappedComponent);
+            if (!isValid) throw new Error(`You must pass a component to the function returned by connect. Instead received ${stringifyComponent(WrappedComponent)}`);
+        }
+        const wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || "Component";
+        const displayName = `Connect(${wrappedComponentName})`;
+        const selectorFactoryOptions = {
+            shouldHandleStateChanges,
+            displayName,
+            wrappedComponentName,
+            WrappedComponent,
+            // @ts-ignore
+            initMapStateToProps,
+            // @ts-ignore
+            initMapDispatchToProps,
+            initMergeProps,
+            areStatesEqual,
+            areStatePropsEqual,
+            areOwnPropsEqual,
+            areMergedPropsEqual
+        };
+        function ConnectFunction(props) {
+            const [propsContext, reactReduxForwardedRef, wrapperProps] = React.useMemo(()=>{
+                const _a = props, { reactReduxForwardedRef: reactReduxForwardedRef2 } = _a, wrapperProps2 = __objRest(_a, [
+                    "reactReduxForwardedRef"
+                ]);
+                return [
+                    props.context,
+                    reactReduxForwardedRef2,
+                    wrapperProps2
+                ];
+            }, [
+                props
+            ]);
+            const ContextToUse = React.useMemo(()=>{
+                let ResultContext = Context;
+                if (propsContext == null ? void 0 : propsContext.Consumer) {
+                    const isValid = /* @__PURE__ */ isContextConsumer(// @ts-ignore
+                    /* @__PURE__ */ React.createElement(propsContext.Consumer, null));
+                    if (!isValid) throw new Error("You must pass a valid React context consumer as `props.context`");
+                    ResultContext = propsContext;
+                }
+                return ResultContext;
+            }, [
+                propsContext,
+                Context
+            ]);
+            const contextValue = React.useContext(ContextToUse);
+            const didStoreComeFromProps = Boolean(props.store) && Boolean(props.store.getState) && Boolean(props.store.dispatch);
+            const didStoreComeFromContext = Boolean(contextValue) && Boolean(contextValue.store);
+            if (!didStoreComeFromProps && !didStoreComeFromContext) throw new Error(`Could not find "store" in the context of "${displayName}". Either wrap the root component in a <Provider>, or pass a custom React context provider to <Provider> and the corresponding React context consumer to ${displayName} in connect options.`);
+            const store = didStoreComeFromProps ? props.store : contextValue.store;
+            const getServerState = didStoreComeFromContext ? contextValue.getServerState : store.getState;
+            const childPropsSelector = React.useMemo(()=>{
+                return finalPropsSelectorFactory(store.dispatch, selectorFactoryOptions);
+            }, [
+                store
+            ]);
+            const [subscription, notifyNestedSubs] = React.useMemo(()=>{
+                if (!shouldHandleStateChanges) return NO_SUBSCRIPTION_ARRAY;
+                const subscription2 = createSubscription(store, didStoreComeFromProps ? void 0 : contextValue.subscription);
+                const notifyNestedSubs2 = subscription2.notifyNestedSubs.bind(subscription2);
+                return [
+                    subscription2,
+                    notifyNestedSubs2
+                ];
+            }, [
+                store,
+                didStoreComeFromProps,
+                contextValue
+            ]);
+            const overriddenContextValue = React.useMemo(()=>{
+                if (didStoreComeFromProps) return contextValue;
+                return __spreadProps(__spreadValues({}, contextValue), {
+                    subscription
+                });
+            }, [
+                didStoreComeFromProps,
+                contextValue,
+                subscription
+            ]);
+            const lastChildProps = React.useRef();
+            const lastWrapperProps = React.useRef(wrapperProps);
+            const childPropsFromStoreUpdate = React.useRef();
+            const renderIsScheduled = React.useRef(false);
+            const isProcessingDispatch = React.useRef(false);
+            const isMounted = React.useRef(false);
+            const latestSubscriptionCallbackError = React.useRef();
+            useIsomorphicLayoutEffect(()=>{
+                isMounted.current = true;
+                return ()=>{
+                    isMounted.current = false;
+                };
+            }, []);
+            const actualChildPropsSelector = React.useMemo(()=>{
+                const selector = ()=>{
+                    if (childPropsFromStoreUpdate.current && wrapperProps === lastWrapperProps.current) return childPropsFromStoreUpdate.current;
+                    return childPropsSelector(store.getState(), wrapperProps);
+                };
+                return selector;
+            }, [
+                store,
+                wrapperProps
+            ]);
+            const subscribeForReact = React.useMemo(()=>{
+                const subscribe = (reactListener)=>{
+                    if (!subscription) return ()=>{};
+                    return subscribeUpdates(shouldHandleStateChanges, store, subscription, // @ts-ignore
+                    childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, isMounted, childPropsFromStoreUpdate, notifyNestedSubs, reactListener);
+                };
+                return subscribe;
+            }, [
+                subscription
+            ]);
+            useIsomorphicLayoutEffectWithArgs(captureWrapperProps, [
+                lastWrapperProps,
+                lastChildProps,
+                renderIsScheduled,
+                wrapperProps,
+                childPropsFromStoreUpdate,
+                notifyNestedSubs
+            ]);
+            let actualChildProps;
+            try {
+                actualChildProps = useSyncExternalStore(// TODO We're passing through a big wrapper that does a bunch of extra side effects besides subscribing
+                subscribeForReact, // TODO This is incredibly hacky. We've already processed the store update and calculated new child props,
+                // TODO and we're just passing that through so it triggers a re-render for us rather than relying on `uSES`.
+                actualChildPropsSelector, getServerState ? ()=>childPropsSelector(getServerState(), wrapperProps) : actualChildPropsSelector);
+            } catch (err) {
+                if (latestSubscriptionCallbackError.current) err.message += `
+The error may be correlated with this previous error:
+${latestSubscriptionCallbackError.current.stack}
+
+`;
+                throw err;
+            }
+            useIsomorphicLayoutEffect(()=>{
+                latestSubscriptionCallbackError.current = void 0;
+                childPropsFromStoreUpdate.current = void 0;
+                lastChildProps.current = actualChildProps;
+            });
+            const renderedWrappedComponent = React.useMemo(()=>{
+                return(// @ts-ignore
+                /* @__PURE__ */ React.createElement(WrappedComponent, __spreadProps(__spreadValues({}, actualChildProps), {
+                    ref: reactReduxForwardedRef
+                })));
+            }, [
+                reactReduxForwardedRef,
+                WrappedComponent,
+                actualChildProps
+            ]);
+            const renderedChild = React.useMemo(()=>{
+                if (shouldHandleStateChanges) return /* @__PURE__ */ React.createElement(ContextToUse.Provider, {
+                    value: overriddenContextValue
+                }, renderedWrappedComponent);
+                return renderedWrappedComponent;
+            }, [
+                ContextToUse,
+                renderedWrappedComponent,
+                overriddenContextValue
+            ]);
+            return renderedChild;
+        }
+        const _Connect = React.memo(ConnectFunction);
+        const Connect = _Connect;
+        Connect.WrappedComponent = WrappedComponent;
+        Connect.displayName = ConnectFunction.displayName = displayName;
+        if (forwardRef) {
+            const _forwarded = React.forwardRef(function forwardConnectRef(props, ref) {
+                return /* @__PURE__ */ React.createElement(Connect, __spreadProps(__spreadValues({}, props), {
+                    reactReduxForwardedRef: ref
+                }));
+            });
+            const forwarded = _forwarded;
+            forwarded.displayName = displayName;
+            forwarded.WrappedComponent = WrappedComponent;
+            return /* @__PURE__ */ hoistNonReactStatics(forwarded, WrappedComponent);
+        }
+        return /* @__PURE__ */ hoistNonReactStatics(Connect, WrappedComponent);
+    };
+    return wrapWithConnect;
+}
+var connect_default = connect;
+// src/components/Provider.tsx
+function Provider({ store, context, children, serverState, stabilityCheck = "once", identityFunctionCheck = "once" }) {
+    const contextValue = React.useMemo(()=>{
+        const subscription = createSubscription(store);
+        return {
+            store,
+            subscription,
+            getServerState: serverState ? ()=>serverState : void 0,
+            stabilityCheck,
+            identityFunctionCheck
+        };
+    }, [
+        store,
+        serverState,
+        stabilityCheck,
+        identityFunctionCheck
+    ]);
+    const previousState = React.useMemo(()=>store.getState(), [
+        store
+    ]);
+    useIsomorphicLayoutEffect(()=>{
+        const { subscription } = contextValue;
+        subscription.onStateChange = subscription.notifyNestedSubs;
+        subscription.trySubscribe();
+        if (previousState !== store.getState()) subscription.notifyNestedSubs();
+        return ()=>{
+            subscription.tryUnsubscribe();
+            subscription.onStateChange = void 0;
+        };
+    }, [
+        contextValue,
+        previousState
+    ]);
+    const Context = context || ReactReduxContext;
+    return /* @__PURE__ */ React.createElement(Context.Provider, {
+        value: contextValue
+    }, children);
+}
+var Provider_default = Provider;
+// src/hooks/useStore.ts
+function createStoreHook(context = ReactReduxContext) {
+    const useReduxContext2 = context === ReactReduxContext ? useReduxContext : // @ts-ignore
+    createReduxContextHook(context);
+    const useStore2 = ()=>{
+        const { store } = useReduxContext2();
+        return store;
+    };
+    Object.assign(useStore2, {
+        withTypes: ()=>useStore2
+    });
+    return useStore2;
+}
+var useStore = /* @__PURE__ */ createStoreHook();
+// src/hooks/useDispatch.ts
+function createDispatchHook(context = ReactReduxContext) {
+    const useStore2 = context === ReactReduxContext ? useStore : createStoreHook(context);
+    const useDispatch2 = ()=>{
+        const store = useStore2();
+        return store.dispatch;
+    };
+    Object.assign(useDispatch2, {
+        withTypes: ()=>useDispatch2
+    });
+    return useDispatch2;
+}
+var useDispatch = /* @__PURE__ */ createDispatchHook();
+// src/exports.ts
+var batch = defaultNoopBatch;
+// src/index.ts
+initializeUseSelector((0, _withSelectorJs.useSyncExternalStoreWithSelector));
+initializeConnect(_react.useSyncExternalStore);
+
+},{"react":"21dqq","use-sync-external-store/with-selector.js":"3eYnG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"21dqq":[function(require,module,exports) {
 "use strict";
 module.exports = require("a569817e6ea559f6");
 
@@ -5854,7 +6306,5093 @@ module.exports = require("a569817e6ea559f6");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"lOjBx":[function(require,module,exports) {
+},{}],"3eYnG":[function(require,module,exports) {
+"use strict";
+module.exports = require("374a059340689e89");
+
+},{"374a059340689e89":"1Ag9Q"}],"1Ag9Q":[function(require,module,exports) {
+/**
+ * @license React
+ * use-sync-external-store-with-selector.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
+    var React = require("8b38fc6c74f16e20");
+    /**
+ * inlined Object.is polyfill to avoid requiring consumers ship their own
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+ */ function is(x, y) {
+        return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y // eslint-disable-line no-self-compare
+        ;
+    }
+    var objectIs = typeof Object.is === "function" ? Object.is : is;
+    var useSyncExternalStore = React.useSyncExternalStore;
+    // for CommonJS interop.
+    var useRef = React.useRef, useEffect = React.useEffect, useMemo = React.useMemo, useDebugValue = React.useDebugValue; // Same as useSyncExternalStore, but supports selector and isEqual arguments.
+    function useSyncExternalStoreWithSelector(subscribe, getSnapshot, getServerSnapshot, selector, isEqual) {
+        // Use this to track the rendered snapshot.
+        var instRef = useRef(null);
+        var inst;
+        if (instRef.current === null) {
+            inst = {
+                hasValue: false,
+                value: null
+            };
+            instRef.current = inst;
+        } else inst = instRef.current;
+        var _useMemo = useMemo(function() {
+            // Track the memoized state using closure variables that are local to this
+            // memoized instance of a getSnapshot function. Intentionally not using a
+            // useRef hook, because that state would be shared across all concurrent
+            // copies of the hook/component.
+            var hasMemo = false;
+            var memoizedSnapshot;
+            var memoizedSelection;
+            var memoizedSelector = function(nextSnapshot) {
+                if (!hasMemo) {
+                    // The first time the hook is called, there is no memoized result.
+                    hasMemo = true;
+                    memoizedSnapshot = nextSnapshot;
+                    var _nextSelection = selector(nextSnapshot);
+                    if (isEqual !== undefined) // Even if the selector has changed, the currently rendered selection
+                    // may be equal to the new selection. We should attempt to reuse the
+                    // current value if possible, to preserve downstream memoizations.
+                    {
+                        if (inst.hasValue) {
+                            var currentSelection = inst.value;
+                            if (isEqual(currentSelection, _nextSelection)) {
+                                memoizedSelection = currentSelection;
+                                return currentSelection;
+                            }
+                        }
+                    }
+                    memoizedSelection = _nextSelection;
+                    return _nextSelection;
+                } // We may be able to reuse the previous invocation's result.
+                // We may be able to reuse the previous invocation's result.
+                var prevSnapshot = memoizedSnapshot;
+                var prevSelection = memoizedSelection;
+                if (objectIs(prevSnapshot, nextSnapshot)) // The snapshot is the same as last time. Reuse the previous selection.
+                return prevSelection;
+                 // The snapshot has changed, so we need to compute a new selection.
+                // The snapshot has changed, so we need to compute a new selection.
+                var nextSelection = selector(nextSnapshot); // If a custom isEqual function is provided, use that to check if the data
+                // has changed. If it hasn't, return the previous selection. That signals
+                // to React that the selections are conceptually equal, and we can bail
+                // out of rendering.
+                // If a custom isEqual function is provided, use that to check if the data
+                // has changed. If it hasn't, return the previous selection. That signals
+                // to React that the selections are conceptually equal, and we can bail
+                // out of rendering.
+                if (isEqual !== undefined && isEqual(prevSelection, nextSelection)) return prevSelection;
+                memoizedSnapshot = nextSnapshot;
+                memoizedSelection = nextSelection;
+                return nextSelection;
+            }; // Assigning this to a constant so that Flow knows it can't change.
+            // Assigning this to a constant so that Flow knows it can't change.
+            var maybeGetServerSnapshot = getServerSnapshot === undefined ? null : getServerSnapshot;
+            var getSnapshotWithSelector = function() {
+                return memoizedSelector(getSnapshot());
+            };
+            var getServerSnapshotWithSelector = maybeGetServerSnapshot === null ? undefined : function() {
+                return memoizedSelector(maybeGetServerSnapshot());
+            };
+            return [
+                getSnapshotWithSelector,
+                getServerSnapshotWithSelector
+            ];
+        }, [
+            getSnapshot,
+            getServerSnapshot,
+            selector,
+            isEqual
+        ]), getSelection = _useMemo[0], getServerSelection = _useMemo[1];
+        var value = useSyncExternalStore(subscribe, getSelection, getServerSelection);
+        useEffect(function() {
+            inst.hasValue = true;
+            inst.value = value;
+        }, [
+            value
+        ]);
+        useDebugValue(value);
+        return value;
+    }
+    exports.useSyncExternalStoreWithSelector = useSyncExternalStoreWithSelector;
+    /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+})();
+
+},{"8b38fc6c74f16e20":"21dqq"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"k2jPV":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _toolkit = require("6639be2575f2c3a7");
+var _cartSlice = _interopRequireDefault(require("28fd56dfb6d3948f"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+const store = (0, _toolkit.configureStore)({
+    reducer: {
+        cart: _cartSlice.default
+    }
+});
+var _default = exports.default = store;
+
+},{"6639be2575f2c3a7":"fuua8","28fd56dfb6d3948f":"5RXlr"}],"fuua8":[function(require,module,exports) {
+// src/index.ts
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ReducerType", ()=>ReducerType);
+parcelHelpers.export(exports, "SHOULD_AUTOBATCH", ()=>SHOULD_AUTOBATCH);
+parcelHelpers.export(exports, "TaskAbortError", ()=>TaskAbortError);
+parcelHelpers.export(exports, "Tuple", ()=>Tuple);
+parcelHelpers.export(exports, "addListener", ()=>addListener);
+parcelHelpers.export(exports, "asyncThunkCreator", ()=>asyncThunkCreator);
+parcelHelpers.export(exports, "autoBatchEnhancer", ()=>autoBatchEnhancer);
+parcelHelpers.export(exports, "buildCreateSlice", ()=>buildCreateSlice);
+parcelHelpers.export(exports, "clearAllListeners", ()=>clearAllListeners);
+parcelHelpers.export(exports, "combineSlices", ()=>combineSlices);
+parcelHelpers.export(exports, "configureStore", ()=>configureStore);
+parcelHelpers.export(exports, "createAction", ()=>createAction);
+parcelHelpers.export(exports, "createActionCreatorInvariantMiddleware", ()=>createActionCreatorInvariantMiddleware);
+parcelHelpers.export(exports, "createAsyncThunk", ()=>createAsyncThunk);
+parcelHelpers.export(exports, "createDraftSafeSelector", ()=>createDraftSafeSelector);
+parcelHelpers.export(exports, "createDraftSafeSelectorCreator", ()=>createDraftSafeSelectorCreator);
+parcelHelpers.export(exports, "createDynamicMiddleware", ()=>createDynamicMiddleware);
+parcelHelpers.export(exports, "createEntityAdapter", ()=>createEntityAdapter);
+parcelHelpers.export(exports, "createImmutableStateInvariantMiddleware", ()=>createImmutableStateInvariantMiddleware);
+parcelHelpers.export(exports, "createListenerMiddleware", ()=>createListenerMiddleware);
+parcelHelpers.export(exports, "createNextState", ()=>(0, _immer.produce));
+parcelHelpers.export(exports, "createReducer", ()=>createReducer);
+parcelHelpers.export(exports, "createSelector", ()=>(0, _reselect.createSelector));
+parcelHelpers.export(exports, "createSelectorCreator", ()=>(0, _reselect.createSelectorCreator));
+parcelHelpers.export(exports, "createSerializableStateInvariantMiddleware", ()=>createSerializableStateInvariantMiddleware);
+parcelHelpers.export(exports, "createSlice", ()=>createSlice);
+parcelHelpers.export(exports, "current", ()=>(0, _immer.current));
+parcelHelpers.export(exports, "findNonSerializableValue", ()=>findNonSerializableValue);
+parcelHelpers.export(exports, "formatProdErrorMessage", ()=>formatProdErrorMessage);
+parcelHelpers.export(exports, "freeze", ()=>(0, _immer.freeze));
+parcelHelpers.export(exports, "isActionCreator", ()=>isActionCreator);
+parcelHelpers.export(exports, "isAllOf", ()=>isAllOf);
+parcelHelpers.export(exports, "isAnyOf", ()=>isAnyOf);
+parcelHelpers.export(exports, "isAsyncThunkAction", ()=>isAsyncThunkAction);
+parcelHelpers.export(exports, "isDraft", ()=>(0, _immer.isDraft));
+parcelHelpers.export(exports, "isFluxStandardAction", ()=>isFSA);
+parcelHelpers.export(exports, "isFulfilled", ()=>isFulfilled);
+parcelHelpers.export(exports, "isImmutableDefault", ()=>isImmutableDefault);
+parcelHelpers.export(exports, "isPending", ()=>isPending);
+parcelHelpers.export(exports, "isPlain", ()=>isPlain);
+parcelHelpers.export(exports, "isRejected", ()=>isRejected);
+parcelHelpers.export(exports, "isRejectedWithValue", ()=>isRejectedWithValue);
+parcelHelpers.export(exports, "lruMemoize", ()=>(0, _reselect.lruMemoize));
+parcelHelpers.export(exports, "miniSerializeError", ()=>miniSerializeError);
+parcelHelpers.export(exports, "nanoid", ()=>nanoid);
+parcelHelpers.export(exports, "original", ()=>(0, _immer.original));
+parcelHelpers.export(exports, "prepareAutoBatched", ()=>prepareAutoBatched);
+parcelHelpers.export(exports, "removeListener", ()=>removeListener);
+parcelHelpers.export(exports, "unwrapResult", ()=>unwrapResult);
+parcelHelpers.export(exports, "weakMapMemoize", ()=>(0, _reselect.weakMapMemoize));
+var _redux = require("redux");
+parcelHelpers.exportAll(_redux, exports);
+var _immer = require("immer");
+var _reselect = require("reselect");
+// src/getDefaultMiddleware.ts
+var _reduxThunk = require("redux-thunk");
+var process = require("2cddd3bdb894f9d3");
+var createDraftSafeSelectorCreator = (...args)=>{
+    const createSelector2 = (0, _reselect.createSelectorCreator)(...args);
+    const createDraftSafeSelector2 = Object.assign((...args2)=>{
+        const selector = createSelector2(...args2);
+        const wrappedSelector = (value, ...rest)=>selector((0, _immer.isDraft)(value) ? (0, _immer.current)(value) : value, ...rest);
+        Object.assign(wrappedSelector, selector);
+        return wrappedSelector;
+    }, {
+        withTypes: ()=>createDraftSafeSelector2
+    });
+    return createDraftSafeSelector2;
+};
+var createDraftSafeSelector = createDraftSafeSelectorCreator((0, _reselect.weakMapMemoize));
+var composeWithDevTools = typeof window !== "undefined" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : function() {
+    if (arguments.length === 0) return void 0;
+    if (typeof arguments[0] === "object") return 0, _redux.compose;
+    return (0, _redux.compose).apply(null, arguments);
+};
+var devToolsEnhancer = typeof window !== "undefined" && window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__ : function() {
+    return function(noop3) {
+        return noop3;
+    };
+};
+// src/tsHelpers.ts
+var hasMatchFunction = (v)=>{
+    return v && typeof v.match === "function";
+};
+// src/createAction.ts
+function createAction(type, prepareAction) {
+    function actionCreator(...args) {
+        if (prepareAction) {
+            let prepared = prepareAction(...args);
+            if (!prepared) throw new Error("prepareAction did not return an object");
+            return {
+                type,
+                payload: prepared.payload,
+                ..."meta" in prepared && {
+                    meta: prepared.meta
+                },
+                ..."error" in prepared && {
+                    error: prepared.error
+                }
+            };
+        }
+        return {
+            type,
+            payload: args[0]
+        };
+    }
+    actionCreator.toString = ()=>`${type}`;
+    actionCreator.type = type;
+    actionCreator.match = (action)=>(0, _redux.isAction)(action) && action.type === type;
+    return actionCreator;
+}
+function isActionCreator(action) {
+    return typeof action === "function" && "type" in action && // hasMatchFunction only wants Matchers but I don't see the point in rewriting it
+    hasMatchFunction(action);
+}
+function isFSA(action) {
+    return (0, _redux.isAction)(action) && Object.keys(action).every(isValidKey);
+}
+function isValidKey(key) {
+    return [
+        "type",
+        "payload",
+        "error",
+        "meta"
+    ].indexOf(key) > -1;
+}
+// src/actionCreatorInvariantMiddleware.ts
+function getMessage(type) {
+    const splitType = type ? `${type}`.split("/") : [];
+    const actionName = splitType[splitType.length - 1] || "actionCreator";
+    return `Detected an action creator with type "${type || "unknown"}" being dispatched. 
+Make sure you're calling the action creator before dispatching, i.e. \`dispatch(${actionName}())\` instead of \`dispatch(${actionName})\`. This is necessary even if the action has no payload.`;
+}
+function createActionCreatorInvariantMiddleware(options = {}) {
+    var next, action;
+    const { isActionCreator: isActionCreator2 = isActionCreator } = options;
+    return ()=>(next)=>(action)=>{
+                if (isActionCreator2(action)) console.warn(getMessage(action.type));
+                return next(action);
+            };
+}
+function getTimeMeasureUtils(maxDelay, fnName) {
+    let elapsed = 0;
+    return {
+        measureTime (fn) {
+            const started = Date.now();
+            try {
+                return fn();
+            } finally{
+                const finished = Date.now();
+                elapsed += finished - started;
+            }
+        },
+        warnIfExceeded () {
+            if (elapsed > maxDelay) console.warn(`${fnName} took ${elapsed}ms, which is more than the warning threshold of ${maxDelay}ms. 
+If your state or actions are very large, you may want to disable the middleware as it might cause too much of a slowdown in development mode. See https://redux-toolkit.js.org/api/getDefaultMiddleware for instructions.
+It is disabled in production builds, so you don't need to worry about that.`);
+        }
+    };
+}
+function find(iterable, comparator) {
+    for (const entry of iterable){
+        if (comparator(entry)) return entry;
+    }
+    return void 0;
+}
+var Tuple = class _Tuple extends Array {
+    constructor(...items){
+        super(...items);
+        Object.setPrototypeOf(this, _Tuple.prototype);
+    }
+    static get [Symbol.species]() {
+        return _Tuple;
+    }
+    concat(...arr) {
+        return super.concat.apply(this, arr);
+    }
+    prepend(...arr) {
+        if (arr.length === 1 && Array.isArray(arr[0])) return new _Tuple(...arr[0].concat(this));
+        return new _Tuple(...arr.concat(this));
+    }
+};
+function freezeDraftable(val) {
+    return (0, _immer.isDraftable)(val) ? (0, _immer.produce)(val, ()=>{}) : val;
+}
+function emplace(map, key, handler) {
+    if (map.has(key)) {
+        let value = map.get(key);
+        if (handler.update) {
+            value = handler.update(value, key, map);
+            map.set(key, value);
+        }
+        return value;
+    }
+    if (!handler.insert) throw new Error("No insert provided for key not already in map");
+    const inserted = handler.insert(key, map);
+    map.set(key, inserted);
+    return inserted;
+}
+// src/immutableStateInvariantMiddleware.ts
+function isImmutableDefault(value) {
+    return typeof value !== "object" || value == null || Object.isFrozen(value);
+}
+function trackForMutations(isImmutable, ignorePaths, obj) {
+    const trackedProperties = trackProperties(isImmutable, ignorePaths, obj);
+    return {
+        detectMutations () {
+            return detectMutations(isImmutable, ignorePaths, trackedProperties, obj);
+        }
+    };
+}
+function trackProperties(isImmutable, ignorePaths = [], obj, path = "", checkedObjects = /* @__PURE__ */ new Set()) {
+    const tracked = {
+        value: obj
+    };
+    if (!isImmutable(obj) && !checkedObjects.has(obj)) {
+        checkedObjects.add(obj);
+        tracked.children = {};
+        for(const key in obj){
+            const childPath = path ? path + "." + key : key;
+            if (ignorePaths.length && ignorePaths.indexOf(childPath) !== -1) continue;
+            tracked.children[key] = trackProperties(isImmutable, ignorePaths, obj[key], childPath);
+        }
+    }
+    return tracked;
+}
+function detectMutations(isImmutable, ignoredPaths = [], trackedProperty, obj, sameParentRef = false, path = "") {
+    const prevObj = trackedProperty ? trackedProperty.value : void 0;
+    const sameRef = prevObj === obj;
+    if (sameParentRef && !sameRef && !Number.isNaN(obj)) return {
+        wasMutated: true,
+        path
+    };
+    if (isImmutable(prevObj) || isImmutable(obj)) return {
+        wasMutated: false
+    };
+    const keysToDetect = {};
+    for(let key in trackedProperty.children)keysToDetect[key] = true;
+    for(let key in obj)keysToDetect[key] = true;
+    const hasIgnoredPaths = ignoredPaths.length > 0;
+    for(let key in keysToDetect){
+        const nestedPath = path ? path + "." + key : key;
+        if (hasIgnoredPaths) {
+            const hasMatches = ignoredPaths.some((ignored)=>{
+                if (ignored instanceof RegExp) return ignored.test(nestedPath);
+                return nestedPath === ignored;
+            });
+            if (hasMatches) continue;
+        }
+        const result = detectMutations(isImmutable, ignoredPaths, trackedProperty.children[key], obj[key], sameRef, nestedPath);
+        if (result.wasMutated) return result;
+    }
+    return {
+        wasMutated: false
+    };
+}
+function createImmutableStateInvariantMiddleware(options = {}) {
+    var next, action;
+    {
+        let stringify2 = function(obj, serializer, indent, decycler) {
+            return JSON.stringify(obj, getSerialize2(serializer, decycler), indent);
+        }, getSerialize2 = function(serializer, decycler) {
+            let stack = [], keys = [];
+            if (!decycler) decycler = function(_, value) {
+                if (stack[0] === value) return "[Circular ~]";
+                return "[Circular ~." + keys.slice(0, stack.indexOf(value)).join(".") + "]";
+            };
+            return function(key, value) {
+                if (stack.length > 0) {
+                    var thisPos = stack.indexOf(this);
+                    ~thisPos ? stack.splice(thisPos + 1) : stack.push(this);
+                    ~thisPos ? keys.splice(thisPos, Infinity, key) : keys.push(key);
+                    if (~stack.indexOf(value)) value = decycler.call(this, key, value);
+                } else stack.push(value);
+                return serializer == null ? value : serializer.call(this, key, value);
+            };
+        };
+        var stringify = stringify2, getSerialize = getSerialize2;
+        let { isImmutable = isImmutableDefault, ignoredPaths, warnAfter = 32 } = options;
+        const track = trackForMutations.bind(null, isImmutable, ignoredPaths);
+        return ({ getState })=>{
+            let state = getState();
+            let tracker = track(state);
+            let result;
+            return (next)=>(action)=>{
+                    const measureUtils = getTimeMeasureUtils(warnAfter, "ImmutableStateInvariantMiddleware");
+                    measureUtils.measureTime(()=>{
+                        state = getState();
+                        result = tracker.detectMutations();
+                        tracker = track(state);
+                        if (result.wasMutated) throw new Error(`A state mutation was detected between dispatches, in the path '${result.path || ""}'.  This may cause incorrect behavior. (https://redux.js.org/style-guide/style-guide#do-not-mutate-state)`);
+                    });
+                    const dispatchedAction = next(action);
+                    measureUtils.measureTime(()=>{
+                        state = getState();
+                        result = tracker.detectMutations();
+                        tracker = track(state);
+                        if (result.wasMutated) throw new Error(`A state mutation was detected inside a dispatch, in the path: ${result.path || ""}. Take a look at the reducer(s) handling the action ${stringify2(action)}. (https://redux.js.org/style-guide/style-guide#do-not-mutate-state)`);
+                    });
+                    measureUtils.warnIfExceeded();
+                    return dispatchedAction;
+                };
+        };
+    }
+}
+function isPlain(val) {
+    const type = typeof val;
+    return val == null || type === "string" || type === "boolean" || type === "number" || Array.isArray(val) || (0, _redux.isPlainObject)(val);
+}
+function findNonSerializableValue(value, path = "", isSerializable = isPlain, getEntries, ignoredPaths = [], cache) {
+    let foundNestedSerializable;
+    if (!isSerializable(value)) return {
+        keyPath: path || "<root>",
+        value
+    };
+    if (typeof value !== "object" || value === null) return false;
+    if (cache?.has(value)) return false;
+    const entries = getEntries != null ? getEntries(value) : Object.entries(value);
+    const hasIgnoredPaths = ignoredPaths.length > 0;
+    for (const [key, nestedValue] of entries){
+        const nestedPath = path ? path + "." + key : key;
+        if (hasIgnoredPaths) {
+            const hasMatches = ignoredPaths.some((ignored)=>{
+                if (ignored instanceof RegExp) return ignored.test(nestedPath);
+                return nestedPath === ignored;
+            });
+            if (hasMatches) continue;
+        }
+        if (!isSerializable(nestedValue)) return {
+            keyPath: nestedPath,
+            value: nestedValue
+        };
+        if (typeof nestedValue === "object") {
+            foundNestedSerializable = findNonSerializableValue(nestedValue, nestedPath, isSerializable, getEntries, ignoredPaths, cache);
+            if (foundNestedSerializable) return foundNestedSerializable;
+        }
+    }
+    if (cache && isNestedFrozen(value)) cache.add(value);
+    return false;
+}
+function isNestedFrozen(value) {
+    if (!Object.isFrozen(value)) return false;
+    for (const nestedValue of Object.values(value)){
+        if (typeof nestedValue !== "object" || nestedValue === null) continue;
+        if (!isNestedFrozen(nestedValue)) return false;
+    }
+    return true;
+}
+function createSerializableStateInvariantMiddleware(options = {}) {
+    var next, action;
+    {
+        const { isSerializable = isPlain, getEntries, ignoredActions = [], ignoredActionPaths = [
+            "meta.arg",
+            "meta.baseQueryMeta"
+        ], ignoredPaths = [], warnAfter = 32, ignoreState = false, ignoreActions = false, disableCache = false } = options;
+        const cache = !disableCache && WeakSet ? /* @__PURE__ */ new WeakSet() : void 0;
+        return (storeAPI)=>(next)=>(action)=>{
+                    if (!(0, _redux.isAction)(action)) return next(action);
+                    const result = next(action);
+                    const measureUtils = getTimeMeasureUtils(warnAfter, "SerializableStateInvariantMiddleware");
+                    if (!ignoreActions && !(ignoredActions.length && ignoredActions.indexOf(action.type) !== -1)) measureUtils.measureTime(()=>{
+                        const foundActionNonSerializableValue = findNonSerializableValue(action, "", isSerializable, getEntries, ignoredActionPaths, cache);
+                        if (foundActionNonSerializableValue) {
+                            const { keyPath, value } = foundActionNonSerializableValue;
+                            console.error(`A non-serializable value was detected in an action, in the path: \`${keyPath}\`. Value:`, value, "\nTake a look at the logic that dispatched this action: ", action, "\n(See https://redux.js.org/faq/actions#why-should-type-be-a-string-or-at-least-serializable-why-should-my-action-types-be-constants)", "\n(To allow non-serializable values see: https://redux-toolkit.js.org/usage/usage-guide#working-with-non-serializable-data)");
+                        }
+                    });
+                    if (!ignoreState) {
+                        measureUtils.measureTime(()=>{
+                            const state = storeAPI.getState();
+                            const foundStateNonSerializableValue = findNonSerializableValue(state, "", isSerializable, getEntries, ignoredPaths, cache);
+                            if (foundStateNonSerializableValue) {
+                                const { keyPath, value } = foundStateNonSerializableValue;
+                                console.error(`A non-serializable value was detected in the state, in the path: \`${keyPath}\`. Value:`, value, `
+Take a look at the reducer(s) handling this action type: ${action.type}.
+(See https://redux.js.org/faq/organizing-state#can-i-put-functions-promises-or-other-non-serializable-items-in-my-store-state)`);
+                            }
+                        });
+                        measureUtils.warnIfExceeded();
+                    }
+                    return result;
+                };
+    }
+}
+// src/getDefaultMiddleware.ts
+function isBoolean(x) {
+    return typeof x === "boolean";
+}
+var buildGetDefaultMiddleware = ()=>function getDefaultMiddleware(options) {
+        const { thunk = true, immutableCheck = true, serializableCheck = true, actionCreatorCheck = true } = options ?? {};
+        let middlewareArray = new Tuple();
+        if (thunk) {
+            if (isBoolean(thunk)) middlewareArray.push((0, _reduxThunk.thunk));
+            else middlewareArray.push((0, _reduxThunk.withExtraArgument)(thunk.extraArgument));
+        }
+        if (immutableCheck) {
+            let immutableOptions = {};
+            if (!isBoolean(immutableCheck)) immutableOptions = immutableCheck;
+            middlewareArray.unshift(createImmutableStateInvariantMiddleware(immutableOptions));
+        }
+        if (serializableCheck) {
+            let serializableOptions = {};
+            if (!isBoolean(serializableCheck)) serializableOptions = serializableCheck;
+            middlewareArray.push(createSerializableStateInvariantMiddleware(serializableOptions));
+        }
+        if (actionCreatorCheck) {
+            let actionCreatorOptions = {};
+            if (!isBoolean(actionCreatorCheck)) actionCreatorOptions = actionCreatorCheck;
+            middlewareArray.unshift(createActionCreatorInvariantMiddleware(actionCreatorOptions));
+        }
+        return middlewareArray;
+    };
+// src/autoBatchEnhancer.ts
+var SHOULD_AUTOBATCH = "RTK_autoBatch";
+var prepareAutoBatched = ()=>(payload)=>({
+            payload,
+            meta: {
+                [SHOULD_AUTOBATCH]: true
+            }
+        });
+var createQueueWithTimer = (timeout)=>{
+    return (notify)=>{
+        setTimeout(notify, timeout);
+    };
+};
+var rAF = typeof window !== "undefined" && window.requestAnimationFrame ? window.requestAnimationFrame : createQueueWithTimer(10);
+var autoBatchEnhancer = (options = {
+    type: "raf"
+})=>(next)=>(...args)=>{
+            const store = next(...args);
+            let notifying = true;
+            let shouldNotifyAtEndOfTick = false;
+            let notificationQueued = false;
+            const listeners = /* @__PURE__ */ new Set();
+            const queueCallback = options.type === "tick" ? queueMicrotask : options.type === "raf" ? rAF : options.type === "callback" ? options.queueNotification : createQueueWithTimer(options.timeout);
+            const notifyListeners = ()=>{
+                notificationQueued = false;
+                if (shouldNotifyAtEndOfTick) {
+                    shouldNotifyAtEndOfTick = false;
+                    listeners.forEach((l)=>l());
+                }
+            };
+            return Object.assign({}, store, {
+                // Override the base `store.subscribe` method to keep original listeners
+                // from running if we're delaying notifications
+                subscribe (listener2) {
+                    const wrappedListener = ()=>notifying && listener2();
+                    const unsubscribe = store.subscribe(wrappedListener);
+                    listeners.add(listener2);
+                    return ()=>{
+                        unsubscribe();
+                        listeners.delete(listener2);
+                    };
+                },
+                // Override the base `store.dispatch` method so that we can check actions
+                // for the `shouldAutoBatch` flag and determine if batching is active
+                dispatch (action) {
+                    try {
+                        notifying = !action?.meta?.[SHOULD_AUTOBATCH];
+                        shouldNotifyAtEndOfTick = !notifying;
+                        if (shouldNotifyAtEndOfTick) {
+                            if (!notificationQueued) {
+                                notificationQueued = true;
+                                queueCallback(notifyListeners);
+                            }
+                        }
+                        return store.dispatch(action);
+                    } finally{
+                        notifying = true;
+                    }
+                }
+            });
+        };
+// src/getDefaultEnhancers.ts
+var buildGetDefaultEnhancers = (middlewareEnhancer)=>function getDefaultEnhancers(options) {
+        const { autoBatch = true } = options ?? {};
+        let enhancerArray = new Tuple(middlewareEnhancer);
+        if (autoBatch) enhancerArray.push(autoBatchEnhancer(typeof autoBatch === "object" ? autoBatch : void 0));
+        return enhancerArray;
+    };
+// src/configureStore.ts
+var IS_PRODUCTION = false;
+function configureStore(options) {
+    const getDefaultMiddleware = buildGetDefaultMiddleware();
+    const { reducer, middleware, devTools = true, preloadedState, enhancers } = options || {};
+    let rootReducer;
+    if (typeof reducer === "function") rootReducer = reducer;
+    else if ((0, _redux.isPlainObject)(reducer)) rootReducer = (0, _redux.combineReducers)(reducer);
+    else throw new Error("`reducer` is a required argument, and must be a function or an object of functions that can be passed to combineReducers");
+    if (!IS_PRODUCTION && middleware && typeof middleware !== "function") throw new Error("`middleware` field must be a callback");
+    let finalMiddleware;
+    if (typeof middleware === "function") {
+        finalMiddleware = middleware(getDefaultMiddleware);
+        if (!IS_PRODUCTION && !Array.isArray(finalMiddleware)) throw new Error("when using a middleware builder function, an array of middleware must be returned");
+    } else finalMiddleware = getDefaultMiddleware();
+    if (!IS_PRODUCTION && finalMiddleware.some((item)=>typeof item !== "function")) throw new Error("each middleware provided to configureStore must be a function");
+    let finalCompose = (0, _redux.compose);
+    if (devTools) finalCompose = composeWithDevTools({
+        // Enable capture of stack traces for dispatched Redux actions
+        trace: !IS_PRODUCTION,
+        ...typeof devTools === "object" && devTools
+    });
+    const middlewareEnhancer = (0, _redux.applyMiddleware)(...finalMiddleware);
+    const getDefaultEnhancers = buildGetDefaultEnhancers(middlewareEnhancer);
+    if (!IS_PRODUCTION && enhancers && typeof enhancers !== "function") throw new Error("`enhancers` field must be a callback");
+    let storeEnhancers = typeof enhancers === "function" ? enhancers(getDefaultEnhancers) : getDefaultEnhancers();
+    if (!IS_PRODUCTION && !Array.isArray(storeEnhancers)) throw new Error("`enhancers` callback must return an array");
+    if (!IS_PRODUCTION && storeEnhancers.some((item)=>typeof item !== "function")) throw new Error("each enhancer provided to configureStore must be a function");
+    if (!IS_PRODUCTION && finalMiddleware.length && !storeEnhancers.includes(middlewareEnhancer)) console.error("middlewares were provided, but middleware enhancer was not included in final enhancers - make sure to call `getDefaultEnhancers`");
+    const composedEnhancer = finalCompose(...storeEnhancers);
+    return (0, _redux.createStore)(rootReducer, preloadedState, composedEnhancer);
+}
+// src/mapBuilders.ts
+function executeReducerBuilderCallback(builderCallback) {
+    const actionsMap = {};
+    const actionMatchers = [];
+    let defaultCaseReducer;
+    const builder = {
+        addCase (typeOrActionCreator, reducer) {
+            if (actionMatchers.length > 0) throw new Error("`builder.addCase` should only be called before calling `builder.addMatcher`");
+            if (defaultCaseReducer) throw new Error("`builder.addCase` should only be called before calling `builder.addDefaultCase`");
+            const type = typeof typeOrActionCreator === "string" ? typeOrActionCreator : typeOrActionCreator.type;
+            if (!type) throw new Error("`builder.addCase` cannot be called with an empty action type");
+            if (type in actionsMap) throw new Error(`\`builder.addCase\` cannot be called with two reducers for the same action type '${type}'`);
+            actionsMap[type] = reducer;
+            return builder;
+        },
+        addMatcher (matcher, reducer) {
+            if (defaultCaseReducer) throw new Error("`builder.addMatcher` should only be called before calling `builder.addDefaultCase`");
+            actionMatchers.push({
+                matcher,
+                reducer
+            });
+            return builder;
+        },
+        addDefaultCase (reducer) {
+            if (defaultCaseReducer) throw new Error("`builder.addDefaultCase` can only be called once");
+            defaultCaseReducer = reducer;
+            return builder;
+        }
+    };
+    builderCallback(builder);
+    return [
+        actionsMap,
+        actionMatchers,
+        defaultCaseReducer
+    ];
+}
+// src/createReducer.ts
+function isStateFunction(x) {
+    return typeof x === "function";
+}
+function createReducer(initialState, mapOrBuilderCallback) {
+    if (typeof mapOrBuilderCallback === "object") throw new Error("The object notation for `createReducer` has been removed. Please use the 'builder callback' notation instead: https://redux-toolkit.js.org/api/createReducer");
+    let [actionsMap, finalActionMatchers, finalDefaultCaseReducer] = executeReducerBuilderCallback(mapOrBuilderCallback);
+    let getInitialState;
+    if (isStateFunction(initialState)) getInitialState = ()=>freezeDraftable(initialState());
+    else {
+        const frozenInitialState = freezeDraftable(initialState);
+        getInitialState = ()=>frozenInitialState;
+    }
+    function reducer(state = getInitialState(), action) {
+        let caseReducers = [
+            actionsMap[action.type],
+            ...finalActionMatchers.filter(({ matcher })=>matcher(action)).map(({ reducer: reducer2 })=>reducer2)
+        ];
+        if (caseReducers.filter((cr)=>!!cr).length === 0) caseReducers = [
+            finalDefaultCaseReducer
+        ];
+        return caseReducers.reduce((previousState, caseReducer)=>{
+            if (caseReducer) {
+                if ((0, _immer.isDraft)(previousState)) {
+                    const draft = previousState;
+                    const result = caseReducer(draft, action);
+                    if (result === void 0) return previousState;
+                    return result;
+                } else if (!(0, _immer.isDraftable)(previousState)) {
+                    const result = caseReducer(previousState, action);
+                    if (result === void 0) {
+                        if (previousState === null) return previousState;
+                        throw new Error("A case reducer on a non-draftable value must not return undefined");
+                    }
+                    return result;
+                } else return (0, _immer.produce)(previousState, (draft)=>{
+                    return caseReducer(draft, action);
+                });
+            }
+            return previousState;
+        }, state);
+    }
+    reducer.getInitialState = getInitialState;
+    return reducer;
+}
+// src/nanoid.ts
+var urlAlphabet = "ModuleSymbhasOwnPr-0123456789ABCDEFGHNRVfgctiUvz_KqYTJkLxpZXIjQW";
+var nanoid = (size = 21)=>{
+    let id = "";
+    let i = size;
+    while(i--)id += urlAlphabet[Math.random() * 64 | 0];
+    return id;
+};
+// src/matchers.ts
+var matches = (matcher, action)=>{
+    if (hasMatchFunction(matcher)) return matcher.match(action);
+    else return matcher(action);
+};
+function isAnyOf(...matchers) {
+    return (action)=>{
+        return matchers.some((matcher)=>matches(matcher, action));
+    };
+}
+function isAllOf(...matchers) {
+    return (action)=>{
+        return matchers.every((matcher)=>matches(matcher, action));
+    };
+}
+function hasExpectedRequestMetadata(action, validStatus) {
+    if (!action || !action.meta) return false;
+    const hasValidRequestId = typeof action.meta.requestId === "string";
+    const hasValidRequestStatus = validStatus.indexOf(action.meta.requestStatus) > -1;
+    return hasValidRequestId && hasValidRequestStatus;
+}
+function isAsyncThunkArray(a) {
+    return typeof a[0] === "function" && "pending" in a[0] && "fulfilled" in a[0] && "rejected" in a[0];
+}
+function isPending(...asyncThunks) {
+    if (asyncThunks.length === 0) return (action)=>hasExpectedRequestMetadata(action, [
+            "pending"
+        ]);
+    if (!isAsyncThunkArray(asyncThunks)) return isPending()(asyncThunks[0]);
+    return (action)=>{
+        const matchers = asyncThunks.map((asyncThunk)=>asyncThunk.pending);
+        const combinedMatcher = isAnyOf(...matchers);
+        return combinedMatcher(action);
+    };
+}
+function isRejected(...asyncThunks) {
+    if (asyncThunks.length === 0) return (action)=>hasExpectedRequestMetadata(action, [
+            "rejected"
+        ]);
+    if (!isAsyncThunkArray(asyncThunks)) return isRejected()(asyncThunks[0]);
+    return (action)=>{
+        const matchers = asyncThunks.map((asyncThunk)=>asyncThunk.rejected);
+        const combinedMatcher = isAnyOf(...matchers);
+        return combinedMatcher(action);
+    };
+}
+function isRejectedWithValue(...asyncThunks) {
+    const hasFlag = (action)=>{
+        return action && action.meta && action.meta.rejectedWithValue;
+    };
+    if (asyncThunks.length === 0) return (action)=>{
+        const combinedMatcher = isAllOf(isRejected(...asyncThunks), hasFlag);
+        return combinedMatcher(action);
+    };
+    if (!isAsyncThunkArray(asyncThunks)) return isRejectedWithValue()(asyncThunks[0]);
+    return (action)=>{
+        const combinedMatcher = isAllOf(isRejected(...asyncThunks), hasFlag);
+        return combinedMatcher(action);
+    };
+}
+function isFulfilled(...asyncThunks) {
+    if (asyncThunks.length === 0) return (action)=>hasExpectedRequestMetadata(action, [
+            "fulfilled"
+        ]);
+    if (!isAsyncThunkArray(asyncThunks)) return isFulfilled()(asyncThunks[0]);
+    return (action)=>{
+        const matchers = asyncThunks.map((asyncThunk)=>asyncThunk.fulfilled);
+        const combinedMatcher = isAnyOf(...matchers);
+        return combinedMatcher(action);
+    };
+}
+function isAsyncThunkAction(...asyncThunks) {
+    if (asyncThunks.length === 0) return (action)=>hasExpectedRequestMetadata(action, [
+            "pending",
+            "fulfilled",
+            "rejected"
+        ]);
+    if (!isAsyncThunkArray(asyncThunks)) return isAsyncThunkAction()(asyncThunks[0]);
+    return (action)=>{
+        const matchers = [];
+        for (const asyncThunk of asyncThunks)matchers.push(asyncThunk.pending, asyncThunk.rejected, asyncThunk.fulfilled);
+        const combinedMatcher = isAnyOf(...matchers);
+        return combinedMatcher(action);
+    };
+}
+// src/createAsyncThunk.ts
+var commonProperties = [
+    "name",
+    "message",
+    "stack",
+    "code"
+];
+var RejectWithValue = class {
+    constructor(payload, meta){
+        this.payload = payload;
+        this.meta = meta;
+    }
+    /*
+  type-only property to distinguish between RejectWithValue and FulfillWithMeta
+  does not exist at runtime
+  */ _type;
+};
+var FulfillWithMeta = class {
+    constructor(payload, meta){
+        this.payload = payload;
+        this.meta = meta;
+    }
+    /*
+  type-only property to distinguish between RejectWithValue and FulfillWithMeta
+  does not exist at runtime
+  */ _type;
+};
+var miniSerializeError = (value)=>{
+    if (typeof value === "object" && value !== null) {
+        const simpleError = {};
+        for (const property of commonProperties)if (typeof value[property] === "string") simpleError[property] = value[property];
+        return simpleError;
+    }
+    return {
+        message: String(value)
+    };
+};
+var createAsyncThunk = /* @__PURE__ */ (()=>{
+    function createAsyncThunk2(typePrefix, payloadCreator, options) {
+        const fulfilled = createAction(typePrefix + "/fulfilled", (payload, requestId, arg, meta)=>({
+                payload,
+                meta: {
+                    ...meta || {},
+                    arg,
+                    requestId,
+                    requestStatus: "fulfilled"
+                }
+            }));
+        const pending = createAction(typePrefix + "/pending", (requestId, arg, meta)=>({
+                payload: void 0,
+                meta: {
+                    ...meta || {},
+                    arg,
+                    requestId,
+                    requestStatus: "pending"
+                }
+            }));
+        const rejected = createAction(typePrefix + "/rejected", (error, requestId, arg, payload, meta)=>({
+                payload,
+                error: (options && options.serializeError || miniSerializeError)(error || "Rejected"),
+                meta: {
+                    ...meta || {},
+                    arg,
+                    requestId,
+                    rejectedWithValue: !!payload,
+                    requestStatus: "rejected",
+                    aborted: error?.name === "AbortError",
+                    condition: error?.name === "ConditionError"
+                }
+            }));
+        function actionCreator(arg) {
+            return (dispatch, getState, extra)=>{
+                const requestId = options?.idGenerator ? options.idGenerator(arg) : nanoid();
+                const abortController = new AbortController();
+                let abortHandler;
+                let abortReason;
+                function abort(reason) {
+                    abortReason = reason;
+                    abortController.abort();
+                }
+                const promise = async function() {
+                    let finalAction;
+                    try {
+                        let conditionResult = options?.condition?.(arg, {
+                            getState,
+                            extra
+                        });
+                        if (isThenable(conditionResult)) conditionResult = await conditionResult;
+                        if (conditionResult === false || abortController.signal.aborted) throw {
+                            name: "ConditionError",
+                            message: "Aborted due to condition callback returning false."
+                        };
+                        const abortedPromise = new Promise((_, reject)=>{
+                            abortHandler = ()=>{
+                                reject({
+                                    name: "AbortError",
+                                    message: abortReason || "Aborted"
+                                });
+                            };
+                            abortController.signal.addEventListener("abort", abortHandler);
+                        });
+                        dispatch(pending(requestId, arg, options?.getPendingMeta?.({
+                            requestId,
+                            arg
+                        }, {
+                            getState,
+                            extra
+                        })));
+                        finalAction = await Promise.race([
+                            abortedPromise,
+                            Promise.resolve(payloadCreator(arg, {
+                                dispatch,
+                                getState,
+                                extra,
+                                requestId,
+                                signal: abortController.signal,
+                                abort,
+                                rejectWithValue: (value, meta)=>{
+                                    return new RejectWithValue(value, meta);
+                                },
+                                fulfillWithValue: (value, meta)=>{
+                                    return new FulfillWithMeta(value, meta);
+                                }
+                            })).then((result)=>{
+                                if (result instanceof RejectWithValue) throw result;
+                                if (result instanceof FulfillWithMeta) return fulfilled(result.payload, requestId, arg, result.meta);
+                                return fulfilled(result, requestId, arg);
+                            })
+                        ]);
+                    } catch (err) {
+                        finalAction = err instanceof RejectWithValue ? rejected(null, requestId, arg, err.payload, err.meta) : rejected(err, requestId, arg);
+                    } finally{
+                        if (abortHandler) abortController.signal.removeEventListener("abort", abortHandler);
+                    }
+                    const skipDispatch = options && !options.dispatchConditionRejection && rejected.match(finalAction) && finalAction.meta.condition;
+                    if (!skipDispatch) dispatch(finalAction);
+                    return finalAction;
+                }();
+                return Object.assign(promise, {
+                    abort,
+                    requestId,
+                    arg,
+                    unwrap () {
+                        return promise.then(unwrapResult);
+                    }
+                });
+            };
+        }
+        return Object.assign(actionCreator, {
+            pending,
+            rejected,
+            fulfilled,
+            settled: isAnyOf(rejected, fulfilled),
+            typePrefix
+        });
+    }
+    createAsyncThunk2.withTypes = ()=>createAsyncThunk2;
+    return createAsyncThunk2;
+})();
+function unwrapResult(action) {
+    if (action.meta && action.meta.rejectedWithValue) throw action.payload;
+    if (action.error) throw action.error;
+    return action.payload;
+}
+function isThenable(value) {
+    return value !== null && typeof value === "object" && typeof value.then === "function";
+}
+// src/createSlice.ts
+var asyncThunkSymbol = /* @__PURE__ */ Symbol.for("rtk-slice-createasyncthunk");
+var asyncThunkCreator = {
+    [asyncThunkSymbol]: createAsyncThunk
+};
+var ReducerType = /* @__PURE__ */ ((ReducerType2)=>{
+    ReducerType2["reducer"] = "reducer";
+    ReducerType2["reducerWithPrepare"] = "reducerWithPrepare";
+    ReducerType2["asyncThunk"] = "asyncThunk";
+    return ReducerType2;
+})(ReducerType || {});
+function getType(slice, actionKey) {
+    return `${slice}/${actionKey}`;
+}
+function buildCreateSlice({ creators } = {}) {
+    const cAT = creators?.asyncThunk?.[asyncThunkSymbol];
+    return function createSlice2(options) {
+        const { name, reducerPath = name } = options;
+        if (!name) throw new Error("`name` is a required option for createSlice");
+        if (typeof process !== "undefined" && true) {
+            if (options.initialState === void 0) console.error("You must provide an `initialState` value that is not `undefined`. You may have misspelled `initialState`");
+        }
+        const reducers = (typeof options.reducers === "function" ? options.reducers(buildReducerCreators()) : options.reducers) || {};
+        const reducerNames = Object.keys(reducers);
+        const context = {
+            sliceCaseReducersByName: {},
+            sliceCaseReducersByType: {},
+            actionCreators: {},
+            sliceMatchers: []
+        };
+        const contextMethods = {
+            addCase (typeOrActionCreator, reducer2) {
+                const type = typeof typeOrActionCreator === "string" ? typeOrActionCreator : typeOrActionCreator.type;
+                if (!type) throw new Error("`context.addCase` cannot be called with an empty action type");
+                if (type in context.sliceCaseReducersByType) throw new Error("`context.addCase` cannot be called with two reducers for the same action type: " + type);
+                context.sliceCaseReducersByType[type] = reducer2;
+                return contextMethods;
+            },
+            addMatcher (matcher, reducer2) {
+                context.sliceMatchers.push({
+                    matcher,
+                    reducer: reducer2
+                });
+                return contextMethods;
+            },
+            exposeAction (name2, actionCreator) {
+                context.actionCreators[name2] = actionCreator;
+                return contextMethods;
+            },
+            exposeCaseReducer (name2, reducer2) {
+                context.sliceCaseReducersByName[name2] = reducer2;
+                return contextMethods;
+            }
+        };
+        reducerNames.forEach((reducerName)=>{
+            const reducerDefinition = reducers[reducerName];
+            const reducerDetails = {
+                reducerName,
+                type: getType(name, reducerName),
+                createNotation: typeof options.reducers === "function"
+            };
+            if (isAsyncThunkSliceReducerDefinition(reducerDefinition)) handleThunkCaseReducerDefinition(reducerDetails, reducerDefinition, contextMethods, cAT);
+            else handleNormalReducerDefinition(reducerDetails, reducerDefinition, contextMethods);
+        });
+        function buildReducer() {
+            if (typeof options.extraReducers === "object") throw new Error("The object notation for `createSlice.extraReducers` has been removed. Please use the 'builder callback' notation instead: https://redux-toolkit.js.org/api/createSlice");
+            const [extraReducers = {}, actionMatchers = [], defaultCaseReducer] = typeof options.extraReducers === "function" ? executeReducerBuilderCallback(options.extraReducers) : [
+                options.extraReducers
+            ];
+            const finalCaseReducers = {
+                ...extraReducers,
+                ...context.sliceCaseReducersByType
+            };
+            return createReducer(options.initialState, (builder)=>{
+                for(let key in finalCaseReducers)builder.addCase(key, finalCaseReducers[key]);
+                for (let sM of context.sliceMatchers)builder.addMatcher(sM.matcher, sM.reducer);
+                for (let m of actionMatchers)builder.addMatcher(m.matcher, m.reducer);
+                if (defaultCaseReducer) builder.addDefaultCase(defaultCaseReducer);
+            });
+        }
+        const selectSelf = (state)=>state;
+        const injectedSelectorCache = /* @__PURE__ */ new Map();
+        let _reducer;
+        function reducer(state, action) {
+            if (!_reducer) _reducer = buildReducer();
+            return _reducer(state, action);
+        }
+        function getInitialState() {
+            if (!_reducer) _reducer = buildReducer();
+            return _reducer.getInitialState();
+        }
+        function makeSelectorProps(reducerPath2, injected = false) {
+            function selectSlice(state) {
+                let sliceState = state[reducerPath2];
+                if (typeof sliceState === "undefined") {
+                    if (injected) sliceState = getInitialState();
+                    else throw new Error("selectSlice returned undefined for an uninjected slice reducer");
+                }
+                return sliceState;
+            }
+            function getSelectors(selectState = selectSelf) {
+                const selectorCache = emplace(injectedSelectorCache, injected, {
+                    insert: ()=>/* @__PURE__ */ new WeakMap()
+                });
+                return emplace(selectorCache, selectState, {
+                    insert: ()=>{
+                        const map = {};
+                        for (const [name2, selector] of Object.entries(options.selectors ?? {}))map[name2] = wrapSelector(selector, selectState, getInitialState, injected);
+                        return map;
+                    }
+                });
+            }
+            return {
+                reducerPath: reducerPath2,
+                getSelectors,
+                get selectors () {
+                    return getSelectors(selectSlice);
+                },
+                selectSlice
+            };
+        }
+        const slice = {
+            name,
+            reducer,
+            actions: context.actionCreators,
+            caseReducers: context.sliceCaseReducersByName,
+            getInitialState,
+            ...makeSelectorProps(reducerPath),
+            injectInto (injectable, { reducerPath: pathOpt, ...config } = {}) {
+                const newReducerPath = pathOpt ?? reducerPath;
+                injectable.inject({
+                    reducerPath: newReducerPath,
+                    reducer
+                }, config);
+                return {
+                    ...slice,
+                    ...makeSelectorProps(newReducerPath, true)
+                };
+            }
+        };
+        return slice;
+    };
+}
+function wrapSelector(selector, selectState, getInitialState, injected) {
+    function wrapper(rootState, ...args) {
+        let sliceState = selectState(rootState);
+        if (typeof sliceState === "undefined") {
+            if (injected) sliceState = getInitialState();
+            else throw new Error("selectState returned undefined for an uninjected slice reducer");
+        }
+        return selector(sliceState, ...args);
+    }
+    wrapper.unwrapped = selector;
+    return wrapper;
+}
+var createSlice = /* @__PURE__ */ buildCreateSlice();
+function buildReducerCreators() {
+    function asyncThunk(payloadCreator, config) {
+        return {
+            _reducerDefinitionType: "asyncThunk" /* asyncThunk */ ,
+            payloadCreator,
+            ...config
+        };
+    }
+    asyncThunk.withTypes = ()=>asyncThunk;
+    return {
+        reducer (caseReducer) {
+            return Object.assign({
+                // hack so the wrapping function has the same name as the original
+                // we need to create a wrapper so the `reducerDefinitionType` is not assigned to the original
+                [caseReducer.name] (...args) {
+                    return caseReducer(...args);
+                }
+            }[caseReducer.name], {
+                _reducerDefinitionType: "reducer" /* reducer */ 
+            });
+        },
+        preparedReducer (prepare, reducer) {
+            return {
+                _reducerDefinitionType: "reducerWithPrepare" /* reducerWithPrepare */ ,
+                prepare,
+                reducer
+            };
+        },
+        asyncThunk
+    };
+}
+function handleNormalReducerDefinition({ type, reducerName, createNotation }, maybeReducerWithPrepare, context) {
+    let caseReducer;
+    let prepareCallback;
+    if ("reducer" in maybeReducerWithPrepare) {
+        if (createNotation && !isCaseReducerWithPrepareDefinition(maybeReducerWithPrepare)) throw new Error("Please use the `create.preparedReducer` notation for prepared action creators with the `create` notation.");
+        caseReducer = maybeReducerWithPrepare.reducer;
+        prepareCallback = maybeReducerWithPrepare.prepare;
+    } else caseReducer = maybeReducerWithPrepare;
+    context.addCase(type, caseReducer).exposeCaseReducer(reducerName, caseReducer).exposeAction(reducerName, prepareCallback ? createAction(type, prepareCallback) : createAction(type));
+}
+function isAsyncThunkSliceReducerDefinition(reducerDefinition) {
+    return reducerDefinition._reducerDefinitionType === "asyncThunk" /* asyncThunk */ ;
+}
+function isCaseReducerWithPrepareDefinition(reducerDefinition) {
+    return reducerDefinition._reducerDefinitionType === "reducerWithPrepare" /* reducerWithPrepare */ ;
+}
+function handleThunkCaseReducerDefinition({ type, reducerName }, reducerDefinition, context, cAT) {
+    if (!cAT) throw new Error("Cannot use `create.asyncThunk` in the built-in `createSlice`. Use `buildCreateSlice({ creators: { asyncThunk: asyncThunkCreator } })` to create a customised version of `createSlice`.");
+    const { payloadCreator, fulfilled, pending, rejected, settled, options } = reducerDefinition;
+    const thunk = cAT(type, payloadCreator, options);
+    context.exposeAction(reducerName, thunk);
+    if (fulfilled) context.addCase(thunk.fulfilled, fulfilled);
+    if (pending) context.addCase(thunk.pending, pending);
+    if (rejected) context.addCase(thunk.rejected, rejected);
+    if (settled) context.addMatcher(thunk.settled, settled);
+    context.exposeCaseReducer(reducerName, {
+        fulfilled: fulfilled || noop,
+        pending: pending || noop,
+        rejected: rejected || noop,
+        settled: settled || noop
+    });
+}
+function noop() {}
+// src/entities/entity_state.ts
+function getInitialEntityState() {
+    return {
+        ids: [],
+        entities: {}
+    };
+}
+function createInitialStateFactory(stateAdapter) {
+    function getInitialState(additionalState = {}, entities) {
+        const state = Object.assign(getInitialEntityState(), additionalState);
+        return entities ? stateAdapter.setAll(state, entities) : state;
+    }
+    return {
+        getInitialState
+    };
+}
+// src/entities/state_selectors.ts
+function createSelectorsFactory() {
+    function getSelectors(selectState, options = {}) {
+        const { createSelector: createSelector2 = createDraftSafeSelector } = options;
+        const selectIds = (state)=>state.ids;
+        const selectEntities = (state)=>state.entities;
+        const selectAll = createSelector2(selectIds, selectEntities, (ids, entities)=>ids.map((id)=>entities[id]));
+        const selectId = (_, id)=>id;
+        const selectById = (entities, id)=>entities[id];
+        const selectTotal = createSelector2(selectIds, (ids)=>ids.length);
+        if (!selectState) return {
+            selectIds,
+            selectEntities,
+            selectAll,
+            selectTotal,
+            selectById: createSelector2(selectEntities, selectId, selectById)
+        };
+        const selectGlobalizedEntities = createSelector2(selectState, selectEntities);
+        return {
+            selectIds: createSelector2(selectState, selectIds),
+            selectEntities: selectGlobalizedEntities,
+            selectAll: createSelector2(selectState, selectAll),
+            selectTotal: createSelector2(selectState, selectTotal),
+            selectById: createSelector2(selectGlobalizedEntities, selectId, selectById)
+        };
+    }
+    return {
+        getSelectors
+    };
+}
+var isDraftTyped = (0, _immer.isDraft);
+function createSingleArgumentStateOperator(mutator) {
+    const operator = createStateOperator((_, state)=>mutator(state));
+    return function operation(state) {
+        return operator(state, void 0);
+    };
+}
+function createStateOperator(mutator) {
+    return function operation(state, arg) {
+        function isPayloadActionArgument(arg2) {
+            return isFSA(arg2);
+        }
+        const runMutator = (draft)=>{
+            if (isPayloadActionArgument(arg)) mutator(arg.payload, draft);
+            else mutator(arg, draft);
+        };
+        if (isDraftTyped(state)) {
+            runMutator(state);
+            return state;
+        }
+        return (0, _immer.produce)(state, runMutator);
+    };
+}
+// src/entities/utils.ts
+function selectIdValue(entity, selectId) {
+    const key = selectId(entity);
+    if (key === void 0) console.warn("The entity passed to the `selectId` implementation returned undefined.", "You should probably provide your own `selectId` implementation.", "The entity that was passed:", entity, "The `selectId` implementation:", selectId.toString());
+    return key;
+}
+function ensureEntitiesArray(entities) {
+    if (!Array.isArray(entities)) entities = Object.values(entities);
+    return entities;
+}
+function splitAddedUpdatedEntities(newEntities, selectId, state) {
+    newEntities = ensureEntitiesArray(newEntities);
+    const added = [];
+    const updated = [];
+    for (const entity of newEntities){
+        const id = selectIdValue(entity, selectId);
+        if (id in state.entities) updated.push({
+            id,
+            changes: entity
+        });
+        else added.push(entity);
+    }
+    return [
+        added,
+        updated
+    ];
+}
+// src/entities/unsorted_state_adapter.ts
+function createUnsortedStateAdapter(selectId) {
+    function addOneMutably(entity, state) {
+        const key = selectIdValue(entity, selectId);
+        if (key in state.entities) return;
+        state.ids.push(key);
+        state.entities[key] = entity;
+    }
+    function addManyMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        for (const entity of newEntities)addOneMutably(entity, state);
+    }
+    function setOneMutably(entity, state) {
+        const key = selectIdValue(entity, selectId);
+        if (!(key in state.entities)) state.ids.push(key);
+        state.entities[key] = entity;
+    }
+    function setManyMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        for (const entity of newEntities)setOneMutably(entity, state);
+    }
+    function setAllMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        state.ids = [];
+        state.entities = {};
+        addManyMutably(newEntities, state);
+    }
+    function removeOneMutably(key, state) {
+        return removeManyMutably([
+            key
+        ], state);
+    }
+    function removeManyMutably(keys, state) {
+        let didMutate = false;
+        keys.forEach((key)=>{
+            if (key in state.entities) {
+                delete state.entities[key];
+                didMutate = true;
+            }
+        });
+        if (didMutate) state.ids = state.ids.filter((id)=>id in state.entities);
+    }
+    function removeAllMutably(state) {
+        Object.assign(state, {
+            ids: [],
+            entities: {}
+        });
+    }
+    function takeNewKey(keys, update, state) {
+        const original3 = state.entities[update.id];
+        if (original3 === void 0) return false;
+        const updated = Object.assign({}, original3, update.changes);
+        const newKey = selectIdValue(updated, selectId);
+        const hasNewKey = newKey !== update.id;
+        if (hasNewKey) {
+            keys[update.id] = newKey;
+            delete state.entities[update.id];
+        }
+        state.entities[newKey] = updated;
+        return hasNewKey;
+    }
+    function updateOneMutably(update, state) {
+        return updateManyMutably([
+            update
+        ], state);
+    }
+    function updateManyMutably(updates, state) {
+        const newKeys = {};
+        const updatesPerEntity = {};
+        updates.forEach((update)=>{
+            if (update.id in state.entities) updatesPerEntity[update.id] = {
+                id: update.id,
+                // Spreads ignore falsy values, so this works even if there isn't
+                // an existing update already at this key
+                changes: {
+                    ...updatesPerEntity[update.id] ? updatesPerEntity[update.id].changes : null,
+                    ...update.changes
+                }
+            };
+        });
+        updates = Object.values(updatesPerEntity);
+        const didMutateEntities = updates.length > 0;
+        if (didMutateEntities) {
+            const didMutateIds = updates.filter((update)=>takeNewKey(newKeys, update, state)).length > 0;
+            if (didMutateIds) state.ids = Object.values(state.entities).map((e)=>selectIdValue(e, selectId));
+        }
+    }
+    function upsertOneMutably(entity, state) {
+        return upsertManyMutably([
+            entity
+        ], state);
+    }
+    function upsertManyMutably(newEntities, state) {
+        const [added, updated] = splitAddedUpdatedEntities(newEntities, selectId, state);
+        updateManyMutably(updated, state);
+        addManyMutably(added, state);
+    }
+    return {
+        removeAll: createSingleArgumentStateOperator(removeAllMutably),
+        addOne: createStateOperator(addOneMutably),
+        addMany: createStateOperator(addManyMutably),
+        setOne: createStateOperator(setOneMutably),
+        setMany: createStateOperator(setManyMutably),
+        setAll: createStateOperator(setAllMutably),
+        updateOne: createStateOperator(updateOneMutably),
+        updateMany: createStateOperator(updateManyMutably),
+        upsertOne: createStateOperator(upsertOneMutably),
+        upsertMany: createStateOperator(upsertManyMutably),
+        removeOne: createStateOperator(removeOneMutably),
+        removeMany: createStateOperator(removeManyMutably)
+    };
+}
+// src/entities/sorted_state_adapter.ts
+function createSortedStateAdapter(selectId, sort) {
+    const { removeOne, removeMany, removeAll } = createUnsortedStateAdapter(selectId);
+    function addOneMutably(entity, state) {
+        return addManyMutably([
+            entity
+        ], state);
+    }
+    function addManyMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        const models = newEntities.filter((model)=>!(selectIdValue(model, selectId) in state.entities));
+        if (models.length !== 0) merge(models, state);
+    }
+    function setOneMutably(entity, state) {
+        return setManyMutably([
+            entity
+        ], state);
+    }
+    function setManyMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        if (newEntities.length !== 0) merge(newEntities, state);
+    }
+    function setAllMutably(newEntities, state) {
+        newEntities = ensureEntitiesArray(newEntities);
+        state.entities = {};
+        state.ids = [];
+        addManyMutably(newEntities, state);
+    }
+    function updateOneMutably(update, state) {
+        return updateManyMutably([
+            update
+        ], state);
+    }
+    function updateManyMutably(updates, state) {
+        let appliedUpdates = false;
+        for (let update of updates){
+            const entity = state.entities[update.id];
+            if (!entity) continue;
+            appliedUpdates = true;
+            Object.assign(entity, update.changes);
+            const newId = selectId(entity);
+            if (update.id !== newId) {
+                delete state.entities[update.id];
+                state.entities[newId] = entity;
+            }
+        }
+        if (appliedUpdates) resortEntities(state);
+    }
+    function upsertOneMutably(entity, state) {
+        return upsertManyMutably([
+            entity
+        ], state);
+    }
+    function upsertManyMutably(newEntities, state) {
+        const [added, updated] = splitAddedUpdatedEntities(newEntities, selectId, state);
+        updateManyMutably(updated, state);
+        addManyMutably(added, state);
+    }
+    function areArraysEqual(a, b) {
+        if (a.length !== b.length) return false;
+        for(let i = 0; i < a.length && i < b.length; i++){
+            if (a[i] === b[i]) continue;
+            return false;
+        }
+        return true;
+    }
+    function merge(models, state) {
+        models.forEach((model)=>{
+            state.entities[selectId(model)] = model;
+        });
+        resortEntities(state);
+    }
+    function resortEntities(state) {
+        const allEntities = Object.values(state.entities);
+        allEntities.sort(sort);
+        const newSortedIds = allEntities.map(selectId);
+        const { ids } = state;
+        if (!areArraysEqual(ids, newSortedIds)) state.ids = newSortedIds;
+    }
+    return {
+        removeOne,
+        removeMany,
+        removeAll,
+        addOne: createStateOperator(addOneMutably),
+        updateOne: createStateOperator(updateOneMutably),
+        upsertOne: createStateOperator(upsertOneMutably),
+        setOne: createStateOperator(setOneMutably),
+        setMany: createStateOperator(setManyMutably),
+        setAll: createStateOperator(setAllMutably),
+        addMany: createStateOperator(addManyMutably),
+        updateMany: createStateOperator(updateManyMutably),
+        upsertMany: createStateOperator(upsertManyMutably)
+    };
+}
+// src/entities/create_adapter.ts
+function createEntityAdapter(options = {}) {
+    const { selectId, sortComparer } = {
+        sortComparer: false,
+        selectId: (instance)=>instance.id,
+        ...options
+    };
+    const stateAdapter = sortComparer ? createSortedStateAdapter(selectId, sortComparer) : createUnsortedStateAdapter(selectId);
+    const stateFactory = createInitialStateFactory(stateAdapter);
+    const selectorsFactory = createSelectorsFactory();
+    return {
+        selectId,
+        sortComparer,
+        ...stateFactory,
+        ...selectorsFactory,
+        ...stateAdapter
+    };
+}
+// src/listenerMiddleware/exceptions.ts
+var task = "task";
+var listener = "listener";
+var completed = "completed";
+var cancelled = "cancelled";
+var taskCancelled = `task-${cancelled}`;
+var taskCompleted = `task-${completed}`;
+var listenerCancelled = `${listener}-${cancelled}`;
+var listenerCompleted = `${listener}-${completed}`;
+var TaskAbortError = class {
+    constructor(code){
+        this.code = code;
+        this.message = `${task} ${cancelled} (reason: ${code})`;
+    }
+    name = "TaskAbortError";
+    message;
+};
+// src/listenerMiddleware/utils.ts
+var assertFunction = (func, expected)=>{
+    if (typeof func !== "function") throw new Error(`${expected} is not a function`);
+};
+var noop2 = ()=>{};
+var catchRejection = (promise, onError = noop2)=>{
+    promise.catch(onError);
+    return promise;
+};
+var addAbortSignalListener = (abortSignal, callback)=>{
+    abortSignal.addEventListener("abort", callback, {
+        once: true
+    });
+    return ()=>abortSignal.removeEventListener("abort", callback);
+};
+var abortControllerWithReason = (abortController, reason)=>{
+    const signal = abortController.signal;
+    if (signal.aborted) return;
+    if (!("reason" in signal)) Object.defineProperty(signal, "reason", {
+        enumerable: true,
+        value: reason,
+        configurable: true,
+        writable: true
+    });
+    abortController.abort(reason);
+};
+// src/listenerMiddleware/task.ts
+var validateActive = (signal)=>{
+    if (signal.aborted) {
+        const { reason } = signal;
+        throw new TaskAbortError(reason);
+    }
+};
+function raceWithSignal(signal, promise) {
+    let cleanup = noop2;
+    return new Promise((resolve, reject)=>{
+        const notifyRejection = ()=>reject(new TaskAbortError(signal.reason));
+        if (signal.aborted) {
+            notifyRejection();
+            return;
+        }
+        cleanup = addAbortSignalListener(signal, notifyRejection);
+        promise.finally(()=>cleanup()).then(resolve, reject);
+    }).finally(()=>{
+        cleanup = noop2;
+    });
+}
+var runTask = async (task2, cleanUp)=>{
+    try {
+        await Promise.resolve();
+        const value = await task2();
+        return {
+            status: "ok",
+            value
+        };
+    } catch (error) {
+        return {
+            status: error instanceof TaskAbortError ? "cancelled" : "rejected",
+            error
+        };
+    } finally{
+        cleanUp?.();
+    }
+};
+var createPause = (signal)=>{
+    return (promise)=>{
+        return catchRejection(raceWithSignal(signal, promise).then((output)=>{
+            validateActive(signal);
+            return output;
+        }));
+    };
+};
+var createDelay = (signal)=>{
+    const pause = createPause(signal);
+    return (timeoutMs)=>{
+        return pause(new Promise((resolve)=>setTimeout(resolve, timeoutMs)));
+    };
+};
+// src/listenerMiddleware/index.ts
+var { assign } = Object;
+var INTERNAL_NIL_TOKEN = {};
+var alm = "listenerMiddleware";
+var createFork = (parentAbortSignal, parentBlockingPromises)=>{
+    const linkControllers = (controller)=>addAbortSignalListener(parentAbortSignal, ()=>abortControllerWithReason(controller, parentAbortSignal.reason));
+    return (taskExecutor, opts)=>{
+        assertFunction(taskExecutor, "taskExecutor");
+        const childAbortController = new AbortController();
+        linkControllers(childAbortController);
+        const result = runTask(async ()=>{
+            validateActive(parentAbortSignal);
+            validateActive(childAbortController.signal);
+            const result2 = await taskExecutor({
+                pause: createPause(childAbortController.signal),
+                delay: createDelay(childAbortController.signal),
+                signal: childAbortController.signal
+            });
+            validateActive(childAbortController.signal);
+            return result2;
+        }, ()=>abortControllerWithReason(childAbortController, taskCompleted));
+        if (opts?.autoJoin) parentBlockingPromises.push(result.catch(noop2));
+        return {
+            result: createPause(parentAbortSignal)(result),
+            cancel () {
+                abortControllerWithReason(childAbortController, taskCancelled);
+            }
+        };
+    };
+};
+var createTakePattern = (startListening, signal)=>{
+    const take = async (predicate, timeout)=>{
+        validateActive(signal);
+        let unsubscribe = ()=>{};
+        const tuplePromise = new Promise((resolve, reject)=>{
+            let stopListening = startListening({
+                predicate,
+                effect: (action, listenerApi)=>{
+                    listenerApi.unsubscribe();
+                    resolve([
+                        action,
+                        listenerApi.getState(),
+                        listenerApi.getOriginalState()
+                    ]);
+                }
+            });
+            unsubscribe = ()=>{
+                stopListening();
+                reject();
+            };
+        });
+        const promises = [
+            tuplePromise
+        ];
+        if (timeout != null) promises.push(new Promise((resolve)=>setTimeout(resolve, timeout, null)));
+        try {
+            const output = await raceWithSignal(signal, Promise.race(promises));
+            validateActive(signal);
+            return output;
+        } finally{
+            unsubscribe();
+        }
+    };
+    return (predicate, timeout)=>catchRejection(take(predicate, timeout));
+};
+var getListenerEntryPropsFrom = (options)=>{
+    let { type, actionCreator, matcher, predicate, effect } = options;
+    if (type) predicate = createAction(type).match;
+    else if (actionCreator) {
+        type = actionCreator.type;
+        predicate = actionCreator.match;
+    } else if (matcher) predicate = matcher;
+    else if (predicate) ;
+    else throw new Error("Creating or removing a listener requires one of the known fields for matching an action");
+    assertFunction(effect, "options.listener");
+    return {
+        predicate,
+        type,
+        effect
+    };
+};
+var createListenerEntry = Object.assign((options)=>{
+    const { type, predicate, effect } = getListenerEntryPropsFrom(options);
+    const id = nanoid();
+    const entry = {
+        id,
+        effect,
+        type,
+        predicate,
+        pending: /* @__PURE__ */ new Set(),
+        unsubscribe: ()=>{
+            throw new Error("Unsubscribe not initialized");
+        }
+    };
+    return entry;
+}, {
+    withTypes: ()=>createListenerEntry
+});
+var cancelActiveListeners = (entry)=>{
+    entry.pending.forEach((controller)=>{
+        abortControllerWithReason(controller, listenerCancelled);
+    });
+};
+var createClearListenerMiddleware = (listenerMap)=>{
+    return ()=>{
+        listenerMap.forEach(cancelActiveListeners);
+        listenerMap.clear();
+    };
+};
+var safelyNotifyError = (errorHandler, errorToNotify, errorInfo)=>{
+    try {
+        errorHandler(errorToNotify, errorInfo);
+    } catch (errorHandlerError) {
+        setTimeout(()=>{
+            throw errorHandlerError;
+        }, 0);
+    }
+};
+var addListener = Object.assign(createAction(`${alm}/add`), {
+    withTypes: ()=>addListener
+});
+var clearAllListeners = createAction(`${alm}/removeAll`);
+var removeListener = Object.assign(createAction(`${alm}/remove`), {
+    withTypes: ()=>removeListener
+});
+var defaultErrorHandler = (...args)=>{
+    console.error(`${alm}/error`, ...args);
+};
+var createListenerMiddleware = (middlewareOptions = {})=>{
+    const listenerMap = /* @__PURE__ */ new Map();
+    const { extra, onError = defaultErrorHandler } = middlewareOptions;
+    assertFunction(onError, "onError");
+    const insertEntry = (entry)=>{
+        entry.unsubscribe = ()=>listenerMap.delete(entry.id);
+        listenerMap.set(entry.id, entry);
+        return (cancelOptions)=>{
+            entry.unsubscribe();
+            if (cancelOptions?.cancelActive) cancelActiveListeners(entry);
+        };
+    };
+    const startListening = (options)=>{
+        let entry = find(Array.from(listenerMap.values()), (existingEntry)=>existingEntry.effect === options.effect);
+        if (!entry) entry = createListenerEntry(options);
+        return insertEntry(entry);
+    };
+    Object.assign(startListening, {
+        withTypes: ()=>startListening
+    });
+    const stopListening = (options)=>{
+        const { type, effect, predicate } = getListenerEntryPropsFrom(options);
+        const entry = find(Array.from(listenerMap.values()), (entry2)=>{
+            const matchPredicateOrType = typeof type === "string" ? entry2.type === type : entry2.predicate === predicate;
+            return matchPredicateOrType && entry2.effect === effect;
+        });
+        if (entry) {
+            entry.unsubscribe();
+            if (options.cancelActive) cancelActiveListeners(entry);
+        }
+        return !!entry;
+    };
+    Object.assign(stopListening, {
+        withTypes: ()=>stopListening
+    });
+    const notifyListener = async (entry, action, api, getOriginalState)=>{
+        const internalTaskController = new AbortController();
+        const take = createTakePattern(startListening, internalTaskController.signal);
+        const autoJoinPromises = [];
+        try {
+            entry.pending.add(internalTaskController);
+            await Promise.resolve(entry.effect(action, // Use assign() rather than ... to avoid extra helper functions added to bundle
+            assign({}, api, {
+                getOriginalState,
+                condition: (predicate, timeout)=>take(predicate, timeout).then(Boolean),
+                take,
+                delay: createDelay(internalTaskController.signal),
+                pause: createPause(internalTaskController.signal),
+                extra,
+                signal: internalTaskController.signal,
+                fork: createFork(internalTaskController.signal, autoJoinPromises),
+                unsubscribe: entry.unsubscribe,
+                subscribe: ()=>{
+                    listenerMap.set(entry.id, entry);
+                },
+                cancelActiveListeners: ()=>{
+                    entry.pending.forEach((controller, _, set)=>{
+                        if (controller !== internalTaskController) {
+                            abortControllerWithReason(controller, listenerCancelled);
+                            set.delete(controller);
+                        }
+                    });
+                },
+                cancel: ()=>{
+                    abortControllerWithReason(internalTaskController, listenerCancelled);
+                    entry.pending.delete(internalTaskController);
+                },
+                throwIfCancelled: ()=>{
+                    validateActive(internalTaskController.signal);
+                }
+            })));
+        } catch (listenerError) {
+            if (!(listenerError instanceof TaskAbortError)) safelyNotifyError(onError, listenerError, {
+                raisedBy: "effect"
+            });
+        } finally{
+            await Promise.all(autoJoinPromises);
+            abortControllerWithReason(internalTaskController, listenerCompleted);
+            entry.pending.delete(internalTaskController);
+        }
+    };
+    const clearListenerMiddleware = createClearListenerMiddleware(listenerMap);
+    const middleware = (api)=>(next)=>(action)=>{
+                if (!(0, _redux.isAction)(action)) return next(action);
+                if (addListener.match(action)) return startListening(action.payload);
+                if (clearAllListeners.match(action)) {
+                    clearListenerMiddleware();
+                    return;
+                }
+                if (removeListener.match(action)) return stopListening(action.payload);
+                let originalState = api.getState();
+                const getOriginalState = ()=>{
+                    if (originalState === INTERNAL_NIL_TOKEN) throw new Error(`${alm}: getOriginalState can only be called synchronously`);
+                    return originalState;
+                };
+                let result;
+                try {
+                    result = next(action);
+                    if (listenerMap.size > 0) {
+                        const currentState = api.getState();
+                        const listenerEntries = Array.from(listenerMap.values());
+                        for (const entry of listenerEntries){
+                            let runListener = false;
+                            try {
+                                runListener = entry.predicate(action, currentState, originalState);
+                            } catch (predicateError) {
+                                runListener = false;
+                                safelyNotifyError(onError, predicateError, {
+                                    raisedBy: "predicate"
+                                });
+                            }
+                            if (!runListener) continue;
+                            notifyListener(entry, action, api, getOriginalState);
+                        }
+                    }
+                } finally{
+                    originalState = INTERNAL_NIL_TOKEN;
+                }
+                return result;
+            };
+    return {
+        middleware,
+        startListening,
+        stopListening,
+        clearListeners: clearListenerMiddleware
+    };
+};
+var createMiddlewareEntry = (middleware)=>({
+        id: nanoid(),
+        middleware,
+        applied: /* @__PURE__ */ new Map()
+    });
+var matchInstance = (instanceId)=>(action)=>action?.meta?.instanceId === instanceId;
+var createDynamicMiddleware = ()=>{
+    const instanceId = nanoid();
+    const middlewareMap = /* @__PURE__ */ new Map();
+    const withMiddleware = Object.assign(createAction("dynamicMiddleware/add", (...middlewares)=>({
+            payload: middlewares,
+            meta: {
+                instanceId
+            }
+        })), {
+        withTypes: ()=>withMiddleware
+    });
+    const addMiddleware = Object.assign(function addMiddleware2(...middlewares) {
+        middlewares.forEach((middleware2)=>{
+            let entry = find(Array.from(middlewareMap.values()), (entry2)=>entry2.middleware === middleware2);
+            if (!entry) entry = createMiddlewareEntry(middleware2);
+            middlewareMap.set(entry.id, entry);
+        });
+    }, {
+        withTypes: ()=>addMiddleware
+    });
+    const getFinalMiddleware = (api)=>{
+        const appliedMiddleware = Array.from(middlewareMap.values()).map((entry)=>emplace(entry.applied, api, {
+                insert: ()=>entry.middleware(api)
+            }));
+        return (0, _redux.compose)(...appliedMiddleware);
+    };
+    const isWithMiddleware = isAllOf(withMiddleware, matchInstance(instanceId));
+    const middleware = (api)=>(next)=>(action)=>{
+                if (isWithMiddleware(action)) {
+                    addMiddleware(...action.payload);
+                    return api.dispatch;
+                }
+                return getFinalMiddleware(api)(next)(action);
+            };
+    return {
+        middleware,
+        addMiddleware,
+        withMiddleware,
+        instanceId
+    };
+};
+var isSliceLike = (maybeSliceLike)=>"reducerPath" in maybeSliceLike && typeof maybeSliceLike.reducerPath === "string";
+var getReducers = (slices)=>slices.flatMap((sliceOrMap)=>isSliceLike(sliceOrMap) ? [
+            [
+                sliceOrMap.reducerPath,
+                sliceOrMap.reducer
+            ]
+        ] : Object.entries(sliceOrMap));
+var ORIGINAL_STATE = Symbol.for("rtk-state-proxy-original");
+var isStateProxy = (value)=>!!value && !!value[ORIGINAL_STATE];
+var stateProxyMap = /* @__PURE__ */ new WeakMap();
+var createStateProxy = (state, reducerMap)=>emplace(stateProxyMap, state, {
+        insert: ()=>new Proxy(state, {
+                get: (target, prop, receiver)=>{
+                    if (prop === ORIGINAL_STATE) return target;
+                    const result = Reflect.get(target, prop, receiver);
+                    if (typeof result === "undefined") {
+                        const reducer = reducerMap[prop.toString()];
+                        if (reducer) {
+                            const reducerResult = reducer(void 0, {
+                                type: nanoid()
+                            });
+                            if (typeof reducerResult === "undefined") throw new Error(`The slice reducer for key "${prop.toString()}" returned undefined when called for selector(). If the state passed to the reducer is undefined, you must explicitly return the initial state. The initial state may not be undefined. If you don't want to set a value for this reducer, you can use null instead of undefined.`);
+                            return reducerResult;
+                        }
+                    }
+                    return result;
+                }
+            })
+    });
+var original = (state)=>{
+    if (!isStateProxy(state)) throw new Error("original must be used on state Proxy");
+    return state[ORIGINAL_STATE];
+};
+var noopReducer = (state = {})=>state;
+function combineSlices(...slices) {
+    const reducerMap = Object.fromEntries(getReducers(slices));
+    const getReducer = ()=>Object.keys(reducerMap).length ? (0, _redux.combineReducers)(reducerMap) : noopReducer;
+    let reducer = getReducer();
+    function combinedReducer(state, action) {
+        return reducer(state, action);
+    }
+    combinedReducer.withLazyLoadedSlices = ()=>combinedReducer;
+    const inject = (slice, config = {})=>{
+        const { reducerPath, reducer: reducerToInject } = slice;
+        const currentReducer = reducerMap[reducerPath];
+        if (!config.overrideExisting && currentReducer && currentReducer !== reducerToInject) {
+            if (typeof process !== "undefined" && true) console.error(`called \`inject\` to override already-existing reducer ${reducerPath} without specifying \`overrideExisting: true\``);
+            return combinedReducer;
+        }
+        reducerMap[reducerPath] = reducerToInject;
+        reducer = getReducer();
+        return combinedReducer;
+    };
+    const selector = Object.assign(function makeSelector(selectorFn, selectState) {
+        return function selector2(state, ...args) {
+            return selectorFn(createStateProxy(selectState ? selectState(state, ...args) : state, reducerMap), ...args);
+        };
+    }, {
+        original
+    });
+    return Object.assign(combinedReducer, {
+        inject,
+        selector
+    });
+}
+// src/formatProdErrorMessage.ts
+function formatProdErrorMessage(code) {
+    return `Minified Redux Toolkit error #${code}; visit https://redux-toolkit.js.org/Errors?code=${code} for the full message or use the non-minified dev environment for full errors. `;
+}
+
+},{"2cddd3bdb894f9d3":"d5jf4","redux":"anWnS","immer":"gxfm0","reselect":"a4FZS","redux-thunk":"3ll1c","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"anWnS":[function(require,module,exports) {
+// src/utils/formatProdErrorMessage.ts
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__DO_NOT_USE__ActionTypes", ()=>actionTypes_default);
+parcelHelpers.export(exports, "applyMiddleware", ()=>applyMiddleware);
+parcelHelpers.export(exports, "bindActionCreators", ()=>bindActionCreators);
+parcelHelpers.export(exports, "combineReducers", ()=>combineReducers);
+parcelHelpers.export(exports, "compose", ()=>compose);
+parcelHelpers.export(exports, "createStore", ()=>createStore);
+parcelHelpers.export(exports, "isAction", ()=>isAction);
+parcelHelpers.export(exports, "isPlainObject", ()=>isPlainObject);
+parcelHelpers.export(exports, "legacy_createStore", ()=>legacy_createStore);
+function formatProdErrorMessage(code) {
+    return `Minified Redux error #${code}; visit https://redux.js.org/Errors?code=${code} for the full message or use the non-minified dev environment for full errors. `;
+}
+// src/utils/symbol-observable.ts
+var $$observable = /* @__PURE__ */ (()=>typeof Symbol === "function" && Symbol.observable || "@@observable")();
+var symbol_observable_default = $$observable;
+// src/utils/actionTypes.ts
+var randomString = ()=>Math.random().toString(36).substring(7).split("").join(".");
+var ActionTypes = {
+    INIT: `@@redux/INIT${randomString()}`,
+    REPLACE: `@@redux/REPLACE${randomString()}`,
+    PROBE_UNKNOWN_ACTION: ()=>`@@redux/PROBE_UNKNOWN_ACTION${randomString()}`
+};
+var actionTypes_default = ActionTypes;
+// src/utils/isPlainObject.ts
+function isPlainObject(obj) {
+    if (typeof obj !== "object" || obj === null) return false;
+    let proto = obj;
+    while(Object.getPrototypeOf(proto) !== null)proto = Object.getPrototypeOf(proto);
+    return Object.getPrototypeOf(obj) === proto || Object.getPrototypeOf(obj) === null;
+}
+// src/utils/kindOf.ts
+function miniKindOf(val) {
+    if (val === void 0) return "undefined";
+    if (val === null) return "null";
+    const type = typeof val;
+    switch(type){
+        case "boolean":
+        case "string":
+        case "number":
+        case "symbol":
+        case "function":
+            return type;
+    }
+    if (Array.isArray(val)) return "array";
+    if (isDate(val)) return "date";
+    if (isError(val)) return "error";
+    const constructorName = ctorName(val);
+    switch(constructorName){
+        case "Symbol":
+        case "Promise":
+        case "WeakMap":
+        case "WeakSet":
+        case "Map":
+        case "Set":
+            return constructorName;
+    }
+    return Object.prototype.toString.call(val).slice(8, -1).toLowerCase().replace(/\s/g, "");
+}
+function ctorName(val) {
+    return typeof val.constructor === "function" ? val.constructor.name : null;
+}
+function isError(val) {
+    return val instanceof Error || typeof val.message === "string" && val.constructor && typeof val.constructor.stackTraceLimit === "number";
+}
+function isDate(val) {
+    if (val instanceof Date) return true;
+    return typeof val.toDateString === "function" && typeof val.getDate === "function" && typeof val.setDate === "function";
+}
+function kindOf(val) {
+    let typeOfVal = typeof val;
+    typeOfVal = miniKindOf(val);
+    return typeOfVal;
+}
+// src/createStore.ts
+function createStore(reducer, preloadedState, enhancer) {
+    if (typeof reducer !== "function") throw new Error(`Expected the root reducer to be a function. Instead, received: '${kindOf(reducer)}'`);
+    if (typeof preloadedState === "function" && typeof enhancer === "function" || typeof enhancer === "function" && typeof arguments[3] === "function") throw new Error("It looks like you are passing several store enhancers to createStore(). This is not supported. Instead, compose them together to a single function. See https://redux.js.org/tutorials/fundamentals/part-4-store#creating-a-store-with-enhancers for an example.");
+    if (typeof preloadedState === "function" && typeof enhancer === "undefined") {
+        enhancer = preloadedState;
+        preloadedState = void 0;
+    }
+    if (typeof enhancer !== "undefined") {
+        if (typeof enhancer !== "function") throw new Error(`Expected the enhancer to be a function. Instead, received: '${kindOf(enhancer)}'`);
+        return enhancer(createStore)(reducer, preloadedState);
+    }
+    let currentReducer = reducer;
+    let currentState = preloadedState;
+    let currentListeners = /* @__PURE__ */ new Map();
+    let nextListeners = currentListeners;
+    let listenerIdCounter = 0;
+    let isDispatching = false;
+    function ensureCanMutateNextListeners() {
+        if (nextListeners === currentListeners) {
+            nextListeners = /* @__PURE__ */ new Map();
+            currentListeners.forEach((listener, key)=>{
+                nextListeners.set(key, listener);
+            });
+        }
+    }
+    function getState() {
+        if (isDispatching) throw new Error("You may not call store.getState() while the reducer is executing. The reducer has already received the state as an argument. Pass it down from the top reducer instead of reading it from the store.");
+        return currentState;
+    }
+    function subscribe(listener) {
+        if (typeof listener !== "function") throw new Error(`Expected the listener to be a function. Instead, received: '${kindOf(listener)}'`);
+        if (isDispatching) throw new Error("You may not call store.subscribe() while the reducer is executing. If you would like to be notified after the store has been updated, subscribe from a component and invoke store.getState() in the callback to access the latest state. See https://redux.js.org/api/store#subscribelistener for more details.");
+        let isSubscribed = true;
+        ensureCanMutateNextListeners();
+        const listenerId = listenerIdCounter++;
+        nextListeners.set(listenerId, listener);
+        return function unsubscribe() {
+            if (!isSubscribed) return;
+            if (isDispatching) throw new Error("You may not unsubscribe from a store listener while the reducer is executing. See https://redux.js.org/api/store#subscribelistener for more details.");
+            isSubscribed = false;
+            ensureCanMutateNextListeners();
+            nextListeners.delete(listenerId);
+            currentListeners = null;
+        };
+    }
+    function dispatch(action) {
+        if (!isPlainObject(action)) throw new Error(`Actions must be plain objects. Instead, the actual type was: '${kindOf(action)}'. You may need to add middleware to your store setup to handle dispatching other values, such as 'redux-thunk' to handle dispatching functions. See https://redux.js.org/tutorials/fundamentals/part-4-store#middleware and https://redux.js.org/tutorials/fundamentals/part-6-async-logic#using-the-redux-thunk-middleware for examples.`);
+        if (typeof action.type === "undefined") throw new Error('Actions may not have an undefined "type" property. You may have misspelled an action type string constant.');
+        if (typeof action.type !== "string") throw new Error(`Action "type" property must be a string. Instead, the actual type was: '${kindOf(action.type)}'. Value was: '${action.type}' (stringified)`);
+        if (isDispatching) throw new Error("Reducers may not dispatch actions.");
+        try {
+            isDispatching = true;
+            currentState = currentReducer(currentState, action);
+        } finally{
+            isDispatching = false;
+        }
+        const listeners = currentListeners = nextListeners;
+        listeners.forEach((listener)=>{
+            listener();
+        });
+        return action;
+    }
+    function replaceReducer(nextReducer) {
+        if (typeof nextReducer !== "function") throw new Error(`Expected the nextReducer to be a function. Instead, received: '${kindOf(nextReducer)}`);
+        currentReducer = nextReducer;
+        dispatch({
+            type: actionTypes_default.REPLACE
+        });
+    }
+    function observable() {
+        const outerSubscribe = subscribe;
+        return {
+            /**
+       * The minimal observable subscription method.
+       * @param observer Any object that can be used as an observer.
+       * The observer object should have a `next` method.
+       * @returns An object with an `unsubscribe` method that can
+       * be used to unsubscribe the observable from the store, and prevent further
+       * emission of values from the observable.
+       */ subscribe (observer) {
+                if (typeof observer !== "object" || observer === null) throw new Error(`Expected the observer to be an object. Instead, received: '${kindOf(observer)}'`);
+                function observeState() {
+                    const observerAsObserver = observer;
+                    if (observerAsObserver.next) observerAsObserver.next(getState());
+                }
+                observeState();
+                const unsubscribe = outerSubscribe(observeState);
+                return {
+                    unsubscribe
+                };
+            },
+            [symbol_observable_default] () {
+                return this;
+            }
+        };
+    }
+    dispatch({
+        type: actionTypes_default.INIT
+    });
+    const store = {
+        dispatch,
+        subscribe,
+        getState,
+        replaceReducer,
+        [symbol_observable_default]: observable
+    };
+    return store;
+}
+function legacy_createStore(reducer, preloadedState, enhancer) {
+    return createStore(reducer, preloadedState, enhancer);
+}
+// src/utils/warning.ts
+function warning(message) {
+    if (typeof console !== "undefined" && typeof console.error === "function") console.error(message);
+    try {
+        throw new Error(message);
+    } catch (e) {}
+}
+// src/combineReducers.ts
+function getUnexpectedStateShapeWarningMessage(inputState, reducers, action, unexpectedKeyCache) {
+    const reducerKeys = Object.keys(reducers);
+    const argumentName = action && action.type === actionTypes_default.INIT ? "preloadedState argument passed to createStore" : "previous state received by the reducer";
+    if (reducerKeys.length === 0) return "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers.";
+    if (!isPlainObject(inputState)) return `The ${argumentName} has unexpected type of "${kindOf(inputState)}". Expected argument to be an object with the following keys: "${reducerKeys.join('", "')}"`;
+    const unexpectedKeys = Object.keys(inputState).filter((key)=>!reducers.hasOwnProperty(key) && !unexpectedKeyCache[key]);
+    unexpectedKeys.forEach((key)=>{
+        unexpectedKeyCache[key] = true;
+    });
+    if (action && action.type === actionTypes_default.REPLACE) return;
+    if (unexpectedKeys.length > 0) return `Unexpected ${unexpectedKeys.length > 1 ? "keys" : "key"} "${unexpectedKeys.join('", "')}" found in ${argumentName}. Expected to find one of the known reducer keys instead: "${reducerKeys.join('", "')}". Unexpected keys will be ignored.`;
+}
+function assertReducerShape(reducers) {
+    Object.keys(reducers).forEach((key)=>{
+        const reducer = reducers[key];
+        const initialState = reducer(void 0, {
+            type: actionTypes_default.INIT
+        });
+        if (typeof initialState === "undefined") throw new Error(`The slice reducer for key "${key}" returned undefined during initialization. If the state passed to the reducer is undefined, you must explicitly return the initial state. The initial state may not be undefined. If you don't want to set a value for this reducer, you can use null instead of undefined.`);
+        if (typeof reducer(void 0, {
+            type: actionTypes_default.PROBE_UNKNOWN_ACTION()
+        }) === "undefined") throw new Error(`The slice reducer for key "${key}" returned undefined when probed with a random type. Don't try to handle '${actionTypes_default.INIT}' or other actions in "redux/*" namespace. They are considered private. Instead, you must return the current state for any unknown actions, unless it is undefined, in which case you must return the initial state, regardless of the action type. The initial state may not be undefined, but can be null.`);
+    });
+}
+function combineReducers(reducers) {
+    const reducerKeys = Object.keys(reducers);
+    const finalReducers = {};
+    for(let i = 0; i < reducerKeys.length; i++){
+        const key = reducerKeys[i];
+        if (typeof reducers[key] === "undefined") warning(`No reducer provided for key "${key}"`);
+        if (typeof reducers[key] === "function") finalReducers[key] = reducers[key];
+    }
+    const finalReducerKeys = Object.keys(finalReducers);
+    let unexpectedKeyCache;
+    unexpectedKeyCache = {};
+    let shapeAssertionError;
+    try {
+        assertReducerShape(finalReducers);
+    } catch (e) {
+        shapeAssertionError = e;
+    }
+    return function combination(state = {}, action) {
+        if (shapeAssertionError) throw shapeAssertionError;
+        {
+            const warningMessage = getUnexpectedStateShapeWarningMessage(state, finalReducers, action, unexpectedKeyCache);
+            if (warningMessage) warning(warningMessage);
+        }
+        let hasChanged = false;
+        const nextState = {};
+        for(let i = 0; i < finalReducerKeys.length; i++){
+            const key = finalReducerKeys[i];
+            const reducer = finalReducers[key];
+            const previousStateForKey = state[key];
+            const nextStateForKey = reducer(previousStateForKey, action);
+            if (typeof nextStateForKey === "undefined") {
+                const actionType = action && action.type;
+                throw new Error(`When called with an action of type ${actionType ? `"${String(actionType)}"` : "(unknown type)"}, the slice reducer for key "${key}" returned undefined. To ignore an action, you must explicitly return the previous state. If you want this reducer to hold no value, you can return null instead of undefined.`);
+            }
+            nextState[key] = nextStateForKey;
+            hasChanged = hasChanged || nextStateForKey !== previousStateForKey;
+        }
+        hasChanged = hasChanged || finalReducerKeys.length !== Object.keys(state).length;
+        return hasChanged ? nextState : state;
+    };
+}
+// src/bindActionCreators.ts
+function bindActionCreator(actionCreator, dispatch) {
+    return function(...args) {
+        return dispatch(actionCreator.apply(this, args));
+    };
+}
+function bindActionCreators(actionCreators, dispatch) {
+    if (typeof actionCreators === "function") return bindActionCreator(actionCreators, dispatch);
+    if (typeof actionCreators !== "object" || actionCreators === null) throw new Error(`bindActionCreators expected an object or a function, but instead received: '${kindOf(actionCreators)}'. Did you write "import ActionCreators from" instead of "import * as ActionCreators from"?`);
+    const boundActionCreators = {};
+    for(const key in actionCreators){
+        const actionCreator = actionCreators[key];
+        if (typeof actionCreator === "function") boundActionCreators[key] = bindActionCreator(actionCreator, dispatch);
+    }
+    return boundActionCreators;
+}
+// src/compose.ts
+function compose(...funcs) {
+    if (funcs.length === 0) return (arg)=>arg;
+    if (funcs.length === 1) return funcs[0];
+    return funcs.reduce((a, b)=>(...args)=>a(b(...args)));
+}
+// src/applyMiddleware.ts
+function applyMiddleware(...middlewares) {
+    return (createStore2)=>(reducer, preloadedState)=>{
+            const store = createStore2(reducer, preloadedState);
+            let dispatch = ()=>{
+                throw new Error("Dispatching while constructing your middleware is not allowed. Other middleware would not be applied to this dispatch.");
+            };
+            const middlewareAPI = {
+                getState: store.getState,
+                dispatch: (action, ...args)=>dispatch(action, ...args)
+            };
+            const chain = middlewares.map((middleware)=>middleware(middlewareAPI));
+            dispatch = compose(...chain)(store.dispatch);
+            return {
+                ...store,
+                dispatch
+            };
+        };
+}
+// src/utils/isAction.ts
+function isAction(action) {
+    return isPlainObject(action) && "type" in action && typeof action.type === "string";
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gxfm0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Immer", ()=>Immer2);
+parcelHelpers.export(exports, "applyPatches", ()=>applyPatches);
+parcelHelpers.export(exports, "castDraft", ()=>castDraft);
+parcelHelpers.export(exports, "castImmutable", ()=>castImmutable);
+parcelHelpers.export(exports, "createDraft", ()=>createDraft);
+parcelHelpers.export(exports, "current", ()=>current);
+parcelHelpers.export(exports, "enableMapSet", ()=>enableMapSet);
+parcelHelpers.export(exports, "enablePatches", ()=>enablePatches);
+parcelHelpers.export(exports, "finishDraft", ()=>finishDraft);
+parcelHelpers.export(exports, "freeze", ()=>freeze);
+parcelHelpers.export(exports, "immerable", ()=>DRAFTABLE);
+parcelHelpers.export(exports, "isDraft", ()=>isDraft);
+parcelHelpers.export(exports, "isDraftable", ()=>isDraftable);
+parcelHelpers.export(exports, "nothing", ()=>NOTHING);
+parcelHelpers.export(exports, "original", ()=>original);
+parcelHelpers.export(exports, "produce", ()=>produce);
+parcelHelpers.export(exports, "produceWithPatches", ()=>produceWithPatches);
+parcelHelpers.export(exports, "setAutoFreeze", ()=>setAutoFreeze);
+parcelHelpers.export(exports, "setUseStrictShallowCopy", ()=>setUseStrictShallowCopy);
+var __defProp = Object.defineProperty;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value)=>key in obj ? __defProp(obj, key, {
+        enumerable: true,
+        configurable: true,
+        writable: true,
+        value
+    }) : obj[key] = value;
+var __spreadValues = (a, b)=>{
+    for(var prop in b || (b = {}))if (__hasOwnProp.call(b, prop)) __defNormalProp(a, prop, b[prop]);
+    if (__getOwnPropSymbols) {
+        for (var prop of __getOwnPropSymbols(b))if (__propIsEnum.call(b, prop)) __defNormalProp(a, prop, b[prop]);
+    }
+    return a;
+};
+// src/utils/env.ts
+var NOTHING = Symbol.for("immer-nothing");
+var DRAFTABLE = Symbol.for("immer-draftable");
+var DRAFT_STATE = Symbol.for("immer-state");
+// src/utils/errors.ts
+var errors = [
+    // All error codes, starting by 0:
+    function(plugin) {
+        return `The plugin for '${plugin}' has not been loaded into Immer. To enable the plugin, import and call \`enable${plugin}()\` when initializing your application.`;
+    },
+    function(thing) {
+        return `produce can only be called on things that are draftable: plain objects, arrays, Map, Set or classes that are marked with '[immerable]: true'. Got '${thing}'`;
+    },
+    "This object has been frozen and should not be mutated",
+    function(data) {
+        return "Cannot use a proxy that has been revoked. Did you pass an object from inside an immer function to an async process? " + data;
+    },
+    "An immer producer returned a new value *and* modified its draft. Either return a new value *or* modify the draft.",
+    "Immer forbids circular references",
+    "The first or second argument to `produce` must be a function",
+    "The third argument to `produce` must be a function or undefined",
+    "First argument to `createDraft` must be a plain object, an array, or an immerable object",
+    "First argument to `finishDraft` must be a draft returned by `createDraft`",
+    function(thing) {
+        return `'current' expects a draft, got: ${thing}`;
+    },
+    "Object.defineProperty() cannot be used on an Immer draft",
+    "Object.setPrototypeOf() cannot be used on an Immer draft",
+    "Immer only supports deleting array indices",
+    "Immer only supports setting array indices and the 'length' property",
+    function(thing) {
+        return `'original' expects a draft, got: ${thing}`;
+    }
+];
+function die(error, ...args) {
+    {
+        const e = errors[error];
+        const msg = typeof e === "function" ? e.apply(null, args) : e;
+        throw new Error(`[Immer] ${msg}`);
+    }
+    throw new Error(`[Immer] minified error nr: ${error}. Full error at: https://bit.ly/3cXEKWf`);
+}
+// src/utils/common.ts
+var getPrototypeOf = Object.getPrototypeOf;
+function isDraft(value) {
+    return !!value && !!value[DRAFT_STATE];
+}
+function isDraftable(value) {
+    var _a;
+    if (!value) return false;
+    return isPlainObject(value) || Array.isArray(value) || !!value[DRAFTABLE] || !!((_a = value.constructor) == null ? void 0 : _a[DRAFTABLE]) || isMap(value) || isSet(value);
+}
+var objectCtorString = Object.prototype.constructor.toString();
+function isPlainObject(value) {
+    if (!value || typeof value !== "object") return false;
+    const proto = getPrototypeOf(value);
+    if (proto === null) return true;
+    const Ctor = Object.hasOwnProperty.call(proto, "constructor") && proto.constructor;
+    if (Ctor === Object) return true;
+    return typeof Ctor == "function" && Function.toString.call(Ctor) === objectCtorString;
+}
+function original(value) {
+    if (!isDraft(value)) die(15, value);
+    return value[DRAFT_STATE].base_;
+}
+function each(obj, iter) {
+    if (getArchtype(obj) === 0 /* Object */ ) Object.entries(obj).forEach(([key, value])=>{
+        iter(key, value, obj);
+    });
+    else obj.forEach((entry, index)=>iter(index, entry, obj));
+}
+function getArchtype(thing) {
+    const state = thing[DRAFT_STATE];
+    return state ? state.type_ : Array.isArray(thing) ? 1 /* Array */  : isMap(thing) ? 2 /* Map */  : isSet(thing) ? 3 /* Set */  : 0 /* Object */ ;
+}
+function has(thing, prop) {
+    return getArchtype(thing) === 2 /* Map */  ? thing.has(prop) : Object.prototype.hasOwnProperty.call(thing, prop);
+}
+function get(thing, prop) {
+    return getArchtype(thing) === 2 /* Map */  ? thing.get(prop) : thing[prop];
+}
+function set(thing, propOrOldValue, value) {
+    const t = getArchtype(thing);
+    if (t === 2 /* Map */ ) thing.set(propOrOldValue, value);
+    else if (t === 3 /* Set */ ) thing.add(value);
+    else thing[propOrOldValue] = value;
+}
+function is(x, y) {
+    if (x === y) return x !== 0 || 1 / x === 1 / y;
+    else return x !== x && y !== y;
+}
+function isMap(target) {
+    return target instanceof Map;
+}
+function isSet(target) {
+    return target instanceof Set;
+}
+function latest(state) {
+    return state.copy_ || state.base_;
+}
+function shallowCopy(base, strict) {
+    if (isMap(base)) return new Map(base);
+    if (isSet(base)) return new Set(base);
+    if (Array.isArray(base)) return Array.prototype.slice.call(base);
+    if (!strict && isPlainObject(base)) {
+        if (!getPrototypeOf(base)) {
+            const obj = /* @__PURE__ */ Object.create(null);
+            return Object.assign(obj, base);
+        }
+        return __spreadValues({}, base);
+    }
+    const descriptors = Object.getOwnPropertyDescriptors(base);
+    delete descriptors[DRAFT_STATE];
+    let keys = Reflect.ownKeys(descriptors);
+    for(let i = 0; i < keys.length; i++){
+        const key = keys[i];
+        const desc = descriptors[key];
+        if (desc.writable === false) {
+            desc.writable = true;
+            desc.configurable = true;
+        }
+        if (desc.get || desc.set) descriptors[key] = {
+            configurable: true,
+            writable: true,
+            // could live with !!desc.set as well here...
+            enumerable: desc.enumerable,
+            value: base[key]
+        };
+    }
+    return Object.create(getPrototypeOf(base), descriptors);
+}
+function freeze(obj, deep = false) {
+    if (isFrozen(obj) || isDraft(obj) || !isDraftable(obj)) return obj;
+    if (getArchtype(obj) > 1) obj.set = obj.add = obj.clear = obj.delete = dontMutateFrozenCollections;
+    Object.freeze(obj);
+    if (deep) each(obj, (_key, value)=>freeze(value, true), true);
+    return obj;
+}
+function dontMutateFrozenCollections() {
+    die(2);
+}
+function isFrozen(obj) {
+    return Object.isFrozen(obj);
+}
+// src/utils/plugins.ts
+var plugins = {};
+function getPlugin(pluginKey) {
+    const plugin = plugins[pluginKey];
+    if (!plugin) die(0, pluginKey);
+    return plugin;
+}
+function loadPlugin(pluginKey, implementation) {
+    if (!plugins[pluginKey]) plugins[pluginKey] = implementation;
+}
+// src/core/scope.ts
+var currentScope;
+function getCurrentScope() {
+    return currentScope;
+}
+function createScope(parent_, immer_) {
+    return {
+        drafts_: [],
+        parent_,
+        immer_,
+        // Whenever the modified draft contains a draft from another scope, we
+        // need to prevent auto-freezing so the unowned draft can be finalized.
+        canAutoFreeze_: true,
+        unfinalizedDrafts_: 0
+    };
+}
+function usePatchesInScope(scope, patchListener) {
+    if (patchListener) {
+        getPlugin("Patches");
+        scope.patches_ = [];
+        scope.inversePatches_ = [];
+        scope.patchListener_ = patchListener;
+    }
+}
+function revokeScope(scope) {
+    leaveScope(scope);
+    scope.drafts_.forEach(revokeDraft);
+    scope.drafts_ = null;
+}
+function leaveScope(scope) {
+    if (scope === currentScope) currentScope = scope.parent_;
+}
+function enterScope(immer2) {
+    return currentScope = createScope(currentScope, immer2);
+}
+function revokeDraft(draft) {
+    const state = draft[DRAFT_STATE];
+    if (state.type_ === 0 /* Object */  || state.type_ === 1 /* Array */ ) state.revoke_();
+    else state.revoked_ = true;
+}
+// src/core/finalize.ts
+function processResult(result, scope) {
+    scope.unfinalizedDrafts_ = scope.drafts_.length;
+    const baseDraft = scope.drafts_[0];
+    const isReplaced = result !== void 0 && result !== baseDraft;
+    if (isReplaced) {
+        if (baseDraft[DRAFT_STATE].modified_) {
+            revokeScope(scope);
+            die(4);
+        }
+        if (isDraftable(result)) {
+            result = finalize(scope, result);
+            if (!scope.parent_) maybeFreeze(scope, result);
+        }
+        if (scope.patches_) getPlugin("Patches").generateReplacementPatches_(baseDraft[DRAFT_STATE].base_, result, scope.patches_, scope.inversePatches_);
+    } else result = finalize(scope, baseDraft, []);
+    revokeScope(scope);
+    if (scope.patches_) scope.patchListener_(scope.patches_, scope.inversePatches_);
+    return result !== NOTHING ? result : void 0;
+}
+function finalize(rootScope, value, path) {
+    if (isFrozen(value)) return value;
+    const state = value[DRAFT_STATE];
+    if (!state) {
+        each(value, (key, childValue)=>finalizeProperty(rootScope, state, value, key, childValue, path), true);
+        return value;
+    }
+    if (state.scope_ !== rootScope) return value;
+    if (!state.modified_) {
+        maybeFreeze(rootScope, state.base_, true);
+        return state.base_;
+    }
+    if (!state.finalized_) {
+        state.finalized_ = true;
+        state.scope_.unfinalizedDrafts_--;
+        const result = state.copy_;
+        let resultEach = result;
+        let isSet2 = false;
+        if (state.type_ === 3 /* Set */ ) {
+            resultEach = new Set(result);
+            result.clear();
+            isSet2 = true;
+        }
+        each(resultEach, (key, childValue)=>finalizeProperty(rootScope, state, result, key, childValue, path, isSet2));
+        maybeFreeze(rootScope, result, false);
+        if (path && rootScope.patches_) getPlugin("Patches").generatePatches_(state, path, rootScope.patches_, rootScope.inversePatches_);
+    }
+    return state.copy_;
+}
+function finalizeProperty(rootScope, parentState, targetObject, prop, childValue, rootPath, targetIsSet) {
+    if (childValue === targetObject) die(5);
+    if (isDraft(childValue)) {
+        const path = rootPath && parentState && parentState.type_ !== 3 /* Set */  && // Set objects are atomic since they have no keys.
+        !has(parentState.assigned_, prop) ? rootPath.concat(prop) : void 0;
+        const res = finalize(rootScope, childValue, path);
+        set(targetObject, prop, res);
+        if (isDraft(res)) rootScope.canAutoFreeze_ = false;
+        else return;
+    } else if (targetIsSet) targetObject.add(childValue);
+    if (isDraftable(childValue) && !isFrozen(childValue)) {
+        if (!rootScope.immer_.autoFreeze_ && rootScope.unfinalizedDrafts_ < 1) return;
+        finalize(rootScope, childValue);
+        if (!parentState || !parentState.scope_.parent_) maybeFreeze(rootScope, childValue);
+    }
+}
+function maybeFreeze(scope, value, deep = false) {
+    if (!scope.parent_ && scope.immer_.autoFreeze_ && scope.canAutoFreeze_) freeze(value, deep);
+}
+// src/core/proxy.ts
+function createProxyProxy(base, parent) {
+    const isArray = Array.isArray(base);
+    const state = {
+        type_: isArray ? 1 /* Array */  : 0 /* Object */ ,
+        // Track which produce call this is associated with.
+        scope_: parent ? parent.scope_ : getCurrentScope(),
+        // True for both shallow and deep changes.
+        modified_: false,
+        // Used during finalization.
+        finalized_: false,
+        // Track which properties have been assigned (true) or deleted (false).
+        assigned_: {},
+        // The parent draft state.
+        parent_: parent,
+        // The base state.
+        base_: base,
+        // The base proxy.
+        draft_: null,
+        // set below
+        // The base copy with any updated values.
+        copy_: null,
+        // Called by the `produce` function.
+        revoke_: null,
+        isManual_: false
+    };
+    let target = state;
+    let traps = objectTraps;
+    if (isArray) {
+        target = [
+            state
+        ];
+        traps = arrayTraps;
+    }
+    const { revoke, proxy } = Proxy.revocable(target, traps);
+    state.draft_ = proxy;
+    state.revoke_ = revoke;
+    return proxy;
+}
+var objectTraps = {
+    get (state, prop) {
+        if (prop === DRAFT_STATE) return state;
+        const source = latest(state);
+        if (!has(source, prop)) return readPropFromProto(state, source, prop);
+        const value = source[prop];
+        if (state.finalized_ || !isDraftable(value)) return value;
+        if (value === peek(state.base_, prop)) {
+            prepareCopy(state);
+            return state.copy_[prop] = createProxy(value, state);
+        }
+        return value;
+    },
+    has (state, prop) {
+        return prop in latest(state);
+    },
+    ownKeys (state) {
+        return Reflect.ownKeys(latest(state));
+    },
+    set (state, prop, value) {
+        const desc = getDescriptorFromProto(latest(state), prop);
+        if (desc == null ? void 0 : desc.set) {
+            desc.set.call(state.draft_, value);
+            return true;
+        }
+        if (!state.modified_) {
+            const current2 = peek(latest(state), prop);
+            const currentState = current2 == null ? void 0 : current2[DRAFT_STATE];
+            if (currentState && currentState.base_ === value) {
+                state.copy_[prop] = value;
+                state.assigned_[prop] = false;
+                return true;
+            }
+            if (is(value, current2) && (value !== void 0 || has(state.base_, prop))) return true;
+            prepareCopy(state);
+            markChanged(state);
+        }
+        if (state.copy_[prop] === value && // special case: handle new props with value 'undefined'
+        (value !== void 0 || prop in state.copy_) || // special case: NaN
+        Number.isNaN(value) && Number.isNaN(state.copy_[prop])) return true;
+        state.copy_[prop] = value;
+        state.assigned_[prop] = true;
+        return true;
+    },
+    deleteProperty (state, prop) {
+        if (peek(state.base_, prop) !== void 0 || prop in state.base_) {
+            state.assigned_[prop] = false;
+            prepareCopy(state);
+            markChanged(state);
+        } else delete state.assigned_[prop];
+        if (state.copy_) delete state.copy_[prop];
+        return true;
+    },
+    // Note: We never coerce `desc.value` into an Immer draft, because we can't make
+    // the same guarantee in ES5 mode.
+    getOwnPropertyDescriptor (state, prop) {
+        const owner = latest(state);
+        const desc = Reflect.getOwnPropertyDescriptor(owner, prop);
+        if (!desc) return desc;
+        return {
+            writable: true,
+            configurable: state.type_ !== 1 /* Array */  || prop !== "length",
+            enumerable: desc.enumerable,
+            value: owner[prop]
+        };
+    },
+    defineProperty () {
+        die(11);
+    },
+    getPrototypeOf (state) {
+        return getPrototypeOf(state.base_);
+    },
+    setPrototypeOf () {
+        die(12);
+    }
+};
+var arrayTraps = {};
+each(objectTraps, (key, fn)=>{
+    arrayTraps[key] = function() {
+        arguments[0] = arguments[0][0];
+        return fn.apply(this, arguments);
+    };
+});
+arrayTraps.deleteProperty = function(state, prop) {
+    if (isNaN(parseInt(prop))) die(13);
+    return arrayTraps.set.call(this, state, prop, void 0);
+};
+arrayTraps.set = function(state, prop, value) {
+    if (prop !== "length" && isNaN(parseInt(prop))) die(14);
+    return objectTraps.set.call(this, state[0], prop, value, state[0]);
+};
+function peek(draft, prop) {
+    const state = draft[DRAFT_STATE];
+    const source = state ? latest(state) : draft;
+    return source[prop];
+}
+function readPropFromProto(state, source, prop) {
+    var _a;
+    const desc = getDescriptorFromProto(source, prop);
+    return desc ? `value` in desc ? desc.value : // This is a very special case, if the prop is a getter defined by the
+    // prototype, we should invoke it with the draft as context!
+    (_a = desc.get) == null ? void 0 : _a.call(state.draft_) : void 0;
+}
+function getDescriptorFromProto(source, prop) {
+    if (!(prop in source)) return void 0;
+    let proto = getPrototypeOf(source);
+    while(proto){
+        const desc = Object.getOwnPropertyDescriptor(proto, prop);
+        if (desc) return desc;
+        proto = getPrototypeOf(proto);
+    }
+    return void 0;
+}
+function markChanged(state) {
+    if (!state.modified_) {
+        state.modified_ = true;
+        if (state.parent_) markChanged(state.parent_);
+    }
+}
+function prepareCopy(state) {
+    if (!state.copy_) state.copy_ = shallowCopy(state.base_, state.scope_.immer_.useStrictShallowCopy_);
+}
+// src/core/immerClass.ts
+var Immer2 = class {
+    constructor(config){
+        this.autoFreeze_ = true;
+        this.useStrictShallowCopy_ = false;
+        /**
+     * The `produce` function takes a value and a "recipe function" (whose
+     * return value often depends on the base state). The recipe function is
+     * free to mutate its first argument however it wants. All mutations are
+     * only ever applied to a __copy__ of the base state.
+     *
+     * Pass only a function to create a "curried producer" which relieves you
+     * from passing the recipe function every time.
+     *
+     * Only plain objects and arrays are made mutable. All other objects are
+     * considered uncopyable.
+     *
+     * Note: This function is __bound__ to its `Immer` instance.
+     *
+     * @param {any} base - the initial state
+     * @param {Function} recipe - function that receives a proxy of the base state as first argument and which can be freely modified
+     * @param {Function} patchListener - optional function that will be called with all the patches produced here
+     * @returns {any} a new state, or the initial state if nothing was modified
+     */ this.produce = (base, recipe, patchListener)=>{
+            if (typeof base === "function" && typeof recipe !== "function") {
+                const defaultBase = recipe;
+                recipe = base;
+                const self = this;
+                return function curriedProduce(base2 = defaultBase, ...args) {
+                    return self.produce(base2, (draft)=>recipe.call(this, draft, ...args));
+                };
+            }
+            if (typeof recipe !== "function") die(6);
+            if (patchListener !== void 0 && typeof patchListener !== "function") die(7);
+            let result;
+            if (isDraftable(base)) {
+                const scope = enterScope(this);
+                const proxy = createProxy(base, void 0);
+                let hasError = true;
+                try {
+                    result = recipe(proxy);
+                    hasError = false;
+                } finally{
+                    if (hasError) revokeScope(scope);
+                    else leaveScope(scope);
+                }
+                usePatchesInScope(scope, patchListener);
+                return processResult(result, scope);
+            } else if (!base || typeof base !== "object") {
+                result = recipe(base);
+                if (result === void 0) result = base;
+                if (result === NOTHING) result = void 0;
+                if (this.autoFreeze_) freeze(result, true);
+                if (patchListener) {
+                    const p = [];
+                    const ip = [];
+                    getPlugin("Patches").generateReplacementPatches_(base, result, p, ip);
+                    patchListener(p, ip);
+                }
+                return result;
+            } else die(1, base);
+        };
+        this.produceWithPatches = (base, recipe)=>{
+            if (typeof base === "function") return (state, ...args)=>this.produceWithPatches(state, (draft)=>base(draft, ...args));
+            let patches, inversePatches;
+            const result = this.produce(base, recipe, (p, ip)=>{
+                patches = p;
+                inversePatches = ip;
+            });
+            return [
+                result,
+                patches,
+                inversePatches
+            ];
+        };
+        if (typeof (config == null ? void 0 : config.autoFreeze) === "boolean") this.setAutoFreeze(config.autoFreeze);
+        if (typeof (config == null ? void 0 : config.useStrictShallowCopy) === "boolean") this.setUseStrictShallowCopy(config.useStrictShallowCopy);
+    }
+    createDraft(base) {
+        if (!isDraftable(base)) die(8);
+        if (isDraft(base)) base = current(base);
+        const scope = enterScope(this);
+        const proxy = createProxy(base, void 0);
+        proxy[DRAFT_STATE].isManual_ = true;
+        leaveScope(scope);
+        return proxy;
+    }
+    finishDraft(draft, patchListener) {
+        const state = draft && draft[DRAFT_STATE];
+        if (!state || !state.isManual_) die(9);
+        const { scope_: scope } = state;
+        usePatchesInScope(scope, patchListener);
+        return processResult(void 0, scope);
+    }
+    /**
+   * Pass true to automatically freeze all copies created by Immer.
+   *
+   * By default, auto-freezing is enabled.
+   */ setAutoFreeze(value) {
+        this.autoFreeze_ = value;
+    }
+    /**
+   * Pass true to enable strict shallow copy.
+   *
+   * By default, immer does not copy the object descriptors such as getter, setter and non-enumrable properties.
+   */ setUseStrictShallowCopy(value) {
+        this.useStrictShallowCopy_ = value;
+    }
+    applyPatches(base, patches) {
+        let i;
+        for(i = patches.length - 1; i >= 0; i--){
+            const patch = patches[i];
+            if (patch.path.length === 0 && patch.op === "replace") {
+                base = patch.value;
+                break;
+            }
+        }
+        if (i > -1) patches = patches.slice(i + 1);
+        const applyPatchesImpl = getPlugin("Patches").applyPatches_;
+        if (isDraft(base)) return applyPatchesImpl(base, patches);
+        return this.produce(base, (draft)=>applyPatchesImpl(draft, patches));
+    }
+};
+function createProxy(value, parent) {
+    const draft = isMap(value) ? getPlugin("MapSet").proxyMap_(value, parent) : isSet(value) ? getPlugin("MapSet").proxySet_(value, parent) : createProxyProxy(value, parent);
+    const scope = parent ? parent.scope_ : getCurrentScope();
+    scope.drafts_.push(draft);
+    return draft;
+}
+// src/core/current.ts
+function current(value) {
+    if (!isDraft(value)) die(10, value);
+    return currentImpl(value);
+}
+function currentImpl(value) {
+    if (!isDraftable(value) || isFrozen(value)) return value;
+    const state = value[DRAFT_STATE];
+    let copy;
+    if (state) {
+        if (!state.modified_) return state.base_;
+        state.finalized_ = true;
+        copy = shallowCopy(value, state.scope_.immer_.useStrictShallowCopy_);
+    } else copy = shallowCopy(value, true);
+    each(copy, (key, childValue)=>{
+        set(copy, key, currentImpl(childValue));
+    });
+    if (state) state.finalized_ = false;
+    return copy;
+}
+// src/plugins/patches.ts
+function enablePatches() {
+    const errorOffset = 16;
+    errors.push('Sets cannot have "replace" patches.', function(op) {
+        return "Unsupported patch operation: " + op;
+    }, function(path) {
+        return "Cannot apply patch, path doesn't resolve: " + path;
+    }, "Patching reserved attributes like __proto__, prototype and constructor is not allowed");
+    const REPLACE = "replace";
+    const ADD = "add";
+    const REMOVE = "remove";
+    function generatePatches_(state, basePath, patches, inversePatches) {
+        switch(state.type_){
+            case 0 /* Object */ :
+            case 2 /* Map */ :
+                return generatePatchesFromAssigned(state, basePath, patches, inversePatches);
+            case 1 /* Array */ :
+                return generateArrayPatches(state, basePath, patches, inversePatches);
+            case 3 /* Set */ :
+                return generateSetPatches(state, basePath, patches, inversePatches);
+        }
+    }
+    function generateArrayPatches(state, basePath, patches, inversePatches) {
+        let { base_, assigned_ } = state;
+        let copy_ = state.copy_;
+        if (copy_.length < base_.length) {
+            [base_, copy_] = [
+                copy_,
+                base_
+            ];
+            [patches, inversePatches] = [
+                inversePatches,
+                patches
+            ];
+        }
+        for(let i = 0; i < base_.length; i++)if (assigned_[i] && copy_[i] !== base_[i]) {
+            const path = basePath.concat([
+                i
+            ]);
+            patches.push({
+                op: REPLACE,
+                path,
+                // Need to maybe clone it, as it can in fact be the original value
+                // due to the base/copy inversion at the start of this function
+                value: clonePatchValueIfNeeded(copy_[i])
+            });
+            inversePatches.push({
+                op: REPLACE,
+                path,
+                value: clonePatchValueIfNeeded(base_[i])
+            });
+        }
+        for(let i = base_.length; i < copy_.length; i++){
+            const path = basePath.concat([
+                i
+            ]);
+            patches.push({
+                op: ADD,
+                path,
+                // Need to maybe clone it, as it can in fact be the original value
+                // due to the base/copy inversion at the start of this function
+                value: clonePatchValueIfNeeded(copy_[i])
+            });
+        }
+        for(let i = copy_.length - 1; base_.length <= i; --i){
+            const path = basePath.concat([
+                i
+            ]);
+            inversePatches.push({
+                op: REMOVE,
+                path
+            });
+        }
+    }
+    function generatePatchesFromAssigned(state, basePath, patches, inversePatches) {
+        const { base_, copy_ } = state;
+        each(state.assigned_, (key, assignedValue)=>{
+            const origValue = get(base_, key);
+            const value = get(copy_, key);
+            const op = !assignedValue ? REMOVE : has(base_, key) ? REPLACE : ADD;
+            if (origValue === value && op === REPLACE) return;
+            const path = basePath.concat(key);
+            patches.push(op === REMOVE ? {
+                op,
+                path
+            } : {
+                op,
+                path,
+                value
+            });
+            inversePatches.push(op === ADD ? {
+                op: REMOVE,
+                path
+            } : op === REMOVE ? {
+                op: ADD,
+                path,
+                value: clonePatchValueIfNeeded(origValue)
+            } : {
+                op: REPLACE,
+                path,
+                value: clonePatchValueIfNeeded(origValue)
+            });
+        });
+    }
+    function generateSetPatches(state, basePath, patches, inversePatches) {
+        let { base_, copy_ } = state;
+        let i = 0;
+        base_.forEach((value)=>{
+            if (!copy_.has(value)) {
+                const path = basePath.concat([
+                    i
+                ]);
+                patches.push({
+                    op: REMOVE,
+                    path,
+                    value
+                });
+                inversePatches.unshift({
+                    op: ADD,
+                    path,
+                    value
+                });
+            }
+            i++;
+        });
+        i = 0;
+        copy_.forEach((value)=>{
+            if (!base_.has(value)) {
+                const path = basePath.concat([
+                    i
+                ]);
+                patches.push({
+                    op: ADD,
+                    path,
+                    value
+                });
+                inversePatches.unshift({
+                    op: REMOVE,
+                    path,
+                    value
+                });
+            }
+            i++;
+        });
+    }
+    function generateReplacementPatches_(baseValue, replacement, patches, inversePatches) {
+        patches.push({
+            op: REPLACE,
+            path: [],
+            value: replacement === NOTHING ? void 0 : replacement
+        });
+        inversePatches.push({
+            op: REPLACE,
+            path: [],
+            value: baseValue
+        });
+    }
+    function applyPatches_(draft, patches) {
+        patches.forEach((patch)=>{
+            const { path, op } = patch;
+            let base = draft;
+            for(let i = 0; i < path.length - 1; i++){
+                const parentType = getArchtype(base);
+                let p = path[i];
+                if (typeof p !== "string" && typeof p !== "number") p = "" + p;
+                if ((parentType === 0 /* Object */  || parentType === 1 /* Array */ ) && (p === "__proto__" || p === "constructor")) die(errorOffset + 3);
+                if (typeof base === "function" && p === "prototype") die(errorOffset + 3);
+                base = get(base, p);
+                if (typeof base !== "object") die(errorOffset + 2, path.join("/"));
+            }
+            const type = getArchtype(base);
+            const value = deepClonePatchValue(patch.value);
+            const key = path[path.length - 1];
+            switch(op){
+                case REPLACE:
+                    switch(type){
+                        case 2 /* Map */ :
+                            return base.set(key, value);
+                        case 3 /* Set */ :
+                            die(errorOffset);
+                        default:
+                            return base[key] = value;
+                    }
+                case ADD:
+                    switch(type){
+                        case 1 /* Array */ :
+                            return key === "-" ? base.push(value) : base.splice(key, 0, value);
+                        case 2 /* Map */ :
+                            return base.set(key, value);
+                        case 3 /* Set */ :
+                            return base.add(value);
+                        default:
+                            return base[key] = value;
+                    }
+                case REMOVE:
+                    switch(type){
+                        case 1 /* Array */ :
+                            return base.splice(key, 1);
+                        case 2 /* Map */ :
+                            return base.delete(key);
+                        case 3 /* Set */ :
+                            return base.delete(patch.value);
+                        default:
+                            return delete base[key];
+                    }
+                default:
+                    die(errorOffset + 1, op);
+            }
+        });
+        return draft;
+    }
+    function deepClonePatchValue(obj) {
+        if (!isDraftable(obj)) return obj;
+        if (Array.isArray(obj)) return obj.map(deepClonePatchValue);
+        if (isMap(obj)) return new Map(Array.from(obj.entries()).map(([k, v])=>[
+                k,
+                deepClonePatchValue(v)
+            ]));
+        if (isSet(obj)) return new Set(Array.from(obj).map(deepClonePatchValue));
+        const cloned = Object.create(getPrototypeOf(obj));
+        for(const key in obj)cloned[key] = deepClonePatchValue(obj[key]);
+        if (has(obj, DRAFTABLE)) cloned[DRAFTABLE] = obj[DRAFTABLE];
+        return cloned;
+    }
+    function clonePatchValueIfNeeded(obj) {
+        if (isDraft(obj)) return deepClonePatchValue(obj);
+        else return obj;
+    }
+    loadPlugin("Patches", {
+        applyPatches_,
+        generatePatches_,
+        generateReplacementPatches_
+    });
+}
+// src/plugins/mapset.ts
+function enableMapSet() {
+    class DraftMap extends Map {
+        constructor(target, parent){
+            super();
+            this[DRAFT_STATE] = {
+                type_: 2 /* Map */ ,
+                parent_: parent,
+                scope_: parent ? parent.scope_ : getCurrentScope(),
+                modified_: false,
+                finalized_: false,
+                copy_: void 0,
+                assigned_: void 0,
+                base_: target,
+                draft_: this,
+                isManual_: false,
+                revoked_: false
+            };
+        }
+        get size() {
+            return latest(this[DRAFT_STATE]).size;
+        }
+        has(key) {
+            return latest(this[DRAFT_STATE]).has(key);
+        }
+        set(key, value) {
+            const state = this[DRAFT_STATE];
+            assertUnrevoked(state);
+            if (!latest(state).has(key) || latest(state).get(key) !== value) {
+                prepareMapCopy(state);
+                markChanged(state);
+                state.assigned_.set(key, true);
+                state.copy_.set(key, value);
+                state.assigned_.set(key, true);
+            }
+            return this;
+        }
+        delete(key) {
+            if (!this.has(key)) return false;
+            const state = this[DRAFT_STATE];
+            assertUnrevoked(state);
+            prepareMapCopy(state);
+            markChanged(state);
+            if (state.base_.has(key)) state.assigned_.set(key, false);
+            else state.assigned_.delete(key);
+            state.copy_.delete(key);
+            return true;
+        }
+        clear() {
+            const state = this[DRAFT_STATE];
+            assertUnrevoked(state);
+            if (latest(state).size) {
+                prepareMapCopy(state);
+                markChanged(state);
+                state.assigned_ = /* @__PURE__ */ new Map();
+                each(state.base_, (key)=>{
+                    state.assigned_.set(key, false);
+                });
+                state.copy_.clear();
+            }
+        }
+        forEach(cb, thisArg) {
+            const state = this[DRAFT_STATE];
+            latest(state).forEach((_value, key, _map)=>{
+                cb.call(thisArg, this.get(key), key, this);
+            });
+        }
+        get(key) {
+            const state = this[DRAFT_STATE];
+            assertUnrevoked(state);
+            const value = latest(state).get(key);
+            if (state.finalized_ || !isDraftable(value)) return value;
+            if (value !== state.base_.get(key)) return value;
+            const draft = createProxy(value, state);
+            prepareMapCopy(state);
+            state.copy_.set(key, draft);
+            return draft;
+        }
+        keys() {
+            return latest(this[DRAFT_STATE]).keys();
+        }
+        values() {
+            const iterator = this.keys();
+            return {
+                [Symbol.iterator]: ()=>this.values(),
+                next: ()=>{
+                    const r = iterator.next();
+                    if (r.done) return r;
+                    const value = this.get(r.value);
+                    return {
+                        done: false,
+                        value
+                    };
+                }
+            };
+        }
+        entries() {
+            const iterator = this.keys();
+            return {
+                [Symbol.iterator]: ()=>this.entries(),
+                next: ()=>{
+                    const r = iterator.next();
+                    if (r.done) return r;
+                    const value = this.get(r.value);
+                    return {
+                        done: false,
+                        value: [
+                            r.value,
+                            value
+                        ]
+                    };
+                }
+            };
+        }
+        [(DRAFT_STATE, Symbol.iterator)]() {
+            return this.entries();
+        }
+    }
+    function proxyMap_(target, parent) {
+        return new DraftMap(target, parent);
+    }
+    function prepareMapCopy(state) {
+        if (!state.copy_) {
+            state.assigned_ = /* @__PURE__ */ new Map();
+            state.copy_ = new Map(state.base_);
+        }
+    }
+    class DraftSet extends Set {
+        constructor(target, parent){
+            super();
+            this[DRAFT_STATE] = {
+                type_: 3 /* Set */ ,
+                parent_: parent,
+                scope_: parent ? parent.scope_ : getCurrentScope(),
+                modified_: false,
+                finalized_: false,
+                copy_: void 0,
+                base_: target,
+                draft_: this,
+                drafts_: /* @__PURE__ */ new Map(),
+                revoked_: false,
+                isManual_: false
+            };
+        }
+        get size() {
+            return latest(this[DRAFT_STATE]).size;
+        }
+        has(value) {
+            const state = this[DRAFT_STATE];
+            assertUnrevoked(state);
+            if (!state.copy_) return state.base_.has(value);
+            if (state.copy_.has(value)) return true;
+            if (state.drafts_.has(value) && state.copy_.has(state.drafts_.get(value))) return true;
+            return false;
+        }
+        add(value) {
+            const state = this[DRAFT_STATE];
+            assertUnrevoked(state);
+            if (!this.has(value)) {
+                prepareSetCopy(state);
+                markChanged(state);
+                state.copy_.add(value);
+            }
+            return this;
+        }
+        delete(value) {
+            if (!this.has(value)) return false;
+            const state = this[DRAFT_STATE];
+            assertUnrevoked(state);
+            prepareSetCopy(state);
+            markChanged(state);
+            return state.copy_.delete(value) || (state.drafts_.has(value) ? state.copy_.delete(state.drafts_.get(value)) : /* istanbul ignore next */ false);
+        }
+        clear() {
+            const state = this[DRAFT_STATE];
+            assertUnrevoked(state);
+            if (latest(state).size) {
+                prepareSetCopy(state);
+                markChanged(state);
+                state.copy_.clear();
+            }
+        }
+        values() {
+            const state = this[DRAFT_STATE];
+            assertUnrevoked(state);
+            prepareSetCopy(state);
+            return state.copy_.values();
+        }
+        entries() {
+            const state = this[DRAFT_STATE];
+            assertUnrevoked(state);
+            prepareSetCopy(state);
+            return state.copy_.entries();
+        }
+        keys() {
+            return this.values();
+        }
+        [(DRAFT_STATE, Symbol.iterator)]() {
+            return this.values();
+        }
+        forEach(cb, thisArg) {
+            const iterator = this.values();
+            let result = iterator.next();
+            while(!result.done){
+                cb.call(thisArg, result.value, result.value, this);
+                result = iterator.next();
+            }
+        }
+    }
+    function proxySet_(target, parent) {
+        return new DraftSet(target, parent);
+    }
+    function prepareSetCopy(state) {
+        if (!state.copy_) {
+            state.copy_ = /* @__PURE__ */ new Set();
+            state.base_.forEach((value)=>{
+                if (isDraftable(value)) {
+                    const draft = createProxy(value, state);
+                    state.drafts_.set(value, draft);
+                    state.copy_.add(draft);
+                } else state.copy_.add(value);
+            });
+        }
+    }
+    function assertUnrevoked(state) {
+        if (state.revoked_) die(3, JSON.stringify(latest(state)));
+    }
+    loadPlugin("MapSet", {
+        proxyMap_,
+        proxySet_
+    });
+}
+// src/immer.ts
+var immer = new Immer2();
+var produce = immer.produce;
+var produceWithPatches = immer.produceWithPatches.bind(immer);
+var setAutoFreeze = immer.setAutoFreeze.bind(immer);
+var setUseStrictShallowCopy = immer.setUseStrictShallowCopy.bind(immer);
+var applyPatches = immer.applyPatches.bind(immer);
+var createDraft = immer.createDraft.bind(immer);
+var finishDraft = immer.finishDraft.bind(immer);
+function castDraft(value) {
+    return value;
+}
+function castImmutable(value) {
+    return value;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"a4FZS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createSelector", ()=>createSelector);
+parcelHelpers.export(exports, "createSelectorCreator", ()=>createSelectorCreator);
+parcelHelpers.export(exports, "createStructuredSelector", ()=>createStructuredSelector);
+parcelHelpers.export(exports, "lruMemoize", ()=>lruMemoize);
+parcelHelpers.export(exports, "referenceEqualityCheck", ()=>referenceEqualityCheck);
+parcelHelpers.export(exports, "setGlobalDevModeChecks", ()=>setGlobalDevModeChecks);
+parcelHelpers.export(exports, "unstable_autotrackMemoize", ()=>autotrackMemoize);
+parcelHelpers.export(exports, "weakMapMemoize", ()=>weakMapMemoize);
+var __defProp = Object.defineProperty;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value)=>key in obj ? __defProp(obj, key, {
+        enumerable: true,
+        configurable: true,
+        writable: true,
+        value
+    }) : obj[key] = value;
+var __spreadValues = (a, b)=>{
+    for(var prop in b || (b = {}))if (__hasOwnProp.call(b, prop)) __defNormalProp(a, prop, b[prop]);
+    if (__getOwnPropSymbols) {
+        for (var prop of __getOwnPropSymbols(b))if (__propIsEnum.call(b, prop)) __defNormalProp(a, prop, b[prop]);
+    }
+    return a;
+};
+var __publicField = (obj, key, value)=>{
+    __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+    return value;
+};
+// src/devModeChecks/identityFunctionCheck.ts
+var runIdentityFunctionCheck = (resultFunc, inputSelectorsResults, outputSelectorResult)=>{
+    if (inputSelectorsResults.length === 1 && inputSelectorsResults[0] === outputSelectorResult) {
+        let isInputSameAsOutput = false;
+        try {
+            const emptyObject = {};
+            if (resultFunc(emptyObject) === emptyObject) isInputSameAsOutput = true;
+        } catch (e) {}
+        if (isInputSameAsOutput) {
+            let stack = void 0;
+            try {
+                throw new Error();
+            } catch (e) {
+                ({ stack } = e);
+            }
+            console.warn("The result function returned its own inputs without modification. e.g\n`createSelector([state => state.todos], todos => todos)`\nThis could lead to inefficient memoization and unnecessary re-renders.\nEnsure transformation logic is in the result function, and extraction logic is in the input selectors.", {
+                stack
+            });
+        }
+    }
+};
+// src/devModeChecks/inputStabilityCheck.ts
+var runInputStabilityCheck = (inputSelectorResultsObject, options, inputSelectorArgs)=>{
+    const { memoize, memoizeOptions } = options;
+    const { inputSelectorResults, inputSelectorResultsCopy } = inputSelectorResultsObject;
+    const createAnEmptyObject = memoize(()=>({}), ...memoizeOptions);
+    const areInputSelectorResultsEqual = createAnEmptyObject.apply(null, inputSelectorResults) === createAnEmptyObject.apply(null, inputSelectorResultsCopy);
+    if (!areInputSelectorResultsEqual) {
+        let stack = void 0;
+        try {
+            throw new Error();
+        } catch (e) {
+            ({ stack } = e);
+        }
+        console.warn("An input selector returned a different result when passed same arguments.\nThis means your output selector will likely run more frequently than intended.\nAvoid returning a new reference inside your input selector, e.g.\n`createSelector([state => state.todos.map(todo => todo.id)], todoIds => todoIds.length)`", {
+            arguments: inputSelectorArgs,
+            firstInputs: inputSelectorResults,
+            secondInputs: inputSelectorResultsCopy,
+            stack
+        });
+    }
+};
+// src/devModeChecks/setGlobalDevModeChecks.ts
+var globalDevModeChecks = {
+    inputStabilityCheck: "once",
+    identityFunctionCheck: "once"
+};
+var setGlobalDevModeChecks = (devModeChecks)=>{
+    Object.assign(globalDevModeChecks, devModeChecks);
+};
+// src/utils.ts
+var NOT_FOUND = "NOT_FOUND";
+function assertIsFunction(func, errorMessage = `expected a function, instead received ${typeof func}`) {
+    if (typeof func !== "function") throw new TypeError(errorMessage);
+}
+function assertIsObject(object, errorMessage = `expected an object, instead received ${typeof object}`) {
+    if (typeof object !== "object") throw new TypeError(errorMessage);
+}
+function assertIsArrayOfFunctions(array, errorMessage = `expected all items to be functions, instead received the following types: `) {
+    if (!array.every((item)=>typeof item === "function")) {
+        const itemTypes = array.map((item)=>typeof item === "function" ? `function ${item.name || "unnamed"}()` : typeof item).join(", ");
+        throw new TypeError(`${errorMessage}[${itemTypes}]`);
+    }
+}
+var ensureIsArray = (item)=>{
+    return Array.isArray(item) ? item : [
+        item
+    ];
+};
+function getDependencies(createSelectorArgs) {
+    const dependencies = Array.isArray(createSelectorArgs[0]) ? createSelectorArgs[0] : createSelectorArgs;
+    assertIsArrayOfFunctions(dependencies, `createSelector expects all input-selectors to be functions, but received the following types: `);
+    return dependencies;
+}
+function collectInputSelectorResults(dependencies, inputSelectorArgs) {
+    const inputSelectorResults = [];
+    const { length } = dependencies;
+    for(let i = 0; i < length; i++)inputSelectorResults.push(dependencies[i].apply(null, inputSelectorArgs));
+    return inputSelectorResults;
+}
+var getDevModeChecksExecutionInfo = (firstRun, devModeChecks)=>{
+    const { identityFunctionCheck, inputStabilityCheck } = __spreadValues(__spreadValues({}, globalDevModeChecks), devModeChecks);
+    return {
+        identityFunctionCheck: {
+            shouldRun: identityFunctionCheck === "always" || identityFunctionCheck === "once" && firstRun,
+            run: runIdentityFunctionCheck
+        },
+        inputStabilityCheck: {
+            shouldRun: inputStabilityCheck === "always" || inputStabilityCheck === "once" && firstRun,
+            run: runInputStabilityCheck
+        }
+    };
+};
+// src/autotrackMemoize/autotracking.ts
+var $REVISION = 0;
+var CURRENT_TRACKER = null;
+var Cell = class {
+    constructor(initialValue, isEqual = tripleEq){
+        __publicField(this, "revision", $REVISION);
+        __publicField(this, "_value");
+        __publicField(this, "_lastValue");
+        __publicField(this, "_isEqual", tripleEq);
+        this._value = this._lastValue = initialValue;
+        this._isEqual = isEqual;
+    }
+    // Whenever a storage value is read, it'll add itself to the current tracker if
+    // one exists, entangling its state with that cache.
+    get value() {
+        CURRENT_TRACKER == null || CURRENT_TRACKER.add(this);
+        return this._value;
+    }
+    // Whenever a storage value is updated, we bump the global revision clock,
+    // assign the revision for this storage to the new value, _and_ we schedule a
+    // rerender. This is important, and it's what makes autotracking  _pull_
+    // based. We don't actively tell the caches which depend on the storage that
+    // anything has happened. Instead, we recompute the caches when needed.
+    set value(newValue) {
+        if (this.value === newValue) return;
+        this._value = newValue;
+        this.revision = ++$REVISION;
+    }
+};
+function tripleEq(a, b) {
+    return a === b;
+}
+var TrackingCache = class {
+    constructor(fn){
+        __publicField(this, "_cachedValue");
+        __publicField(this, "_cachedRevision", -1);
+        __publicField(this, "_deps", []);
+        __publicField(this, "hits", 0);
+        __publicField(this, "fn");
+        this.fn = fn;
+    }
+    clear() {
+        this._cachedValue = void 0;
+        this._cachedRevision = -1;
+        this._deps = [];
+        this.hits = 0;
+    }
+    get value() {
+        if (this.revision > this._cachedRevision) {
+            const { fn } = this;
+            const currentTracker = /* @__PURE__ */ new Set();
+            const prevTracker = CURRENT_TRACKER;
+            CURRENT_TRACKER = currentTracker;
+            this._cachedValue = fn();
+            CURRENT_TRACKER = prevTracker;
+            this.hits++;
+            this._deps = Array.from(currentTracker);
+            this._cachedRevision = this.revision;
+        }
+        CURRENT_TRACKER == null || CURRENT_TRACKER.add(this);
+        return this._cachedValue;
+    }
+    get revision() {
+        return Math.max(...this._deps.map((d)=>d.revision), 0);
+    }
+};
+function getValue(cell) {
+    if (!(cell instanceof Cell)) console.warn("Not a valid cell! ", cell);
+    return cell.value;
+}
+function setValue(storage, value) {
+    if (!(storage instanceof Cell)) throw new TypeError("setValue must be passed a tracked store created with `createStorage`.");
+    storage.value = storage._lastValue = value;
+}
+function createCell(initialValue, isEqual = tripleEq) {
+    return new Cell(initialValue, isEqual);
+}
+function createCache(fn) {
+    assertIsFunction(fn, "the first parameter to `createCache` must be a function");
+    return new TrackingCache(fn);
+}
+// src/autotrackMemoize/tracking.ts
+var neverEq = (a, b)=>false;
+function createTag() {
+    return createCell(null, neverEq);
+}
+function dirtyTag(tag, value) {
+    setValue(tag, value);
+}
+var consumeCollection = (node)=>{
+    let tag = node.collectionTag;
+    if (tag === null) tag = node.collectionTag = createTag();
+    getValue(tag);
+};
+var dirtyCollection = (node)=>{
+    const tag = node.collectionTag;
+    if (tag !== null) dirtyTag(tag, null);
+};
+// src/autotrackMemoize/proxy.ts
+var REDUX_PROXY_LABEL = Symbol();
+var nextId = 0;
+var proto = Object.getPrototypeOf({});
+var ObjectTreeNode = class {
+    constructor(value){
+        this.value = value;
+        __publicField(this, "proxy", new Proxy(this, objectProxyHandler));
+        __publicField(this, "tag", createTag());
+        __publicField(this, "tags", {});
+        __publicField(this, "children", {});
+        __publicField(this, "collectionTag", null);
+        __publicField(this, "id", nextId++);
+        this.value = value;
+        this.tag.value = value;
+    }
+};
+var objectProxyHandler = {
+    get (node, key) {
+        function calculateResult() {
+            const { value } = node;
+            const childValue = Reflect.get(value, key);
+            if (typeof key === "symbol") return childValue;
+            if (key in proto) return childValue;
+            if (typeof childValue === "object" && childValue !== null) {
+                let childNode = node.children[key];
+                if (childNode === void 0) childNode = node.children[key] = createNode(childValue);
+                if (childNode.tag) getValue(childNode.tag);
+                return childNode.proxy;
+            } else {
+                let tag = node.tags[key];
+                if (tag === void 0) {
+                    tag = node.tags[key] = createTag();
+                    tag.value = childValue;
+                }
+                getValue(tag);
+                return childValue;
+            }
+        }
+        const res = calculateResult();
+        return res;
+    },
+    ownKeys (node) {
+        consumeCollection(node);
+        return Reflect.ownKeys(node.value);
+    },
+    getOwnPropertyDescriptor (node, prop) {
+        return Reflect.getOwnPropertyDescriptor(node.value, prop);
+    },
+    has (node, prop) {
+        return Reflect.has(node.value, prop);
+    }
+};
+var ArrayTreeNode = class {
+    constructor(value){
+        this.value = value;
+        __publicField(this, "proxy", new Proxy([
+            this
+        ], arrayProxyHandler));
+        __publicField(this, "tag", createTag());
+        __publicField(this, "tags", {});
+        __publicField(this, "children", {});
+        __publicField(this, "collectionTag", null);
+        __publicField(this, "id", nextId++);
+        this.value = value;
+        this.tag.value = value;
+    }
+};
+var arrayProxyHandler = {
+    get ([node], key) {
+        if (key === "length") consumeCollection(node);
+        return objectProxyHandler.get(node, key);
+    },
+    ownKeys ([node]) {
+        return objectProxyHandler.ownKeys(node);
+    },
+    getOwnPropertyDescriptor ([node], prop) {
+        return objectProxyHandler.getOwnPropertyDescriptor(node, prop);
+    },
+    has ([node], prop) {
+        return objectProxyHandler.has(node, prop);
+    }
+};
+function createNode(value) {
+    if (Array.isArray(value)) return new ArrayTreeNode(value);
+    return new ObjectTreeNode(value);
+}
+function updateNode(node, newValue) {
+    const { value, tags, children } = node;
+    node.value = newValue;
+    if (Array.isArray(value) && Array.isArray(newValue) && value.length !== newValue.length) dirtyCollection(node);
+    else if (value !== newValue) {
+        let oldKeysSize = 0;
+        let newKeysSize = 0;
+        let anyKeysAdded = false;
+        for(const _key in value)oldKeysSize++;
+        for(const key in newValue){
+            newKeysSize++;
+            if (!(key in value)) {
+                anyKeysAdded = true;
+                break;
+            }
+        }
+        const isDifferent = anyKeysAdded || oldKeysSize !== newKeysSize;
+        if (isDifferent) dirtyCollection(node);
+    }
+    for(const key in tags){
+        const childValue = value[key];
+        const newChildValue = newValue[key];
+        if (childValue !== newChildValue) {
+            dirtyCollection(node);
+            dirtyTag(tags[key], newChildValue);
+        }
+        if (typeof newChildValue === "object" && newChildValue !== null) delete tags[key];
+    }
+    for(const key in children){
+        const childNode = children[key];
+        const newChildValue = newValue[key];
+        const childValue = childNode.value;
+        if (childValue === newChildValue) continue;
+        else if (typeof newChildValue === "object" && newChildValue !== null) updateNode(childNode, newChildValue);
+        else {
+            deleteNode(childNode);
+            delete children[key];
+        }
+    }
+}
+function deleteNode(node) {
+    if (node.tag) dirtyTag(node.tag, null);
+    dirtyCollection(node);
+    for(const key in node.tags)dirtyTag(node.tags[key], null);
+    for(const key in node.children)deleteNode(node.children[key]);
+}
+// src/lruMemoize.ts
+function createSingletonCache(equals) {
+    let entry;
+    return {
+        get (key) {
+            if (entry && equals(entry.key, key)) return entry.value;
+            return NOT_FOUND;
+        },
+        put (key, value) {
+            entry = {
+                key,
+                value
+            };
+        },
+        getEntries () {
+            return entry ? [
+                entry
+            ] : [];
+        },
+        clear () {
+            entry = void 0;
+        }
+    };
+}
+function createLruCache(maxSize, equals) {
+    let entries = [];
+    function get(key) {
+        const cacheIndex = entries.findIndex((entry)=>equals(key, entry.key));
+        if (cacheIndex > -1) {
+            const entry = entries[cacheIndex];
+            if (cacheIndex > 0) {
+                entries.splice(cacheIndex, 1);
+                entries.unshift(entry);
+            }
+            return entry.value;
+        }
+        return NOT_FOUND;
+    }
+    function put(key, value) {
+        if (get(key) === NOT_FOUND) {
+            entries.unshift({
+                key,
+                value
+            });
+            if (entries.length > maxSize) entries.pop();
+        }
+    }
+    function getEntries() {
+        return entries;
+    }
+    function clear() {
+        entries = [];
+    }
+    return {
+        get,
+        put,
+        getEntries,
+        clear
+    };
+}
+var referenceEqualityCheck = (a, b)=>a === b;
+function createCacheKeyComparator(equalityCheck) {
+    return function areArgumentsShallowlyEqual(prev, next) {
+        if (prev === null || next === null || prev.length !== next.length) return false;
+        const { length } = prev;
+        for(let i = 0; i < length; i++){
+            if (!equalityCheck(prev[i], next[i])) return false;
+        }
+        return true;
+    };
+}
+function lruMemoize(func, equalityCheckOrOptions) {
+    const providedOptions = typeof equalityCheckOrOptions === "object" ? equalityCheckOrOptions : {
+        equalityCheck: equalityCheckOrOptions
+    };
+    const { equalityCheck = referenceEqualityCheck, maxSize = 1, resultEqualityCheck } = providedOptions;
+    const comparator = createCacheKeyComparator(equalityCheck);
+    let resultsCount = 0;
+    const cache = maxSize === 1 ? createSingletonCache(comparator) : createLruCache(maxSize, comparator);
+    function memoized() {
+        let value = cache.get(arguments);
+        if (value === NOT_FOUND) {
+            value = func.apply(null, arguments);
+            resultsCount++;
+            if (resultEqualityCheck) {
+                const entries = cache.getEntries();
+                const matchingEntry = entries.find((entry)=>resultEqualityCheck(entry.value, value));
+                if (matchingEntry) {
+                    value = matchingEntry.value;
+                    resultsCount !== 0 && resultsCount--;
+                }
+            }
+            cache.put(arguments, value);
+        }
+        return value;
+    }
+    memoized.clearCache = ()=>{
+        cache.clear();
+        memoized.resetResultsCount();
+    };
+    memoized.resultsCount = ()=>resultsCount;
+    memoized.resetResultsCount = ()=>{
+        resultsCount = 0;
+    };
+    return memoized;
+}
+// src/autotrackMemoize/autotrackMemoize.ts
+function autotrackMemoize(func) {
+    const node = createNode([]);
+    let lastArgs = null;
+    const shallowEqual = createCacheKeyComparator(referenceEqualityCheck);
+    const cache = createCache(()=>{
+        const res = func.apply(null, node.proxy);
+        return res;
+    });
+    function memoized() {
+        if (!shallowEqual(lastArgs, arguments)) {
+            updateNode(node, arguments);
+            lastArgs = arguments;
+        }
+        return cache.value;
+    }
+    memoized.clearCache = ()=>{
+        return cache.clear();
+    };
+    return memoized;
+}
+// src/weakMapMemoize.ts
+var StrongRef = class {
+    constructor(value){
+        this.value = value;
+    }
+    deref() {
+        return this.value;
+    }
+};
+var Ref = typeof WeakRef !== "undefined" ? WeakRef : StrongRef;
+var UNTERMINATED = 0;
+var TERMINATED = 1;
+function createCacheNode() {
+    return {
+        s: UNTERMINATED,
+        v: void 0,
+        o: null,
+        p: null
+    };
+}
+function weakMapMemoize(func, options = {}) {
+    let fnNode = createCacheNode();
+    const { resultEqualityCheck } = options;
+    let lastResult;
+    let resultsCount = 0;
+    function memoized() {
+        var _a, _b;
+        let cacheNode = fnNode;
+        const { length } = arguments;
+        for(let i = 0, l = length; i < l; i++){
+            const arg = arguments[i];
+            if (typeof arg === "function" || typeof arg === "object" && arg !== null) {
+                let objectCache = cacheNode.o;
+                if (objectCache === null) cacheNode.o = objectCache = /* @__PURE__ */ new WeakMap();
+                const objectNode = objectCache.get(arg);
+                if (objectNode === void 0) {
+                    cacheNode = createCacheNode();
+                    objectCache.set(arg, cacheNode);
+                } else cacheNode = objectNode;
+            } else {
+                let primitiveCache = cacheNode.p;
+                if (primitiveCache === null) cacheNode.p = primitiveCache = /* @__PURE__ */ new Map();
+                const primitiveNode = primitiveCache.get(arg);
+                if (primitiveNode === void 0) {
+                    cacheNode = createCacheNode();
+                    primitiveCache.set(arg, cacheNode);
+                } else cacheNode = primitiveNode;
+            }
+        }
+        const terminatedNode = cacheNode;
+        let result;
+        if (cacheNode.s === TERMINATED) result = cacheNode.v;
+        else {
+            result = func.apply(null, arguments);
+            resultsCount++;
+        }
+        terminatedNode.s = TERMINATED;
+        if (resultEqualityCheck) {
+            const lastResultValue = (_b = (_a = lastResult == null ? void 0 : lastResult.deref) == null ? void 0 : _a.call(lastResult)) != null ? _b : lastResult;
+            if (lastResultValue != null && resultEqualityCheck(lastResultValue, result)) {
+                result = lastResultValue;
+                resultsCount !== 0 && resultsCount--;
+            }
+            const needsWeakRef = typeof result === "object" && result !== null || typeof result === "function";
+            lastResult = needsWeakRef ? new Ref(result) : result;
+        }
+        terminatedNode.v = result;
+        return result;
+    }
+    memoized.clearCache = ()=>{
+        fnNode = createCacheNode();
+        memoized.resetResultsCount();
+    };
+    memoized.resultsCount = ()=>resultsCount;
+    memoized.resetResultsCount = ()=>{
+        resultsCount = 0;
+    };
+    return memoized;
+}
+// src/createSelectorCreator.ts
+function createSelectorCreator(memoizeOrOptions, ...memoizeOptionsFromArgs) {
+    const createSelectorCreatorOptions = typeof memoizeOrOptions === "function" ? {
+        memoize: memoizeOrOptions,
+        memoizeOptions: memoizeOptionsFromArgs
+    } : memoizeOrOptions;
+    const createSelector2 = (...createSelectorArgs)=>{
+        let recomputations = 0;
+        let dependencyRecomputations = 0;
+        let lastResult;
+        let directlyPassedOptions = {};
+        let resultFunc = createSelectorArgs.pop();
+        if (typeof resultFunc === "object") {
+            directlyPassedOptions = resultFunc;
+            resultFunc = createSelectorArgs.pop();
+        }
+        assertIsFunction(resultFunc, `createSelector expects an output function after the inputs, but received: [${typeof resultFunc}]`);
+        const combinedOptions = __spreadValues(__spreadValues({}, createSelectorCreatorOptions), directlyPassedOptions);
+        const { memoize, memoizeOptions = [], argsMemoize = weakMapMemoize, argsMemoizeOptions = [], devModeChecks = {} } = combinedOptions;
+        const finalMemoizeOptions = ensureIsArray(memoizeOptions);
+        const finalArgsMemoizeOptions = ensureIsArray(argsMemoizeOptions);
+        const dependencies = getDependencies(createSelectorArgs);
+        const memoizedResultFunc = memoize(function recomputationWrapper() {
+            recomputations++;
+            return resultFunc.apply(null, arguments);
+        }, ...finalMemoizeOptions);
+        let firstRun = true;
+        const selector = argsMemoize(function dependenciesChecker() {
+            dependencyRecomputations++;
+            const inputSelectorResults = collectInputSelectorResults(dependencies, arguments);
+            lastResult = memoizedResultFunc.apply(null, inputSelectorResults);
+            {
+                const { identityFunctionCheck, inputStabilityCheck } = getDevModeChecksExecutionInfo(firstRun, devModeChecks);
+                if (identityFunctionCheck.shouldRun) identityFunctionCheck.run(resultFunc, inputSelectorResults, lastResult);
+                if (inputStabilityCheck.shouldRun) {
+                    const inputSelectorResultsCopy = collectInputSelectorResults(dependencies, arguments);
+                    inputStabilityCheck.run({
+                        inputSelectorResults,
+                        inputSelectorResultsCopy
+                    }, {
+                        memoize,
+                        memoizeOptions: finalMemoizeOptions
+                    }, arguments);
+                }
+                if (firstRun) firstRun = false;
+            }
+            return lastResult;
+        }, ...finalArgsMemoizeOptions);
+        return Object.assign(selector, {
+            resultFunc,
+            memoizedResultFunc,
+            dependencies,
+            dependencyRecomputations: ()=>dependencyRecomputations,
+            resetDependencyRecomputations: ()=>{
+                dependencyRecomputations = 0;
+            },
+            lastResult: ()=>lastResult,
+            recomputations: ()=>recomputations,
+            resetRecomputations: ()=>{
+                recomputations = 0;
+            },
+            memoize,
+            argsMemoize
+        });
+    };
+    Object.assign(createSelector2, {
+        withTypes: ()=>createSelector2
+    });
+    return createSelector2;
+}
+var createSelector = /* @__PURE__ */ createSelectorCreator(weakMapMemoize);
+// src/createStructuredSelector.ts
+var createStructuredSelector = Object.assign((inputSelectorsObject, selectorCreator = createSelector)=>{
+    assertIsObject(inputSelectorsObject, `createStructuredSelector expects first argument to be an object where each property is a selector, instead received a ${typeof inputSelectorsObject}`);
+    const inputSelectorKeys = Object.keys(inputSelectorsObject);
+    const dependencies = inputSelectorKeys.map((key)=>inputSelectorsObject[key]);
+    const structuredSelector = selectorCreator(dependencies, (...inputSelectorResults)=>{
+        return inputSelectorResults.reduce((composition, value, index)=>{
+            composition[inputSelectorKeys[index]] = value;
+            return composition;
+        }, {});
+    });
+    return structuredSelector;
+}, {
+    withTypes: ()=>createStructuredSelector
+});
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3ll1c":[function(require,module,exports) {
+// src/index.ts
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "thunk", ()=>thunk);
+parcelHelpers.export(exports, "withExtraArgument", ()=>withExtraArgument);
+function createThunkMiddleware(extraArgument) {
+    const middleware = ({ dispatch, getState })=>(next)=>(action)=>{
+                if (typeof action === "function") return action(dispatch, getState, extraArgument);
+                return next(action);
+            };
+    return middleware;
+}
+var thunk = createThunkMiddleware();
+var withExtraArgument = createThunkMiddleware;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5RXlr":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.removeItem = exports.default = exports.clearCart = exports.addItem = void 0;
+var _toolkit = require("533e83df82448f27");
+const cartSlice = (0, _toolkit.createSlice)({
+    name: "cart",
+    initialState: {
+        items: []
+    },
+    reducers: {
+        addItem: (state, action)=>{
+            //state - hold previouse state value
+            state.items.push(action.payload);
+        // return
+        // not return anything
+        // its take a state and directly modify it
+        },
+        removeItem: (state, action)=>{
+            state.items.pop();
+        },
+        clearCart: (state)=>{
+            state.items = [];
+        }
+    }
+});
+const { addItem, removeItem, clearCart } = cartSlice.actions;
+exports.clearCart = clearCart;
+exports.removeItem = removeItem;
+exports.addItem = addItem;
+var _default = exports.default = cartSlice.reducer;
+
+},{"533e83df82448f27":"fuua8"}],"7pbKz":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$91ba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$91ba.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _constant = require("9b0a4e2a038b947d");
+var _jsxRuntime = require("cdf55e102b152f60");
+const FoodItem = ({ price, name, description, imageId, isVeg })=>{
+    // console.log(item)
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        className: "card p-2 m-2  shadow-lg bg-pink-50",
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
+                src: _constant.ITEM_IMG_CDN_URL + imageId
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
+                className: "font-bold text-xl ",
+                children: name
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h5", {
+                children: description
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h5", {
+                children: [
+                    "Rupees:",
+                    price / 100
+                ]
+            })
+        ]
+    });
+};
+_c = FoodItem;
+var _default = exports.default = FoodItem;
+var _c;
+$RefreshReg$(_c, "FoodItem");
+
+  $parcel$ReactRefreshHelpers$91ba.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"9b0a4e2a038b947d":"1w0li","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","cdf55e102b152f60":"6AEwr"}],"1w0li":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.swiggy_menu_api_URL = exports.swiggy_api_URL = exports.options = exports.RESTAURANT_TYPE_KEY = exports.MENU_ITEM_TYPE_KEY = exports.ITEM_IMG_CDN_URL = exports.IMG_CDN_URL = exports.Github_UserName = exports.Github_API_User = void 0;
+// Image CDN URL for Restaurant card
+const IMG_CDN_URL = exports.IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+// Image CDN URL for Restaurant Menu
+const ITEM_IMG_CDN_URL = exports.ITEM_IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/";
+// Swiggy API to get Restaurant data with foodfire erver
+const swiggy_api_URL = exports.swiggy_api_URL = "https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING";
+// Swiggy API to get Restaurant Menu data with foodfire erver
+const swiggy_menu_api_URL = exports.swiggy_menu_api_URL = "https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=";
+// menu items api card type key
+const MENU_ITEM_TYPE_KEY = exports.MENU_ITEM_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
+const RESTAURANT_TYPE_KEY = exports.RESTAURANT_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.Restaurant";
+// Github - username
+const Github_UserName = exports.Github_UserName = "DhruvAmbaliya";
+// Github API for User
+const Github_API_User = exports.Github_API_User = "https://api.github.com/users/";
+// Github Authorization Token
+const options = exports.options = {
+    method: "GET",
+    headers: {
+        Authorization: ""
+    }
+};
+
+},{}],"6AEwr":[function(require,module,exports) {
+"use strict";
+module.exports = require("c4c10cbba9862d5f");
+
+},{"c4c10cbba9862d5f":"kujY4"}],"kujY4":[function(require,module,exports) {
+/**
+ * @license React
+ * react-jsx-runtime.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    var React = require("593632ccebda0d3a");
+    // ATTENTION
+    // When adding new symbols to this file,
+    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
+    // The Symbol used to tag the ReactElement-like types.
+    var REACT_ELEMENT_TYPE = Symbol.for("react.element");
+    var REACT_PORTAL_TYPE = Symbol.for("react.portal");
+    var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+    var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
+    var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+    var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
+    var REACT_CONTEXT_TYPE = Symbol.for("react.context");
+    var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
+    var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
+    var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
+    var REACT_MEMO_TYPE = Symbol.for("react.memo");
+    var REACT_LAZY_TYPE = Symbol.for("react.lazy");
+    var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
+    var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
+    var FAUX_ITERATOR_SYMBOL = "@@iterator";
+    function getIteratorFn(maybeIterable) {
+        if (maybeIterable === null || typeof maybeIterable !== "object") return null;
+        var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
+        if (typeof maybeIterator === "function") return maybeIterator;
+        return null;
+    }
+    var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function error(format) {
+        for(var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++)args[_key2 - 1] = arguments[_key2];
+        printWarning("error", format, args);
+    }
+    function printWarning(level, format, args) {
+        var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+        var stack = ReactDebugCurrentFrame.getStackAddendum();
+        if (stack !== "") {
+            format += "%s";
+            args = args.concat([
+                stack
+            ]);
+        } // eslint-disable-next-line react-internal/safe-string-coercion
+        var argsWithFormat = args.map(function(item) {
+            return String(item);
+        }); // Careful: RN currently depends on this prefix
+        argsWithFormat.unshift("Warning: " + format); // We intentionally don't use spread (or .apply) directly because it
+        // breaks IE9: https://github.com/facebook/react/issues/13610
+        // eslint-disable-next-line react-internal/no-production-logging
+        Function.prototype.apply.call(console[level], console, argsWithFormat);
+    }
+    // -----------------------------------------------------------------------------
+    var enableScopeAPI = false; // Experimental Create Event Handle API.
+    var enableCacheElement = false;
+    var enableTransitionTracing = false; // No known bugs, but needs performance testing
+    var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
+    // stuff. Intended to enable React core members to more easily debug scheduling
+    // issues in DEV builds.
+    var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
+    var REACT_MODULE_REFERENCE;
+    REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
+    function isValidElementType(type) {
+        if (typeof type === "string" || typeof type === "function") return true;
+         // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
+        if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) return true;
+        if (typeof type === "object" && type !== null) {
+            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+            // types supported by any Flight configuration anywhere since
+            // we don't know which Flight build this will end up being used
+            // with.
+            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) return true;
+        }
+        return false;
+    }
+    function getWrappedName(outerType, innerType, wrapperName) {
+        var displayName = outerType.displayName;
+        if (displayName) return displayName;
+        var functionName = innerType.displayName || innerType.name || "";
+        return functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName;
+    } // Keep in sync with react-reconciler/getComponentNameFromFiber
+    function getContextName(type) {
+        return type.displayName || "Context";
+    } // Note that the reconciler package should generally prefer to use getComponentNameFromFiber() instead.
+    function getComponentNameFromType(type) {
+        if (type == null) // Host root, text node or just invalid type.
+        return null;
+        if (typeof type.tag === "number") error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
+        if (typeof type === "function") return type.displayName || type.name || null;
+        if (typeof type === "string") return type;
+        switch(type){
+            case REACT_FRAGMENT_TYPE:
+                return "Fragment";
+            case REACT_PORTAL_TYPE:
+                return "Portal";
+            case REACT_PROFILER_TYPE:
+                return "Profiler";
+            case REACT_STRICT_MODE_TYPE:
+                return "StrictMode";
+            case REACT_SUSPENSE_TYPE:
+                return "Suspense";
+            case REACT_SUSPENSE_LIST_TYPE:
+                return "SuspenseList";
+        }
+        if (typeof type === "object") switch(type.$$typeof){
+            case REACT_CONTEXT_TYPE:
+                var context = type;
+                return getContextName(context) + ".Consumer";
+            case REACT_PROVIDER_TYPE:
+                var provider = type;
+                return getContextName(provider._context) + ".Provider";
+            case REACT_FORWARD_REF_TYPE:
+                return getWrappedName(type, type.render, "ForwardRef");
+            case REACT_MEMO_TYPE:
+                var outerName = type.displayName || null;
+                if (outerName !== null) return outerName;
+                return getComponentNameFromType(type.type) || "Memo";
+            case REACT_LAZY_TYPE:
+                var lazyComponent = type;
+                var payload = lazyComponent._payload;
+                var init = lazyComponent._init;
+                try {
+                    return getComponentNameFromType(init(payload));
+                } catch (x) {
+                    return null;
+                }
+        }
+        return null;
+    }
+    var assign = Object.assign;
+    // Helpers to patch console.logs to avoid logging during side-effect free
+    // replaying on render function. This currently only patches the object
+    // lazily which won't cover if the log function was extracted eagerly.
+    // We could also eagerly patch the method.
+    var disabledDepth = 0;
+    var prevLog;
+    var prevInfo;
+    var prevWarn;
+    var prevError;
+    var prevGroup;
+    var prevGroupCollapsed;
+    var prevGroupEnd;
+    function disabledLog() {}
+    disabledLog.__reactDisabledLog = true;
+    function disableLogs() {
+        if (disabledDepth === 0) {
+            /* eslint-disable react-internal/no-production-logging */ prevLog = console.log;
+            prevInfo = console.info;
+            prevWarn = console.warn;
+            prevError = console.error;
+            prevGroup = console.group;
+            prevGroupCollapsed = console.groupCollapsed;
+            prevGroupEnd = console.groupEnd; // https://github.com/facebook/react/issues/19099
+            var props = {
+                configurable: true,
+                enumerable: true,
+                value: disabledLog,
+                writable: true
+            }; // $FlowFixMe Flow thinks console is immutable.
+            Object.defineProperties(console, {
+                info: props,
+                log: props,
+                warn: props,
+                error: props,
+                group: props,
+                groupCollapsed: props,
+                groupEnd: props
+            });
+        /* eslint-enable react-internal/no-production-logging */ }
+        disabledDepth++;
+    }
+    function reenableLogs() {
+        disabledDepth--;
+        if (disabledDepth === 0) {
+            /* eslint-disable react-internal/no-production-logging */ var props = {
+                configurable: true,
+                enumerable: true,
+                writable: true
+            }; // $FlowFixMe Flow thinks console is immutable.
+            Object.defineProperties(console, {
+                log: assign({}, props, {
+                    value: prevLog
+                }),
+                info: assign({}, props, {
+                    value: prevInfo
+                }),
+                warn: assign({}, props, {
+                    value: prevWarn
+                }),
+                error: assign({}, props, {
+                    value: prevError
+                }),
+                group: assign({}, props, {
+                    value: prevGroup
+                }),
+                groupCollapsed: assign({}, props, {
+                    value: prevGroupCollapsed
+                }),
+                groupEnd: assign({}, props, {
+                    value: prevGroupEnd
+                })
+            });
+        /* eslint-enable react-internal/no-production-logging */ }
+        if (disabledDepth < 0) error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+    }
+    var ReactCurrentDispatcher = ReactSharedInternals.ReactCurrentDispatcher;
+    var prefix;
+    function describeBuiltInComponentFrame(name, source, ownerFn) {
+        if (prefix === undefined) // Extract the VM specific prefix used by each line.
+        try {
+            throw Error();
+        } catch (x) {
+            var match = x.stack.trim().match(/\n( *(at )?)/);
+            prefix = match && match[1] || "";
+        }
+         // We use the prefix to ensure our stacks line up with native stack frames.
+        return "\n" + prefix + name;
+    }
+    var reentry = false;
+    var componentFrameCache;
+    var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map;
+    componentFrameCache = new PossiblyWeakMap();
+    function describeNativeComponentFrame(fn, construct) {
+        // If something asked for a stack inside a fake render, it should get ignored.
+        if (!fn || reentry) return "";
+        var frame = componentFrameCache.get(fn);
+        if (frame !== undefined) return frame;
+        var control;
+        reentry = true;
+        var previousPrepareStackTrace = Error.prepareStackTrace; // $FlowFixMe It does accept undefined.
+        Error.prepareStackTrace = undefined;
+        var previousDispatcher;
+        previousDispatcher = ReactCurrentDispatcher.current; // Set the dispatcher in DEV because this might be call in the render function
+        // for warnings.
+        ReactCurrentDispatcher.current = null;
+        disableLogs();
+        try {
+            // This should throw.
+            if (construct) {
+                // Something should be setting the props in the constructor.
+                var Fake = function() {
+                    throw Error();
+                }; // $FlowFixMe
+                Object.defineProperty(Fake.prototype, "props", {
+                    set: function() {
+                        // We use a throwing setter instead of frozen or non-writable props
+                        // because that won't throw in a non-strict mode function.
+                        throw Error();
+                    }
+                });
+                if (typeof Reflect === "object" && Reflect.construct) {
+                    // We construct a different control for this case to include any extra
+                    // frames added by the construct call.
+                    try {
+                        Reflect.construct(Fake, []);
+                    } catch (x) {
+                        control = x;
+                    }
+                    Reflect.construct(fn, [], Fake);
+                } else {
+                    try {
+                        Fake.call();
+                    } catch (x) {
+                        control = x;
+                    }
+                    fn.call(Fake.prototype);
+                }
+            } else {
+                try {
+                    throw Error();
+                } catch (x) {
+                    control = x;
+                }
+                fn();
+            }
+        } catch (sample) {
+            // This is inlined manually because closure doesn't do it for us.
+            if (sample && control && typeof sample.stack === "string") {
+                // This extracts the first frame from the sample that isn't also in the control.
+                // Skipping one frame that we assume is the frame that calls the two.
+                var sampleLines = sample.stack.split("\n");
+                var controlLines = control.stack.split("\n");
+                var s = sampleLines.length - 1;
+                var c = controlLines.length - 1;
+                while(s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c])// We expect at least one stack frame to be shared.
+                // Typically this will be the root most one. However, stack frames may be
+                // cut off due to maximum stack limits. In this case, one maybe cut off
+                // earlier than the other. We assume that the sample is longer or the same
+                // and there for cut off earlier. So we should find the root most frame in
+                // the sample somewhere in the control.
+                c--;
+                for(; s >= 1 && c >= 0; s--, c--)// Next we find the first one that isn't the same which should be the
+                // frame that called our sample function and the control.
+                if (sampleLines[s] !== controlLines[c]) {
+                    // In V8, the first line is describing the message but other VMs don't.
+                    // If we're about to return the first line, and the control is also on the same
+                    // line, that's a pretty good indicator that our sample threw at same line as
+                    // the control. I.e. before we entered the sample frame. So we ignore this result.
+                    // This can happen if you passed a class to function component, or non-function.
+                    if (s !== 1 || c !== 1) do {
+                        s--;
+                        c--; // We may still have similar intermediate frames from the construct call.
+                        // The next one that isn't the same should be our match though.
+                        if (c < 0 || sampleLines[s] !== controlLines[c]) {
+                            // V8 adds a "new" prefix for native classes. Let's remove it to make it prettier.
+                            var _frame = "\n" + sampleLines[s].replace(" at new ", " at "); // If our component frame is labeled "<anonymous>"
+                            // but we have a user-provided "displayName"
+                            // splice it in to make the stack more readable.
+                            if (fn.displayName && _frame.includes("<anonymous>")) _frame = _frame.replace("<anonymous>", fn.displayName);
+                            if (typeof fn === "function") componentFrameCache.set(fn, _frame);
+                            return _frame;
+                        }
+                    }while (s >= 1 && c >= 0);
+                    break;
+                }
+            }
+        } finally{
+            reentry = false;
+            ReactCurrentDispatcher.current = previousDispatcher;
+            reenableLogs();
+            Error.prepareStackTrace = previousPrepareStackTrace;
+        } // Fallback to just using the name if we couldn't make it throw.
+        var name = fn ? fn.displayName || fn.name : "";
+        var syntheticFrame = name ? describeBuiltInComponentFrame(name) : "";
+        if (typeof fn === "function") componentFrameCache.set(fn, syntheticFrame);
+        return syntheticFrame;
+    }
+    function describeFunctionComponentFrame(fn, source, ownerFn) {
+        return describeNativeComponentFrame(fn, false);
+    }
+    function shouldConstruct(Component) {
+        var prototype = Component.prototype;
+        return !!(prototype && prototype.isReactComponent);
+    }
+    function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
+        if (type == null) return "";
+        if (typeof type === "function") return describeNativeComponentFrame(type, shouldConstruct(type));
+        if (typeof type === "string") return describeBuiltInComponentFrame(type);
+        switch(type){
+            case REACT_SUSPENSE_TYPE:
+                return describeBuiltInComponentFrame("Suspense");
+            case REACT_SUSPENSE_LIST_TYPE:
+                return describeBuiltInComponentFrame("SuspenseList");
+        }
+        if (typeof type === "object") switch(type.$$typeof){
+            case REACT_FORWARD_REF_TYPE:
+                return describeFunctionComponentFrame(type.render);
+            case REACT_MEMO_TYPE:
+                // Memo may contain any component type so we recursively resolve it.
+                return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
+            case REACT_LAZY_TYPE:
+                var lazyComponent = type;
+                var payload = lazyComponent._payload;
+                var init = lazyComponent._init;
+                try {
+                    // Lazy may contain any component type so we recursively resolve it.
+                    return describeUnknownElementTypeFrameInDEV(init(payload), source, ownerFn);
+                } catch (x) {}
+        }
+        return "";
+    }
+    var hasOwnProperty = Object.prototype.hasOwnProperty;
+    var loggedTypeFailures = {};
+    var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+    function setCurrentlyValidatingElement(element) {
+        if (element) {
+            var owner = element._owner;
+            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
+            ReactDebugCurrentFrame.setExtraStackFrame(stack);
+        } else ReactDebugCurrentFrame.setExtraStackFrame(null);
+    }
+    function checkPropTypes(typeSpecs, values, location, componentName, element) {
+        // $FlowFixMe This is okay but Flow doesn't know it.
+        var has = Function.call.bind(hasOwnProperty);
+        for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
+            var error$1 = void 0; // Prop type validation may throw. In case they do, we don't want to
+            // fail the render phase where it didn't fail before. So we log it.
+            // After these have been cleaned up, we'll let them throw.
+            try {
+                // This is intentionally an invariant that gets caught. It's the same
+                // behavior as without this statement except with a better message.
+                if (typeof typeSpecs[typeSpecName] !== "function") {
+                    // eslint-disable-next-line react-internal/prod-error-codes
+                    var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`." + "This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                    err.name = "Invariant Violation";
+                    throw err;
+                }
+                error$1 = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (ex) {
+                error$1 = ex;
+            }
+            if (error$1 && !(error$1 instanceof Error)) {
+                setCurrentlyValidatingElement(element);
+                error("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", componentName || "React class", location, typeSpecName, typeof error$1);
+                setCurrentlyValidatingElement(null);
+            }
+            if (error$1 instanceof Error && !(error$1.message in loggedTypeFailures)) {
+                // Only monitor this failure once because there tends to be a lot of the
+                // same error.
+                loggedTypeFailures[error$1.message] = true;
+                setCurrentlyValidatingElement(element);
+                error("Failed %s type: %s", location, error$1.message);
+                setCurrentlyValidatingElement(null);
+            }
+        }
+    }
+    var isArrayImpl = Array.isArray; // eslint-disable-next-line no-redeclare
+    function isArray(a) {
+        return isArrayImpl(a);
+    }
+    /*
+ * The `'' + value` pattern (used in in perf-sensitive code) throws for Symbol
+ * and Temporal.* types. See https://github.com/facebook/react/pull/22064.
+ *
+ * The functions in this module will throw an easier-to-understand,
+ * easier-to-debug exception with a clear errors message message explaining the
+ * problem. (Instead of a confusing exception thrown inside the implementation
+ * of the `value` object).
+ */ // $FlowFixMe only called in DEV, so void return is not possible.
+    function typeName(value) {
+        // toStringTag is needed for namespaced types like Temporal.Instant
+        var hasToStringTag = typeof Symbol === "function" && Symbol.toStringTag;
+        var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
+        return type;
+    } // $FlowFixMe only called in DEV, so void return is not possible.
+    function willCoercionThrow(value) {
+        try {
+            testStringCoercion(value);
+            return false;
+        } catch (e) {
+            return true;
+        }
+    }
+    function testStringCoercion(value) {
+        // If you ended up here by following an exception call stack, here's what's
+        // happened: you supplied an object or symbol value to React (as a prop, key,
+        // DOM attribute, CSS property, string ref, etc.) and when React tried to
+        // coerce it to a string using `'' + value`, an exception was thrown.
+        //
+        // The most common types that will cause this exception are `Symbol` instances
+        // and Temporal objects like `Temporal.Instant`. But any object that has a
+        // `valueOf` or `[Symbol.toPrimitive]` method that throws will also cause this
+        // exception. (Library authors do this to prevent users from using built-in
+        // numeric operators like `+` or comparison operators like `>=` because custom
+        // methods are needed to perform accurate arithmetic or comparison.)
+        //
+        // To fix the problem, coerce this object or symbol value to a string before
+        // passing it to React. The most reliable way is usually `String(value)`.
+        //
+        // To find which value is throwing, check the browser or debugger console.
+        // Before this exception was thrown, there should be `console.error` output
+        // that shows the type (Symbol, Temporal.PlainDate, etc.) that caused the
+        // problem and how that type was used: key, atrribute, input value prop, etc.
+        // In most cases, this console output also shows the component and its
+        // ancestor components where the exception happened.
+        //
+        // eslint-disable-next-line react-internal/safe-string-coercion
+        return "" + value;
+    }
+    function checkKeyStringCoercion(value) {
+        if (willCoercionThrow(value)) {
+            error("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", typeName(value));
+            return testStringCoercion(value); // throw (to help callers find troubleshooting comments)
+        }
+    }
+    var ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
+    var RESERVED_PROPS = {
+        key: true,
+        ref: true,
+        __self: true,
+        __source: true
+    };
+    var specialPropKeyWarningShown;
+    var specialPropRefWarningShown;
+    var didWarnAboutStringRefs;
+    didWarnAboutStringRefs = {};
+    function hasValidRef(config) {
+        if (hasOwnProperty.call(config, "ref")) {
+            var getter = Object.getOwnPropertyDescriptor(config, "ref").get;
+            if (getter && getter.isReactWarning) return false;
+        }
+        return config.ref !== undefined;
+    }
+    function hasValidKey(config) {
+        if (hasOwnProperty.call(config, "key")) {
+            var getter = Object.getOwnPropertyDescriptor(config, "key").get;
+            if (getter && getter.isReactWarning) return false;
+        }
+        return config.key !== undefined;
+    }
+    function warnIfStringRefCannotBeAutoConverted(config, self) {
+        if (typeof config.ref === "string" && ReactCurrentOwner.current && self && ReactCurrentOwner.current.stateNode !== self) {
+            var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
+            if (!didWarnAboutStringRefs[componentName]) {
+                error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', getComponentNameFromType(ReactCurrentOwner.current.type), config.ref);
+                didWarnAboutStringRefs[componentName] = true;
+            }
+        }
+    }
+    function defineKeyPropWarningGetter(props, displayName) {
+        var warnAboutAccessingKey = function() {
+            if (!specialPropKeyWarningShown) {
+                specialPropKeyWarningShown = true;
+                error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
+            }
+        };
+        warnAboutAccessingKey.isReactWarning = true;
+        Object.defineProperty(props, "key", {
+            get: warnAboutAccessingKey,
+            configurable: true
+        });
+    }
+    function defineRefPropWarningGetter(props, displayName) {
+        var warnAboutAccessingRef = function() {
+            if (!specialPropRefWarningShown) {
+                specialPropRefWarningShown = true;
+                error("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
+            }
+        };
+        warnAboutAccessingRef.isReactWarning = true;
+        Object.defineProperty(props, "ref", {
+            get: warnAboutAccessingRef,
+            configurable: true
+        });
+    }
+    /**
+ * Factory method to create a new React element. This no longer adheres to
+ * the class pattern, so do not use new to call it. Also, instanceof check
+ * will not work. Instead test $$typeof field against Symbol.for('react.element') to check
+ * if something is a React Element.
+ *
+ * @param {*} type
+ * @param {*} props
+ * @param {*} key
+ * @param {string|object} ref
+ * @param {*} owner
+ * @param {*} self A *temporary* helper to detect places where `this` is
+ * different from the `owner` when React.createElement is called, so that we
+ * can warn. We want to get rid of owner and replace string `ref`s with arrow
+ * functions, and as long as `this` and owner are the same, there will be no
+ * change in behavior.
+ * @param {*} source An annotation object (added by a transpiler or otherwise)
+ * indicating filename, line number, and/or other information.
+ * @internal
+ */ var ReactElement = function(type, key, ref, self, source, owner, props) {
+        var element = {
+            // This tag allows us to uniquely identify this as a React Element
+            $$typeof: REACT_ELEMENT_TYPE,
+            // Built-in properties that belong on the element
+            type: type,
+            key: key,
+            ref: ref,
+            props: props,
+            // Record the component responsible for creating this element.
+            _owner: owner
+        };
+        // The validation flag is currently mutative. We put it on
+        // an external backing store so that we can freeze the whole object.
+        // This can be replaced with a WeakMap once they are implemented in
+        // commonly used development environments.
+        element._store = {}; // To make comparing ReactElements easier for testing purposes, we make
+        // the validation flag non-enumerable (where possible, which should
+        // include every environment we run tests in), so the test framework
+        // ignores it.
+        Object.defineProperty(element._store, "validated", {
+            configurable: false,
+            enumerable: false,
+            writable: true,
+            value: false
+        }); // self and source are DEV only properties.
+        Object.defineProperty(element, "_self", {
+            configurable: false,
+            enumerable: false,
+            writable: false,
+            value: self
+        }); // Two elements created in two different places should be considered
+        // equal for testing purposes and therefore we hide it from enumeration.
+        Object.defineProperty(element, "_source", {
+            configurable: false,
+            enumerable: false,
+            writable: false,
+            value: source
+        });
+        if (Object.freeze) {
+            Object.freeze(element.props);
+            Object.freeze(element);
+        }
+        return element;
+    };
+    /**
+ * https://github.com/reactjs/rfcs/pull/107
+ * @param {*} type
+ * @param {object} props
+ * @param {string} key
+ */ function jsxDEV(type, config, maybeKey, source, self) {
+        var propName; // Reserved names are extracted
+        var props = {};
+        var key = null;
+        var ref = null; // Currently, key can be spread in as a prop. This causes a potential
+        // issue if key is also explicitly declared (ie. <div {...props} key="Hi" />
+        // or <div key="Hi" {...props} /> ). We want to deprecate key spread,
+        // but as an intermediary step, we will use jsxDEV for everything except
+        // <div {...props} key="Hi" />, because we aren't currently able to tell if
+        // key is explicitly declared to be undefined or not.
+        if (maybeKey !== undefined) {
+            checkKeyStringCoercion(maybeKey);
+            key = "" + maybeKey;
+        }
+        if (hasValidKey(config)) {
+            checkKeyStringCoercion(config.key);
+            key = "" + config.key;
+        }
+        if (hasValidRef(config)) {
+            ref = config.ref;
+            warnIfStringRefCannotBeAutoConverted(config, self);
+        } // Remaining properties are added to a new props object
+        for(propName in config)if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) props[propName] = config[propName];
+         // Resolve default props
+        if (type && type.defaultProps) {
+            var defaultProps = type.defaultProps;
+            for(propName in defaultProps)if (props[propName] === undefined) props[propName] = defaultProps[propName];
+        }
+        if (key || ref) {
+            var displayName = typeof type === "function" ? type.displayName || type.name || "Unknown" : type;
+            if (key) defineKeyPropWarningGetter(props, displayName);
+            if (ref) defineRefPropWarningGetter(props, displayName);
+        }
+        return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
+    }
+    var ReactCurrentOwner$1 = ReactSharedInternals.ReactCurrentOwner;
+    var ReactDebugCurrentFrame$1 = ReactSharedInternals.ReactDebugCurrentFrame;
+    function setCurrentlyValidatingElement$1(element) {
+        if (element) {
+            var owner = element._owner;
+            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
+            ReactDebugCurrentFrame$1.setExtraStackFrame(stack);
+        } else ReactDebugCurrentFrame$1.setExtraStackFrame(null);
+    }
+    var propTypesMisspellWarningShown;
+    propTypesMisspellWarningShown = false;
+    /**
+ * Verifies the object is a ReactElement.
+ * See https://reactjs.org/docs/react-api.html#isvalidelement
+ * @param {?object} object
+ * @return {boolean} True if `object` is a ReactElement.
+ * @final
+ */ function isValidElement(object) {
+        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function getDeclarationErrorAddendum() {
+        if (ReactCurrentOwner$1.current) {
+            var name = getComponentNameFromType(ReactCurrentOwner$1.current.type);
+            if (name) return "\n\nCheck the render method of `" + name + "`.";
+        }
+        return "";
+    }
+    function getSourceInfoErrorAddendum(source) {
+        if (source !== undefined) {
+            var fileName = source.fileName.replace(/^.*[\\\/]/, "");
+            var lineNumber = source.lineNumber;
+            return "\n\nCheck your code at " + fileName + ":" + lineNumber + ".";
+        }
+        return "";
+    }
+    /**
+ * Warn if there's no key explicitly set on dynamic arrays of children or
+ * object keys are not valid. This allows us to keep track of children between
+ * updates.
+ */ var ownerHasKeyUseWarning = {};
+    function getCurrentComponentErrorInfo(parentType) {
+        var info = getDeclarationErrorAddendum();
+        if (!info) {
+            var parentName = typeof parentType === "string" ? parentType : parentType.displayName || parentType.name;
+            if (parentName) info = "\n\nCheck the top-level render call using <" + parentName + ">.";
+        }
+        return info;
+    }
+    /**
+ * Warn if the element doesn't have an explicit key assigned to it.
+ * This element is in an array. The array could grow and shrink or be
+ * reordered. All children that haven't already been validated are required to
+ * have a "key" property assigned to it. Error statuses are cached so a warning
+ * will only be shown once.
+ *
+ * @internal
+ * @param {ReactElement} element Element that requires a key.
+ * @param {*} parentType element's parent's type.
+ */ function validateExplicitKey(element, parentType) {
+        if (!element._store || element._store.validated || element.key != null) return;
+        element._store.validated = true;
+        var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
+        if (ownerHasKeyUseWarning[currentComponentErrorInfo]) return;
+        ownerHasKeyUseWarning[currentComponentErrorInfo] = true; // Usually the current owner is the offender, but if it accepts children as a
+        // property, it may be the creator of the child that's responsible for
+        // assigning it a key.
+        var childOwner = "";
+        if (element && element._owner && element._owner !== ReactCurrentOwner$1.current) // Give the component that originally created this child.
+        childOwner = " It was passed a child from " + getComponentNameFromType(element._owner.type) + ".";
+        setCurrentlyValidatingElement$1(element);
+        error('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', currentComponentErrorInfo, childOwner);
+        setCurrentlyValidatingElement$1(null);
+    }
+    /**
+ * Ensure that every element either is passed in a static location, in an
+ * array with an explicit keys property defined, or in an object literal
+ * with valid key property.
+ *
+ * @internal
+ * @param {ReactNode} node Statically passed child of any type.
+ * @param {*} parentType node's parent's type.
+ */ function validateChildKeys(node, parentType) {
+        if (typeof node !== "object") return;
+        if (isArray(node)) for(var i = 0; i < node.length; i++){
+            var child = node[i];
+            if (isValidElement(child)) validateExplicitKey(child, parentType);
+        }
+        else if (isValidElement(node)) // This element was passed in a valid location.
+        {
+            if (node._store) node._store.validated = true;
+        } else if (node) {
+            var iteratorFn = getIteratorFn(node);
+            if (typeof iteratorFn === "function") // Entry iterators used to provide implicit keys,
+            // but now we print a separate warning for them later.
+            {
+                if (iteratorFn !== node.entries) {
+                    var iterator = iteratorFn.call(node);
+                    var step;
+                    while(!(step = iterator.next()).done)if (isValidElement(step.value)) validateExplicitKey(step.value, parentType);
+                }
+            }
+        }
+    }
+    /**
+ * Given an element, validate that its props follow the propTypes definition,
+ * provided by the type.
+ *
+ * @param {ReactElement} element
+ */ function validatePropTypes(element) {
+        var type = element.type;
+        if (type === null || type === undefined || typeof type === "string") return;
+        var propTypes;
+        if (typeof type === "function") propTypes = type.propTypes;
+        else if (typeof type === "object" && (type.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
+        // Inner props are checked in the reconciler.
+        type.$$typeof === REACT_MEMO_TYPE)) propTypes = type.propTypes;
+        else return;
+        if (propTypes) {
+            // Intentionally inside to avoid triggering lazy initializers:
+            var name = getComponentNameFromType(type);
+            checkPropTypes(propTypes, element.props, "prop", name, element);
+        } else if (type.PropTypes !== undefined && !propTypesMisspellWarningShown) {
+            propTypesMisspellWarningShown = true; // Intentionally inside to avoid triggering lazy initializers:
+            var _name = getComponentNameFromType(type);
+            error("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", _name || "Unknown");
+        }
+        if (typeof type.getDefaultProps === "function" && !type.getDefaultProps.isReactClassApproved) error("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+    }
+    /**
+ * Given a fragment, validate that it can only be provided with fragment props
+ * @param {ReactElement} fragment
+ */ function validateFragmentProps(fragment) {
+        var keys = Object.keys(fragment.props);
+        for(var i = 0; i < keys.length; i++){
+            var key = keys[i];
+            if (key !== "children" && key !== "key") {
+                setCurrentlyValidatingElement$1(fragment);
+                error("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", key);
+                setCurrentlyValidatingElement$1(null);
+                break;
+            }
+        }
+        if (fragment.ref !== null) {
+            setCurrentlyValidatingElement$1(fragment);
+            error("Invalid attribute `ref` supplied to `React.Fragment`.");
+            setCurrentlyValidatingElement$1(null);
+        }
+    }
+    function jsxWithValidation(type, props, key, isStaticChildren, source, self) {
+        var validType = isValidElementType(type); // We warn in this case but don't throw. We expect the element creation to
+        // succeed and there will likely be errors in render.
+        if (!validType) {
+            var info = "";
+            if (type === undefined || typeof type === "object" && type !== null && Object.keys(type).length === 0) info += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
+            var sourceInfo = getSourceInfoErrorAddendum(source);
+            if (sourceInfo) info += sourceInfo;
+            else info += getDeclarationErrorAddendum();
+            var typeString;
+            if (type === null) typeString = "null";
+            else if (isArray(type)) typeString = "array";
+            else if (type !== undefined && type.$$typeof === REACT_ELEMENT_TYPE) {
+                typeString = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />";
+                info = " Did you accidentally export a JSX literal instead of a component?";
+            } else typeString = typeof type;
+            error("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
+        }
+        var element = jsxDEV(type, props, key, source, self); // The result can be nullish if a mock or a custom function is used.
+        // TODO: Drop this when these are no longer allowed as the type argument.
+        if (element == null) return element;
+         // Skip key warning if the type isn't valid since our key validation logic
+        // doesn't expect a non-string/function type and can throw confusing errors.
+        // We don't want exception behavior to differ between dev and prod.
+        // (Rendering will throw with a helpful message and as soon as the type is
+        // fixed, the key warnings will appear.)
+        if (validType) {
+            var children = props.children;
+            if (children !== undefined) {
+                if (isStaticChildren) {
+                    if (isArray(children)) {
+                        for(var i = 0; i < children.length; i++)validateChildKeys(children[i], type);
+                        if (Object.freeze) Object.freeze(children);
+                    } else error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                } else validateChildKeys(children, type);
+            }
+        }
+        if (type === REACT_FRAGMENT_TYPE) validateFragmentProps(element);
+        else validatePropTypes(element);
+        return element;
+    } // These two functions exist to still get child warnings in dev
+    // even with the prod transform. This means that jsxDEV is purely
+    // opt-in behavior for better messages but that we won't stop
+    // giving you warnings if you use production apis.
+    function jsxWithValidationStatic(type, props, key) {
+        return jsxWithValidation(type, props, key, true);
+    }
+    function jsxWithValidationDynamic(type, props, key) {
+        return jsxWithValidation(type, props, key, false);
+    }
+    var jsx = jsxWithValidationDynamic; // we may want to special case jsxs internally to take advantage of static children.
+    // for now we can ship identical prod functions
+    var jsxs = jsxWithValidationStatic;
+    exports.Fragment = REACT_FRAGMENT_TYPE;
+    exports.jsx = jsx;
+    exports.jsxs = jsxs;
+})();
+
+},{"593632ccebda0d3a":"21dqq"}],"c5vgB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4ca8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4ca8.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("7513bcd591a82e7e");
+const UserContext = /*#__PURE__*/ (0, _react.createContext)({
+    user: {
+        name: "Dhruv",
+        email: "dummy@gmail.com"
+    }
+});
+UserContext.displayName = "UserContext";
+var _default = exports.default = UserContext;
+
+  $parcel$ReactRefreshHelpers$4ca8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","7513bcd591a82e7e":"21dqq"}],"lOjBx":[function(require,module,exports) {
 "use strict";
 var m = require("aaccff5d309d9239");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -27336,334 +32874,149 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"786KC"}],"knXDc":[function(require,module,exports) {
+},{}],"knXDc":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3d92 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$3d92.prelude(module);
 
 try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = exports.Title = void 0;
+var _react = require("8d0f2adbfa16d549");
+var _Logo = _interopRequireDefault(require("1c87e2771cd912ae"));
+var _reactRouterDom = require("6cb2a6d919030f76");
+var _useOnline = _interopRequireDefault(require("1065160c324879b5"));
+var _UserContext = _interopRequireDefault(require("ab8ed04a56ae0001"));
+var _reactRedux = require("fa11b65524028f74");
+var _store = _interopRequireDefault(require("ae6e470c34b3ccc2"));
+var _jsxRuntime = require("53f0a8cd1b4f92b4");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 // this is not normal js file thats why some people name it .jsx 
 // you write typescript then name it .tsx
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Title", ()=>Title);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _logoPng = require("../assets/img/Logo.png");
-var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
 const loggedInUser = ()=>{
     // API call to check authentication
     return true;
 };
-const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+const Title = ()=>/*#__PURE__*/ (0, _jsxRuntime.jsx)("a", {
         href: "/",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
+            "data-testid": "logo",
+            id: "",
+            className: "h-28 p-2",
             alt: "logo",
-            className: "Logo",
-            src: (0, _logoPngDefault.default)
-        }, void 0, false, {
-            fileName: "src/component/Header.js",
-            lineNumber: 12,
-            columnNumber: 5
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/component/Header.js",
-        lineNumber: 11,
-        columnNumber: 28
-    }, undefined);
+            src: _Logo.default
+        })
+    });
 _c = Title;
+exports.Title = Title;
 const title = "Food Villa";
 //react component
 // functional base component 
 // var xyz = 120;
 // const data = api.getData();
 const Header = ()=>{
-    _s();
     const [isLoggedin, setisLoggedin] = (0, _react.useState)(false);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "Header",
+    const isOnline = (0, _useOnline.default)();
+    const { user } = (0, _react.useContext)(_UserContext.default);
+    const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
+    // console.log(cartItems);
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        className: "flex justify-between bg-pink-50 shadow-lg sm:bg-blue-50 md:bg-yellow-50",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                fileName: "src/component/Header.js",
-                lineNumber: 33,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Title, {}),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                className: "py-10",
                 children: title
-            }, void 0, false, {
-                fileName: "src/component/Header.js",
-                lineNumber: 34,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                 className: "nav-item",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("ul", {
+                    className: "flex py-10",
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
+                            className: "px-2 ",
+                            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                                 to: "/",
                                 children: "Home"
-                            }, void 0, false, {
-                                fileName: "src/component/Header.js",
-                                lineNumber: 37,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/component/Header.js",
-                            lineNumber: 37,
-                            columnNumber: 9
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            })
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsxs)("li", {
+                            className: "px-2 ",
                             children: [
                                 " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                                     to: "/about",
                                     children: "About us"
-                                }, void 0, false, {
-                                    fileName: "src/component/Header.js",
-                                    lineNumber: 38,
-                                    columnNumber: 13
-                                }, undefined)
+                                })
                             ]
-                        }, void 0, true, {
-                            fileName: "src/component/Header.js",
-                            lineNumber: 38,
-                            columnNumber: 8
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
+                            className: "px-2 ",
+                            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                                 to: "/contact",
                                 children: "Contact us"
-                            }, void 0, false, {
-                                fileName: "src/component/Header.js",
-                                lineNumber: 39,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/component/Header.js",
-                            lineNumber: 39,
-                            columnNumber: 9
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Card"
-                        }, void 0, false, {
-                            fileName: "src/component/Header.js",
-                            lineNumber: 40,
-                            columnNumber: 9
-                        }, undefined)
+                            })
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
+                            className: "px-2 ",
+                            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                                to: "/instamart",
+                                children: "Instamart"
+                            })
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                            to: "/cart",
+                            children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("li", {
+                                className: "px-2",
+                                "data-testid": "cart",
+                                children: [
+                                    "Cart- ",
+                                    cartItems.length,
+                                    " item"
+                                ]
+                            })
+                        })
                     ]
-                }, void 0, true, {
-                    fileName: "src/component/Header.js",
-                    lineNumber: 36,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/component/Header.js",
-                lineNumber: 35,
-                columnNumber: 5
-            }, undefined),
-            isLoggedin ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                })
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                "data-testid": "online-status",
+                className: "p-10",
+                children: isOnline ? "\u2705" : "\uD83D\uDD34"
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("span", {
+                className: "p-10 font-bold text-red-500",
+                children: [
+                    " ",
+                    user.name,
+                    " "
+                ]
+            }),
+            isLoggedin ? /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                 onClick: ()=>setisLoggedin(false),
                 children: "logout"
-            }, void 0, false, {
-                fileName: "src/component/Header.js",
-                lineNumber: 43,
-                columnNumber: 23
-            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            }) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                 onClick: ()=>setisLoggedin(true),
                 children: "login"
-            }, void 0, false, {
-                fileName: "src/component/Header.js",
-                lineNumber: 43,
-                columnNumber: 86
-            }, undefined)
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/component/Header.js",
-        lineNumber: 22,
-        columnNumber: 10
-    }, undefined); // return react element
+    }); // return react element
 };
-_s(Header, "SoBnP4nnK+fprtAFnp4LpNl8IiM=");
 _c1 = Header;
-// const HeaderComponent2 = ()=>(
-//     <div>
-//     <h1>hellooooooo</h1>
-//     <h1>2hello</h1>
-//     </div>
-//     );  // return react element
-exports.default = Header;
+var _default = exports.default = Header; // const HeaderComponent2 = ()=>(
+ //     <div>
+ //     <h1>hellooooooo</h1>
+ //     <h1>2hello</h1>
+ //     </div>
+ //     );  // return react element
 var _c, _c1;
 $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "Header");
@@ -27673,45 +33026,10 @@ $RefreshReg$(_c1, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../assets/img/Logo.png":"2PXAj","react-router-dom":"9xmpe"}],"2PXAj":[function(require,module,exports) {
+},{"8d0f2adbfa16d549":"21dqq","1c87e2771cd912ae":"2PXAj","6cb2a6d919030f76":"9xmpe","1065160c324879b5":"74Yls","ab8ed04a56ae0001":"c5vgB","fa11b65524028f74":"62sf7","ae6e470c34b3ccc2":"k2jPV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","53f0a8cd1b4f92b4":"6AEwr"}],"2PXAj":[function(require,module,exports) {
 module.exports = require("b93913009ad300f9").getBundleURL("lPpKD") + "Logo.0508dcf8.png" + "?" + Date.now();
 
-},{"b93913009ad300f9":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"9xmpe":[function(require,module,exports) {
+},{"b93913009ad300f9":"lgJ39"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.21.3
  *
@@ -34188,25 +39506,71 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iizf5":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"74Yls":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$03b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$03b2.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("1b5499d8c7068196");
+const useOnline = ()=>{
+    const [isOnline, setIsOnline] = (0, _react.useState)(true);
+    (0, _react.useEffect)(()=>{
+        const handleOnline = ()=>{
+            setIsOnline(true);
+        };
+        const handleOffline = ()=>{
+            setIsOnline(false);
+        };
+        window.addEventListener("online", handleOnline);
+        window.addEventListener("offline", handleOffline);
+        return ()=>{
+            window.removeEventListener("online", handleOnline);
+            window.removeEventListener("offline", handleOffline);
+        };
+    }, []);
+    return isOnline; // return true or false
+};
+var _default = exports.default = useOnline;
+
+  $parcel$ReactRefreshHelpers$03b2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"1b5499d8c7068196":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iizf5":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$cee4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$cee4.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _constantJs = require("./constant.js");
-var _restaurantCard = require("./RestaurantCard");
-var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
-var _react = require("react"); /* This is named export */ 
-var _shimmer = require("./Shimmer"); /* This is default export */ 
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-// import { restaurantList } from "./constant.js";
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("8901adae174e98ae");
+var _UserContext = _interopRequireDefault(require("701dd6e964ecd9ed"));
+var _constant = require("16b056cfc8ca8e7b");
+var _RestaurantCard = _interopRequireDefault(require("4d516b3230a945ca"));
+var _Shimmer = _interopRequireDefault(require("873c0cd7a04c1a8a"));
+var _reactRouterDom = require("51b7953642ed49dd");
+var _helper = require("ce9c8407acc27720");
+var _useOnline = _interopRequireDefault(require("7e3fbaed6f95c606"));
+var _jsxRuntime = require("a9a64eab81a13d5");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+/* This is named export */ /* This is default export */ // import { restaurantList } from "./constant.js";
 // const BurgerKing = 
 //     {
 //     name :"Burger King",
@@ -34242,12 +39606,7 @@ var _s = $RefreshSig$();
 //     );
 // };
 // const ResturentList = [ResturentCard,ResturentCard2];
-function filterData(searchText, restaurants) {
-    const resFilterData = restaurants.filter((restaurant)=>restaurant?.info?.name.toLowerCase().includes(searchText.toLowerCase()));
-    return resFilterData;
-}
 const Body = ()=>{
-    _s();
     // create normal vriable in js
     // const searchTxt = "kfc";
     // create local state variable in react
@@ -34257,6 +39616,7 @@ const Body = ()=>{
     const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
     const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
     const [errorMessage, setErrorMessage] = (0, _react.useState)("");
+    const { user, setUser } = (0, _react.useContext)(_UserContext.default);
     // empty dependency array => call once after render
     // dep arr [searchInput] => call once after initial render + everytime after render (my searchInput change)
     (0, _react.useEffect)(()=>{
@@ -34267,7 +39627,7 @@ const Body = ()=>{
     async function getRestaurants() {
         // handle the error using try... catch
         try {
-            const response = await fetch((0, _constantJs.swiggy_api_URL));
+            const response = await fetch(_constant.swiggy_api_URL);
             const json = await response.json();
             // initialize checkJsonData() function to check Swiggy Restaurant data
             async function checkJsonData(jsonData) {
@@ -34291,7 +39651,7 @@ const Body = ()=>{
     // use searchData function and set condition if data is empty show error message
     const searchData = (searchText, restaurants)=>{
         if (searchText !== "") {
-            const filteredData = filterData(searchText, restaurants);
+            const filteredData = (0, _helper.filterData)(searchText, restaurants);
             setFilteredRestaurants(filteredData);
             setErrorMessage("");
             if (filteredData?.length === 0) setErrorMessage(`Sorry, we couldn't find any results for "${searchText}"`);
@@ -34300,84 +39660,72 @@ const Body = ()=>{
             setFilteredRestaurants(restaurants);
         }
     };
+    const isOnline = (0, _useOnline.default)();
+    if (!isOnline) return /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+        children: "\uD83D\uDD34 offline, please check your internet connection!!"
+    });
     // if allRestaurants is empty don't render restaurants cards
     if (!allRestaurants) return null;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-container",
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                className: "search-container p-5 bg-pink-50 my-5 ",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
+                        "data-testid": "search-input",
                         type: "text",
                         className: "search-input",
                         placeholder: "Search a restaurant you want...",
                         value: searchText,
-                        // update the state variable searchText when we typing in input box
                         onChange: (e)=>setSearchText(e.target.value)
-                    }, void 0, false, {
-                        fileName: "src/component/Body.js",
-                        lineNumber: 119,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "search-btn",
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                        "data-testid": "search-btn",
+                        className: "search-btn p-2 m-2 bg-purple-800 hover:bg-black text-white rounded-md",
                         onClick: ()=>{
                             // user click on button searchData function is called
                             searchData(searchText, allRestaurants);
                         },
                         children: "Search"
-                    }, void 0, false, {
-                        fileName: "src/component/Body.js",
-                        lineNumber: 122,
-                        columnNumber: 9
-                    }, undefined)
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
+                        value: user.name,
+                        onChange: (e)=>setUser({
+                                ...user,
+                                name: e.target.value
+                            })
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
+                        className: "ml-2",
+                        value: user.email,
+                        onChange: (e)=>setUser({
+                                ...user,
+                                email: e.target.value
+                            })
+                    })
                 ]
-            }, void 0, true, {
-                fileName: "src/component/Body.js",
-                lineNumber: 118,
-                columnNumber: 7
-            }, undefined),
-            errorMessage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            }),
+            errorMessage && /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                 className: "error-container",
                 children: errorMessage
-            }, void 0, false, {
-                fileName: "src/component/Body.js",
-                lineNumber: 129,
-                columnNumber: 24
-            }, undefined),
-            allRestaurants?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "src/component/Body.js",
-                lineNumber: 132,
-                columnNumber: 39
-            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "restaurant-list",
+            }),
+            allRestaurants?.length === 0 ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                className: "grid grid-cols-5 ",
+                "data-testid": "res-list",
                 children: filteredRestaurants.map((restaurant)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
                         to: "/restaurant/" + restaurant?.info?.id,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_RestaurantCard.default, {
                             ...restaurant?.info
-                        }, void 0, false, {
-                            fileName: "src/component/Body.js",
-                            lineNumber: 136,
-                            columnNumber: 17
-                        }, undefined)
-                    }, restaurant?.info?.id, false, {
-                        fileName: "src/component/Body.js",
-                        lineNumber: 135,
-                        columnNumber: 16
-                    }, undefined);
+                        })
+                    }, restaurant?.info?.id);
                 })
-            }, void 0, false, {
-                fileName: "src/component/Body.js",
-                lineNumber: 132,
-                columnNumber: 53
-            }, undefined)
+            })
         ]
-    }, void 0, true);
+    });
 };
-_s(Body, "+HhlMwbQ+xUSNXFpTBqVZVGNDfk=");
 _c = Body;
-exports.default = Body;
+var _default = exports.default = Body;
 var _c;
 $RefreshReg$(_c, "Body");
 
@@ -34386,119 +39734,66 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"./RestaurantCard":"ekJ0u","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","./Shimmer":"l5rS0","./constant.js":"1w0li","react-router-dom":"9xmpe"}],"ekJ0u":[function(require,module,exports) {
+},{"8901adae174e98ae":"21dqq","701dd6e964ecd9ed":"c5vgB","16b056cfc8ca8e7b":"1w0li","4d516b3230a945ca":"ekJ0u","873c0cd7a04c1a8a":"l5rS0","51b7953642ed49dd":"9xmpe","ce9c8407acc27720":"3GF3D","7e3fbaed6f95c606":"74Yls","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","a9a64eab81a13d5":"6AEwr"}],"ekJ0u":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a386 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$a386.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _constant = require("./constant");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _constant = require("cedf7191c0c5347e");
+var _jsxRuntime = require("b717c9e1ef7b4b87");
+// import UserContext from "../utils/UserContext";
+// import { useContext } from "react";
 // Restaurant card component: Image, name, cuisine
-const RestaurantCard = ({ cloudinaryImageId, name, cuisines, areaName, sla, costForTwo, avgRatingString })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
+const RestaurantCard = ({ cloudinaryImageId, name, cuisines, areaName, avgRatingString, sla, costForTwo })=>{
+    // const {user}= useContext(UserContext)
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        className: "card p-2 m-2 h-96 shadow-lg bg-pink-50",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: (0, _constant.IMG_CDN_URL) + cloudinaryImageId
-            }, void 0, false, {
-                fileName: "src/component/RestaurantCard.js",
-                lineNumber: 14,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
+                src: _constant.IMG_CDN_URL + cloudinaryImageId
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
+                className: "font-bold text-xl ",
                 children: name
-            }, void 0, false, {
-                fileName: "src/component/RestaurantCard.js",
-                lineNumber: 15,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h5", {
                 children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "src/component/RestaurantCard.js",
-                lineNumber: 16,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h5", {
                 children: areaName
-            }, void 0, false, {
-                fileName: "src/component/RestaurantCard.js",
-                lineNumber: 17,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("span", {
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        style: avgRatingString < 4 ? {
-                            backgroundColor: "var(--light-red)"
-                        } : avgRatingString === "--" ? {
-                            backgroundColor: "white",
-                            color: "black"
-                        } : {
-                            color: "white"
-                        },
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h4", {
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                className: "fa-solid fa-star"
-                            }, void 0, false, {
-                                fileName: "src/component/RestaurantCard.js",
-                                lineNumber: 27,
-                                columnNumber: 11
-                            }, undefined),
-                            avgRatingString
+                            " Rating : ",
+                            avgRatingString,
+                            " "
                         ]
-                    }, void 0, true, {
-                        fileName: "src/component/RestaurantCard.js",
-                        lineNumber: 19,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: "\u2022"
-                    }, void 0, false, {
-                        fileName: "src/component/RestaurantCard.js",
-                        lineNumber: 30,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: sla?.lastMileTravelString ?? "2.0 km"
-                    }, void 0, false, {
-                        fileName: "src/component/RestaurantCard.js",
-                        lineNumber: 31,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: "\u2022"
-                    }, void 0, false, {
-                        fileName: "src/component/RestaurantCard.js",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: costForTwo ?? "\u20B9200 for two"
-                    }, void 0, false, {
-                        fileName: "src/component/RestaurantCard.js",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined)
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h4", {
+                        children: [
+                            "Distance : ",
+                            sla?.lastMileTravelString ?? "2.0 km"
+                        ]
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h4", {
+                        children: costForTwo ?? "&#8377;200 for two"
+                    })
                 ]
-            }, void 0, true, {
-                fileName: "src/component/RestaurantCard.js",
-                lineNumber: 18,
-                columnNumber: 7
-            }, undefined)
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/component/RestaurantCard.js",
-        lineNumber: 13,
-        columnNumber: 10
-    }, undefined);
+    });
 };
 _c = RestaurantCard;
-exports.default = RestaurantCard;
+var _default = exports.default = RestaurantCard;
 var _c;
 $RefreshReg$(_c, "RestaurantCard");
 
@@ -34507,308 +39802,205 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./constant":"1w0li"}],"1w0li":[function(require,module,exports) {
-// Image CDN URL for Restaurant card
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
-parcelHelpers.export(exports, "ITEM_IMG_CDN_URL", ()=>ITEM_IMG_CDN_URL);
-parcelHelpers.export(exports, "swiggy_api_URL", ()=>swiggy_api_URL);
-parcelHelpers.export(exports, "swiggy_menu_api_URL", ()=>swiggy_menu_api_URL);
-parcelHelpers.export(exports, "shimmer_card_unit", ()=>shimmer_card_unit);
-parcelHelpers.export(exports, "shimmer_menu_card_unit", ()=>shimmer_menu_card_unit);
-parcelHelpers.export(exports, "MENU_ITEM_TYPE_KEY", ()=>MENU_ITEM_TYPE_KEY);
-parcelHelpers.export(exports, "RESTAURANT_TYPE_KEY", ()=>RESTAURANT_TYPE_KEY);
-parcelHelpers.export(exports, "Github_UserName", ()=>Github_UserName);
-parcelHelpers.export(exports, "Github_API_User", ()=>Github_API_User);
-parcelHelpers.export(exports, "options", ()=>options);
-const IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
-const ITEM_IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/";
-const swiggy_api_URL = "https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING";
-const swiggy_menu_api_URL = "https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=";
-const shimmer_card_unit = 20;
-const shimmer_menu_card_unit = 4;
-const MENU_ITEM_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
-const RESTAURANT_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.Restaurant";
-const Github_UserName = "DhruvAmbaliya";
-const Github_API_User = "https://api.github.com/users/";
-const options = {
-    method: "GET",
-    headers: {
-        Authorization: ""
-    }
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l5rS0":[function(require,module,exports) {
+},{"cedf7191c0c5347e":"1w0li","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","b717c9e1ef7b4b87":"6AEwr"}],"l5rS0":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a366 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$a366.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "MenuShimmer", ()=>MenuShimmer);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _constant = require("./constant");
-// Shimmer card to display with animation
-const CardShimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "shimmer-card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-img stroke animate"
-            }, void 0, false, {
-                fileName: "src/component/Shimmer.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-title stroke animate"
-            }, void 0, false, {
-                fileName: "src/component/Shimmer.js",
-                lineNumber: 7,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-tags stroke animate "
-            }, void 0, false, {
-                fileName: "src/component/Shimmer.js",
-                lineNumber: 8,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-details stroke animate "
-            }, void 0, false, {
-                fileName: "src/component/Shimmer.js",
-                lineNumber: 9,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/component/Shimmer.js",
-        lineNumber: 5,
-        columnNumber: 10
-    }, undefined);
-};
-_c = CardShimmer;
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = exports.MenuShimmer = void 0;
+var _jsxRuntime = require("4c3c44d88f1f260e");
 const MenuShimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "restaurant-menu",
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "restaurant-summary stroke-color animate",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "shimmer-img stroke animate"
-                    }, void 0, false, {
-                        fileName: "src/component/Shimmer.js",
-                        lineNumber: 15,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "restaurant-summary-details",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                className: "shimmer-w40  stroke animate"
-                            }, void 0, false, {
-                                fileName: "src/component/Shimmer.js",
-                                lineNumber: 17,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "shimmer-w20 stroke animate"
-                            }, void 0, false, {
-                                fileName: "src/component/Shimmer.js",
-                                lineNumber: 18,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "shimmer-w60  stroke animate"
-                            }, void 0, false, {
-                                fileName: "src/component/Shimmer.js",
-                                lineNumber: 19,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/component/Shimmer.js",
-                        lineNumber: 16,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/component/Shimmer.js",
-                lineNumber: 14,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "restaurant-menu-content",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "menu-items-container",
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                className: " animate-pulse h-72 py-8 mb-5",
+                children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                    className: "m-auto w-4/5 flex justify-evenly items-center gap-5",
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "menu-title-wrap ",
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                            className: "w-96 h-52 bg-gray-400"
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                            className: "w-1/3",
                             children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                    className: "shimmer-w40 stroke animate"
-                                }, void 0, false, {
-                                    fileName: "src/component/Shimmer.js",
-                                    lineNumber: 27,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "shimmer-w20 stroke animate"
-                                }, void 0, false, {
-                                    fileName: "src/component/Shimmer.js",
-                                    lineNumber: 28,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/component/Shimmer.js",
-                            lineNumber: 26,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "menu-items-list",
-                            children: Array((0, _constant.shimmer_menu_card_unit)).fill("").map((element, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "shimmer-menu-card",
+                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                                    className: " mb-2 w-full h-10 bg-gray-400"
+                                }),
+                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                                    className: " mb-2 w-2/3 h-10 bg-gray-400"
+                                }),
+                                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                                    className: "flex w-full h-5 gap-2 justify-between",
                                     children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "shimmer-item-details",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                    className: "shimmer-w40  stroke animate"
-                                                }, void 0, false, {
-                                                    fileName: "src/component/Shimmer.js",
-                                                    lineNumber: 33,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    className: "shimmer-w20  stroke animate",
-                                                    children: " "
-                                                }, void 0, false, {
-                                                    fileName: "src/component/Shimmer.js",
-                                                    lineNumber: 34,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    className: "shimmer-w60  stroke animate"
-                                                }, void 0, false, {
-                                                    fileName: "src/component/Shimmer.js",
-                                                    lineNumber: 35,
-                                                    columnNumber: 17
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/component/Shimmer.js",
-                                            lineNumber: 32,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "shimmer-img-wrapper",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                    className: "shimmer-img stroke animate"
-                                                }, void 0, false, {
-                                                    fileName: "src/component/Shimmer.js",
-                                                    lineNumber: 38,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "shimmer-btn stroke animate",
-                                                    children: " "
-                                                }, void 0, false, {
-                                                    fileName: "src/component/Shimmer.js",
-                                                    lineNumber: 39,
-                                                    columnNumber: 17
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/component/Shimmer.js",
-                                            lineNumber: 37,
-                                            columnNumber: 15
-                                        }, undefined)
+                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                                            className: "w-1/3 bg-gray-400"
+                                        }),
+                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                                            className: "w-1/3 bg-gray-400"
+                                        }),
+                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                                            className: "w-1/3 bg-gray-400"
+                                        })
                                     ]
-                                }, index, true, {
-                                    fileName: "src/component/Shimmer.js",
-                                    lineNumber: 31,
-                                    columnNumber: 77
-                                }, undefined))
-                        }, void 0, false, {
-                            fileName: "src/component/Shimmer.js",
-                            lineNumber: 30,
-                            columnNumber: 11
-                        }, undefined)
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                            className: "h-32 w-1/3 bg-gray-400"
+                        })
                     ]
-                }, void 0, true, {
-                    fileName: "src/component/Shimmer.js",
-                    lineNumber: 25,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/component/Shimmer.js",
-                lineNumber: 24,
-                columnNumber: 7
-            }, undefined)
+                })
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                className: "m-auto w-3/5",
+                children: Array(5).fill("").map((item, index)=>{
+                    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                        className: " flex animate-pulse items-center gap-5 h-44",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                                className: "h-4/5 w-3/4",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                                        className: "h-5 w-3/4 bg-gray-400 mb-2"
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                                        className: "h-12 w-3/4 bg-gray-400 mb-2"
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                                        className: "h-5 w-1/6 bg-gray-400 mb-2"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                                className: "h-4/5 w-1/4 bg-gray-400"
+                            })
+                        ]
+                    }, index);
+                })
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/component/Shimmer.js",
-        lineNumber: 13,
-        columnNumber: 10
-    }, undefined);
+    });
 };
-_c1 = MenuShimmer;
+_c = MenuShimmer;
+exports.MenuShimmer = MenuShimmer;
 const Shimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "restaurant-list",
-        children: Array(20).fill("").map((e, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card"
-            }, index, false, {
-                fileName: "src/component/Shimmer.js",
-                lineNumber: 49,
-                columnNumber: 51
-            }, undefined))
-    }, void 0, false, {
-        fileName: "src/component/Shimmer.js",
-        lineNumber: 48,
-        columnNumber: 10
-    }, undefined);
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+        className: "mt-5 m-auto",
+        "data-testid": "shimmer",
+        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+            className: "grid grid-cols-5 gap-8 justify-evenly ",
+            children: Array(20).fill("").map((item, index)=>{
+                return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                    className: " animate-pulse w-72 h-96",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                            className: "w-72 h-44 bg-gray-400 mb-3"
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                            className: "w-72 h-8 bg-gray-400 mb-3"
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                            className: "w-3/4 h-8 bg-gray-400 mb-3"
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                            className: "flex w-72 h-5 gap-2 justify-between",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                                    className: "w-1/3 bg-gray-400"
+                                }),
+                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                                    className: "w-1/3 bg-gray-400"
+                                }),
+                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                                    className: "w-1/3 bg-gray-400"
+                                })
+                            ]
+                        })
+                    ]
+                }, index);
+            })
+        })
+    });
 };
-_c2 = Shimmer;
-exports.default = Shimmer;
-var _c, _c1, _c2;
-$RefreshReg$(_c, "CardShimmer");
-$RefreshReg$(_c1, "MenuShimmer");
-$RefreshReg$(_c2, "Shimmer");
+_c1 = Shimmer;
+var _default = exports.default = Shimmer; // const Shimmer = ()=>{
+ //     return (
+ //         <div className="grid grid-cols-5 ">
+ //             {Array(20).fill("").map((e,index)=>(
+ //                 <div key={index} className="shimmer-card"></div>
+ //             ))}
+ //         </div>
+ //     )
+ // }
+var _c, _c1;
+$RefreshReg$(_c, "MenuShimmer");
+$RefreshReg$(_c1, "Shimmer");
 
   $parcel$ReactRefreshHelpers$a366.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./constant":"1w0li"}],"4ifUV":[function(require,module,exports) {
+},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","4c3c44d88f1f260e":"6AEwr"}],"3GF3D":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.filterData = filterData;
+function filterData(searchText, restaurants) {
+    const resFilterData = restaurants.filter((restaurant)=>restaurant?.info?.name.toLowerCase().includes(searchText.toLowerCase()));
+    return resFilterData;
+}
+
+},{}],"4ifUV":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bcf9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$bcf9.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _UserContext = _interopRequireDefault(require("7b0ae98bc90675bd"));
+var _react = require("2f160aedc23f6c86");
+var _jsxRuntime = require("f642c11e3257f929");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-        children: "footer"
-    }, void 0, false, {
-        fileName: "src/component/Footer.js",
-        lineNumber: 2,
-        columnNumber: 10
-    }, undefined);
+    const { user } = (0, _react.useContext)(_UserContext.default);
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
+                className: " mt-5",
+                children: "footer"
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h4", {
+                className: " m-5 p-5",
+                children: [
+                    " This Side is developed by ",
+                    user.name,
+                    " - ",
+                    user.email,
+                    " "
+                ]
+            })
+        ]
+    });
 };
 _c = Footer;
-exports.default = Footer;
+var _default = exports.default = Footer;
 var _c;
 $RefreshReg$(_c, "Footer");
 
@@ -34817,90 +40009,39 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jR9xM":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$411c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$411c.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const Contact = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "contact us"
-    }, void 0, false, {
-        fileName: "src/component/contact.js",
-        lineNumber: 3,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Contact;
-exports.default = Contact;
-var _c;
-$RefreshReg$(_c, "Contact");
-
-  $parcel$ReactRefreshHelpers$411c.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cosKY":[function(require,module,exports) {
+},{"7b0ae98bc90675bd":"c5vgB","2f160aedc23f6c86":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","f642c11e3257f929":"6AEwr"}],"cosKY":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ea6f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$ea6f.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _reactRouterDom = require("363f9fa1f45fc7f");
+var _jsxRuntime = require("653b08a285060cf3");
 const Error = ()=>{
-    _s();
     const err = (0, _reactRouterDom.useRouteError)();
     console.log(err);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
                 children: "Oppps!"
-            }, void 0, false, {
-                fileName: "src/component/Error.js",
-                lineNumber: 6,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
                 children: "Something Went Wrong"
-            }, void 0, false, {
-                fileName: "src/component/Error.js",
-                lineNumber: 7,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
                 children: err.status + " : " + err.statusText
-            }, void 0, false, {
-                fileName: "src/component/Error.js",
-                lineNumber: 8,
-                columnNumber: 9
-            }, undefined)
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/component/Error.js",
-        lineNumber: 5,
-        columnNumber: 10
-    }, undefined);
+    });
 };
-_s(Error, "U5GmGaAmh0j0MVy+E8WdBnjlm7s=", false, function() {
-    return [
-        (0, _reactRouterDom.useRouteError)
-    ];
-});
 _c = Error;
-exports.default = Error;
+var _default = exports.default = Error;
 var _c;
 $RefreshReg$(_c, "Error");
 
@@ -34909,38 +40050,55 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kMuXm":[function(require,module,exports) {
+},{"363f9fa1f45fc7f":"9xmpe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","653b08a285060cf3":"6AEwr"}],"kMuXm":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$10e0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$10e0.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactRouterDom = require("react-router-dom"); // import useParams for read `resId`
-var _constant = require("./constant");
-var _shimmer = require("./Shimmer");
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _Logo = _interopRequireDefault(require("2a7b1b5f23478c5c"));
+var _react = require("3274f90c14f12952");
+var _reactRouterDom = require("f8ec3b2b995f079");
+var _constant = require("817da4d393f20eaf");
+var _Shimmer = require("bcdd0a25a6ab6cda");
+var _cartSlice = require("76de755172c628a2");
+var _reactRedux = require("70b2ae28f1b1b64b");
+var _jsxRuntime = require("e50c5153d9270c74");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+// import useParams for read `resId`
 const RestaurantMenu = ()=>{
-    _s();
     const { resId } = (0, _reactRouterDom.useParams)(); // call useParams and get value of restaurant id using object destructuring
     const [restaurant, setRestaurant] = (0, _react.useState)(null); // call useState to store the api data in res
     const [menuItems, setMenuItems] = (0, _react.useState)([]);
+    const dispatch = (0, _reactRedux.useDispatch)();
+    // const handleAddItem=()=>{
+    //   dispatch(addItem("Grapes")) // {payload:"Grapes"}
+    // };
+    const addFoodItem = (item)=>{
+        dispatch((0, _cartSlice.addItem)(item));
+    };
     (0, _react.useEffect)(()=>{
         getRestaurantInfo(); // call getRestaurantInfo function so it fetch api data and set data in restaurant state variable
     }, []);
     async function getRestaurantInfo() {
         try {
-            const response = await fetch((0, _constant.swiggy_menu_api_URL) + resId);
+            const response = await fetch(_constant.swiggy_menu_api_URL + resId);
             const json = await response.json();
             // Set restaurant data
-            const restaurantData = json?.data?.cards?.map((x)=>x.card)?.find((x)=>x && x.card["@type"] === (0, _constant.RESTAURANT_TYPE_KEY))?.card?.info || null;
+            const restaurantData = json?.data?.cards?.map((x)=>x.card)?.find((x)=>x && x.card["@type"] === _constant.RESTAURANT_TYPE_KEY)?.card?.info || null;
             setRestaurant(restaurantData);
             // Set menu item data
-            const menuItemsData = json?.data?.cards.find((x)=>x.groupedCard)?.groupedCard?.cardGroupMap?.REGULAR?.cards?.map((x)=>x.card?.card)?.filter((x)=>x["@type"] == (0, _constant.MENU_ITEM_TYPE_KEY))?.map((x)=>x.itemCards).flat().map((x)=>x.card?.info) || [];
+            const menuItemsData = json?.data?.cards.find((x)=>x.groupedCard)?.groupedCard?.cardGroupMap?.REGULAR?.cards?.map((x)=>x.card?.card)?.filter((x)=>x["@type"] == _constant.MENU_ITEM_TYPE_KEY)?.map((x)=>x.itemCards).flat().map((x)=>x.card?.info) || [];
             const uniqueMenuItems = [];
             menuItemsData.forEach((item)=>{
                 if (!uniqueMenuItems.find((x)=>x.id === item.id)) uniqueMenuItems.push(item);
@@ -34952,48 +40110,32 @@ const RestaurantMenu = ()=>{
             console.log(error);
         }
     }
-    return !restaurant ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmer.MenuShimmer), {}, void 0, false, {
-        fileName: "src/component/RestaurantMenu.js",
-        lineNumber: 38,
-        columnNumber: 24
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "restaurant-menu",
+    return !restaurant ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.MenuShimmer, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        className: "flex ",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "restaurant-summary",
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                className: "",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
                         className: "restaurant-img",
-                        src: (0, _constant.IMG_CDN_URL) + restaurant?.cloudinaryImageId,
+                        src: _constant.IMG_CDN_URL + restaurant?.cloudinaryImageId,
                         alt: restaurant?.name
-                    }, void 0, false, {
-                        fileName: "src/component/RestaurantMenu.js",
-                        lineNumber: 40,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
                         className: "restaurant-summary-details",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
                                 className: "restaurant-title",
                                 children: restaurant?.name
-                            }, void 0, false, {
-                                fileName: "src/component/RestaurantMenu.js",
-                                lineNumber: 42,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            }),
+                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                                 className: "restaurant-tags",
                                 children: restaurant?.cuisines?.join(", ")
-                            }, void 0, false, {
-                                fileName: "src/component/RestaurantMenu.js",
-                                lineNumber: 43,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            }),
+                            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
                                 className: "restaurant-details",
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
                                         className: "restaurant-rating",
                                         style: restaurant?.avgRating < 4 ? {
                                             backgroundColor: "var(--light-red)"
@@ -35004,210 +40146,106 @@ const RestaurantMenu = ()=>{
                                             color: "white"
                                         },
                                         children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("i", {
                                                 className: "fa-solid fa-star"
-                                            }, void 0, false, {
-                                                fileName: "src/component/RestaurantMenu.js",
-                                                lineNumber: 53,
-                                                columnNumber: 13
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            }),
+                                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
                                                 children: restaurant?.avgRating
-                                            }, void 0, false, {
-                                                fileName: "src/component/RestaurantMenu.js",
-                                                lineNumber: 54,
-                                                columnNumber: 15
-                                            }, undefined)
+                                            })
                                         ]
-                                    }, void 0, true, {
-                                        fileName: "src/component/RestaurantMenu.js",
-                                        lineNumber: 45,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                                         className: "restaurant-rating-slash",
                                         children: "|"
-                                    }, void 0, false, {
-                                        fileName: "src/component/RestaurantMenu.js",
-                                        lineNumber: 56,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                                         children: restaurant?.sla?.slaString
-                                    }, void 0, false, {
-                                        fileName: "src/component/RestaurantMenu.js",
-                                        lineNumber: 57,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                                         className: "restaurant-rating-slash",
                                         children: "|"
-                                    }, void 0, false, {
-                                        fileName: "src/component/RestaurantMenu.js",
-                                        lineNumber: 58,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                                         children: restaurant?.costForTwoMessage
-                                    }, void 0, false, {
-                                        fileName: "src/component/RestaurantMenu.js",
-                                        lineNumber: 59,
-                                        columnNumber: 13
-                                    }, undefined)
+                                    })
                                 ]
-                            }, void 0, true, {
-                                fileName: "src/component/RestaurantMenu.js",
-                                lineNumber: 44,
-                                columnNumber: 11
-                            }, undefined)
+                            })
                         ]
-                    }, void 0, true, {
-                        fileName: "src/component/RestaurantMenu.js",
-                        lineNumber: 41,
-                        columnNumber: 9
-                    }, undefined)
+                    })
                 ]
-            }, void 0, true, {
-                fileName: "src/component/RestaurantMenu.js",
-                lineNumber: 39,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                 className: "restaurant-menu-content",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
                     className: "menu-items-container",
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
                             className: "menu-title-wrap",
                             children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
                                     className: "menu-title",
                                     children: "Recommended"
-                                }, void 0, false, {
-                                    fileName: "src/component/RestaurantMenu.js",
-                                    lineNumber: 67,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                }),
+                                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("p", {
                                     className: "menu-count",
                                     children: [
                                         menuItems.length,
                                         " ITEMS"
                                     ]
-                                }, void 0, true, {
-                                    fileName: "src/component/RestaurantMenu.js",
-                                    lineNumber: 68,
-                                    columnNumber: 13
-                                }, undefined)
+                                })
                             ]
-                        }, void 0, true, {
-                            fileName: "src/component/RestaurantMenu.js",
-                            lineNumber: 66,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "menu-items-list",
-                            children: menuItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                            className: "grid grid-cols-2",
+                            children: menuItems.map((item)=>/*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
                                     className: "menu-item",
                                     children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
                                             className: "menu-item-details",
                                             children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
                                                     className: "item-title",
                                                     children: item?.name
-                                                }, void 0, false, {
-                                                    fileName: "src/component/RestaurantMenu.js",
-                                                    lineNumber: 75,
-                                                    columnNumber: 19
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                }),
+                                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                                                     className: "item-cost",
                                                     children: item?.price > 0 ? new Intl.NumberFormat("en-IN", {
                                                         style: "currency",
                                                         currency: "INR"
                                                     }).format(item?.price / 100) : " "
-                                                }, void 0, false, {
-                                                    fileName: "src/component/RestaurantMenu.js",
-                                                    lineNumber: 76,
-                                                    columnNumber: 19
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                }),
+                                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                                                     className: "item-desc",
                                                     children: item?.description
-                                                }, void 0, false, {
-                                                    fileName: "src/component/RestaurantMenu.js",
-                                                    lineNumber: 82,
-                                                    columnNumber: 19
-                                                }, undefined)
+                                                })
                                             ]
-                                        }, void 0, true, {
-                                            fileName: "src/component/RestaurantMenu.js",
-                                            lineNumber: 74,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "menu-img-wrapper",
+                                        }),
+                                        /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                                            className: "grid grid-cols",
                                             children: [
-                                                item?.imageId && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                item?.imageId && /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
                                                     className: "menu-item-img",
-                                                    src: (0, _constant.ITEM_IMG_CDN_URL) + item?.imageId,
+                                                    src: _constant.ITEM_IMG_CDN_URL + item?.imageId,
                                                     alt: item?.name
-                                                }, void 0, false, {
-                                                    fileName: "src/component/RestaurantMenu.js",
-                                                    lineNumber: 85,
-                                                    columnNumber: 37
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                    className: "add-btn",
-                                                    children: " ADD +"
-                                                }, void 0, false, {
-                                                    fileName: "src/component/RestaurantMenu.js",
-                                                    lineNumber: 86,
-                                                    columnNumber: 19
-                                                }, undefined)
+                                                }),
+                                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                                                    className: "p-2 m-5 bg-green-300",
+                                                    onClick: ()=>addFoodItem(item),
+                                                    children: " ADD Item"
+                                                })
                                             ]
-                                        }, void 0, true, {
-                                            fileName: "src/component/RestaurantMenu.js",
-                                            lineNumber: 84,
-                                            columnNumber: 17
-                                        }, undefined)
+                                        })
                                     ]
-                                }, item?.id, true, {
-                                    fileName: "src/component/RestaurantMenu.js",
-                                    lineNumber: 73,
-                                    columnNumber: 36
-                                }, undefined))
-                        }, void 0, false, {
-                            fileName: "src/component/RestaurantMenu.js",
-                            lineNumber: 72,
-                            columnNumber: 11
-                        }, undefined)
+                                }, item?.id))
+                        })
                     ]
-                }, void 0, true, {
-                    fileName: "src/component/RestaurantMenu.js",
-                    lineNumber: 65,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/component/RestaurantMenu.js",
-                lineNumber: 64,
-                columnNumber: 7
-            }, undefined)
+                })
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/component/RestaurantMenu.js",
-        lineNumber: 38,
-        columnNumber: 42
-    }, undefined);
+    });
 };
-_s(RestaurantMenu, "HAXyrIbP532797rOFAwShvQr2a8=", false, function() {
-    return [
-        (0, _reactRouterDom.useParams)
-    ];
-});
 _c = RestaurantMenu;
-exports.default = RestaurantMenu; // import { useEffect,useState } from 'react';
+var _default = exports.default = RestaurantMenu; // import { useEffect,useState } from 'react';
  // import { useParams } from 'react-router-dom';
  // const RestaurantMenu = () => {
  //     // read dynamic URL
@@ -35239,18 +40277,43 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Shimmer":"l5rS0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./constant":"1w0li"}],"7kLfj":[function(require,module,exports) {
+},{"3274f90c14f12952":"21dqq","f8ec3b2b995f079":"9xmpe","817da4d393f20eaf":"1w0li","bcdd0a25a6ab6cda":"l5rS0","76de755172c628a2":"5RXlr","70b2ae28f1b1b64b":"62sf7","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","e50c5153d9270c74":"6AEwr","2a7b1b5f23478c5c":"2PXAj"}],"7kLfj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8530 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$8530.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireWildcard(require("acedec0e30950f85"));
+var _jsxRuntime = require("3d8717078fe70f10");
+function _getRequireWildcardCache(e) {
+    if ("function" != typeof WeakMap) return null;
+    var r = new WeakMap(), t = new WeakMap();
+    return (_getRequireWildcardCache = function(e) {
+        return e ? t : r;
+    })(e);
+}
+function _interopRequireWildcard(e, r) {
+    if (!r && e && e.__esModule) return e;
+    if (null === e || "object" != typeof e && "function" != typeof e) return {
+        default: e
+    };
+    var t = _getRequireWildcardCache(r);
+    if (t && t.has(e)) return t.get(e);
+    var n = {
+        __proto__: null
+    }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var u in e)if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) {
+        var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
+        i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
+    }
+    return n.default = e, t && t.set(e, n), n;
+}
 const Profile = (props)=>{
     // console.log("render function")
     // const [count,setCount]= useState(0);
@@ -35273,35 +40336,23 @@ const Profile = (props)=>{
     // }
     // },[])
     // console.log("render")
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
                 children: "Profile component"
-            }, void 0, false, {
-                fileName: "src/component/Profile.js",
-                lineNumber: 32,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h2", {
                 children: [
                     "Name: ",
                     props.name,
                     " "
                 ]
-            }, void 0, true, {
-                fileName: "src/component/Profile.js",
-                lineNumber: 33,
-                columnNumber: 9
-            }, undefined)
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/component/Profile.js",
-        lineNumber: 31,
-        columnNumber: 10
-    }, undefined);
+    });
 };
 _c = Profile;
-exports.default = Profile;
+var _default = exports.default = Profile;
 var _c;
 $RefreshReg$(_c, "Profile");
 
@@ -35310,166 +40361,6 @@ $RefreshReg$(_c, "Profile");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"94Koj":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$77f7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$77f7.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-var _profile = require("./Profile");
-var _profileDefault = parcelHelpers.interopDefault(_profile);
-var _profileclass = require("./Profileclass");
-var _profileclassDefault = parcelHelpers.interopDefault(_profileclass);
-// const About = () => {
-//   return (
-//     <div>
-//         <h1> About Us Page</h1>
-//         <p>this is about us Page</p>
-//         {/* <Outlet/> */}
-//         <Profile name={"Dhruv"}/>
-//         <ProfileClass name={"Dhruvclass"}/>
-//     </div>
-//   )
-// }
-class About extends (0, _reactDefault.default).Component {
-    constructor(props){
-        super(props);
-    // create state
-    // console.log("parent - constructor")
-    }
-    componentDidMount() {
-    // best place to make API call => because print after render
-    // console.log("parent - componentDidMount");
-    }
-    render() {
-        // console.log("parent - render")
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: " About Us Page"
-                }, void 0, false, {
-                    fileName: "src/component/About.js",
-                    lineNumber: 33,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "this is about us Page"
-                }, void 0, false, {
-                    fileName: "src/component/About.js",
-                    lineNumber: 34,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
-                    name: "Dhruv"
-                }, void 0, false, {
-                    fileName: "src/component/About.js",
-                    lineNumber: 36,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileclassDefault.default), {
-                    name: "1class",
-                    XYZ: "abc"
-                }, void 0, false, {
-                    fileName: "src/component/About.js",
-                    lineNumber: 37,
-                    columnNumber: 13
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/component/About.js",
-            lineNumber: 32,
-            columnNumber: 12
-        }, this);
-    }
-}
-exports.default = About;
-
-  $parcel$ReactRefreshHelpers$77f7.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Profile":"7kLfj","./Profileclass":"e4s58","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e4s58":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b40c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b40c.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _constant = require("./constant");
-class Profile extends (0, _reactDefault.default).Component {
-    constructor(props){
-        super(props);
-        // create state
-        this.state = {
-            userInfo: {
-                name: "",
-                bio: ""
-            }
-        };
-    // console.log("child - constructor" + this.props.name)
-    }
-    // async componentDidMount() {
-    //     const response = await fetch(Github_API_User + Github_UserName, options); // access the props `name` from parent class `ProfileClass`
-    //     const json = await response.json();
-    //     console.log(json);
-    //     this.setState({
-    //       userInfo: json,
-    //     });
-    //     console.log("child - componentDidMount"+ this.props.name);
-    // }
-    // componentDidMount(){
-    //     this.timer = setInterval(()=>{
-    //         console.log("print");
-    //     },1000);
-    // }
-    // componentWillUnmount(){
-    //     clearInterval(this.timer)
-    //     console.log(" component Will Unmount ")
-    // }
-    // componentDidUpdate(prevProps,prevState){
-    //     if (this.state.count !== prevState.count || this.state.count2 !== prevState.count2){
-    //     }
-    //     if (this.state.count2 !== prevState.count2){
-    //     }
-    //     console.log(" component Did Update ")
-    // }
-    render() {
-        // console.log("child - render"+ this.props.name)
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: " Profile class component"
-            }, void 0, false, {
-                fileName: "src/component/Profileclass.js",
-                lineNumber: 52,
-                columnNumber: 9
-            }, this)
-        }, void 0, false, {
-            fileName: "src/component/Profileclass.js",
-            lineNumber: 51,
-            columnNumber: 12
-        }, this);
-    }
-}
-exports.default = Profile;
-
-  $parcel$ReactRefreshHelpers$b40c.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./constant":"1w0li"}]},["3lsJq","1xC6H","bNKaB"], "bNKaB", "parcelRequire77dd")
+},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","acedec0e30950f85":"21dqq","3d8717078fe70f10":"6AEwr"}]},["3lsJq","1xC6H","bNKaB"], "bNKaB", "parcelRequire77dd")
 
 //# sourceMappingURL=index.0641b553.js.map

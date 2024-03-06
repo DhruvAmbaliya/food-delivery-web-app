@@ -1,67 +1,79 @@
-import { shimmer_card_unit, shimmer_menu_card_unit } from "./constant";
-
-// Shimmer card to display with animation
-const CardShimmer = () => {
+export const MenuShimmer = () => {
   return (
-    <div className="shimmer-card">
-      <div className="shimmer-img stroke animate"></div>
-      <div className="shimmer-title stroke animate"></div>
-      <div className="shimmer-tags stroke animate "></div>
-      <div className="shimmer-details stroke animate "></div>
+    <>
+      <div className=" animate-pulse h-72 py-8 mb-5">
+        <div className="m-auto w-4/5 flex justify-evenly items-center gap-5">
+          <div className="w-96 h-52 bg-gray-400"></div>
+
+          <div className="w-1/3">
+            <div className=" mb-2 w-full h-10 bg-gray-400"></div>
+            <div className=" mb-2 w-2/3 h-10 bg-gray-400"></div>
+            <div className="flex w-full h-5 gap-2 justify-between">
+              <div className="w-1/3 bg-gray-400"></div>
+              <div className="w-1/3 bg-gray-400"></div>
+              <div className="w-1/3 bg-gray-400"></div>
+            </div>
+          </div>
+
+          <div className="h-32 w-1/3 bg-gray-400"></div>
+        </div>
+      </div>
+      <div className="m-auto w-3/5">
+        {Array(5)
+          .fill("")
+          .map((item, index) => {
+            return (
+              <div
+                className=" flex animate-pulse items-center gap-5 h-44"
+                key={index}
+              >
+                <div className="h-4/5 w-3/4">
+                  <p className="h-5 w-3/4 bg-gray-400 mb-2"></p>
+                  <p className="h-12 w-3/4 bg-gray-400 mb-2"></p>
+                  <p className="h-5 w-1/6 bg-gray-400 mb-2"></p>
+                </div>
+
+                <div className="h-4/5 w-1/4 bg-gray-400"></div>
+              </div>
+            );
+          })}
+      </div>
+    </>
+  );
+};
+
+const Shimmer = () => {
+  return (
+    <div className="mt-5 m-auto" data-testid="shimmer">
+      <div className="grid grid-cols-5 gap-8 justify-evenly ">
+        {Array(20).fill("").map((item, index) => {
+            return (
+              <div className=" animate-pulse w-72 h-96" key={index}>
+                <div className="w-72 h-44 bg-gray-400 mb-3"></div>
+                <div className="w-72 h-8 bg-gray-400 mb-3"></div>
+                <div className="w-3/4 h-8 bg-gray-400 mb-3"></div>
+                <div className="flex w-72 h-5 gap-2 justify-between">
+                  <div className="w-1/3 bg-gray-400"></div>
+                  <div className="w-1/3 bg-gray-400"></div>
+                  <div className="w-1/3 bg-gray-400"></div>
+                </div>
+              </div>
+            );
+          })}
+      </div>
     </div>
   );
 };
 
-export const MenuShimmer = () => {
-  return (
-    <div className="restaurant-menu">
-      <div className="restaurant-summary stroke-color animate">
-        <img className="shimmer-img stroke animate" />
-        <div className="restaurant-summary-details">
-          <h2 className="shimmer-w40  stroke animate"></h2>
-          <p className="shimmer-w20 stroke animate"></p>
-          <div className="shimmer-w60  stroke animate">
-          </div>
-        </div>
-      </div>
-
-      <div className="restaurant-menu-content">
-        <div className="menu-items-container">
-          <div className="menu-title-wrap ">
-            <h3 className="shimmer-w40 stroke animate"></h3>
-            <p className="shimmer-w20 stroke animate"></p>
-          </div>
-          <div className="menu-items-list">
-            { Array(shimmer_menu_card_unit).fill("").map( (element, index)  => 
-            <div className="shimmer-menu-card" key={index}>
-              <div className="shimmer-item-details">
-                <h3 className="shimmer-w40  stroke animate"></h3>
-                <p className="shimmer-w20  stroke animate"> </p>
-                <p className="shimmer-w60  stroke animate"></p>
-              </div>
-              <div className="shimmer-img-wrapper">
-                <img className="shimmer-img stroke animate" /> 
-                <div className="shimmer-btn stroke animate"> </div>
-              </div>
-            </div>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-
-const Shimmer = ()=>{
-    return (
-        <div className="restaurant-list">
-            {Array(20).fill("").map((e,index)=>(
-                <div key={index} className="shimmer-card"></div>
-            ))}
-        </div>
-    )
-}
-
-
 export default Shimmer;
+
+
+// const Shimmer = ()=>{
+//     return (
+//         <div className="grid grid-cols-5 ">
+//             {Array(20).fill("").map((e,index)=>(
+//                 <div key={index} className="shimmer-card"></div>
+//             ))}
+//         </div>
+//     )
+// }
