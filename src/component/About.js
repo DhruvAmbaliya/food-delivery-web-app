@@ -50,4 +50,4 @@ render(){
 }
 }
 
-export default About 
+export default About;
