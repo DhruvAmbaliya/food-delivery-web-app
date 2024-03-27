@@ -18,29 +18,22 @@
 - Different dev and prod bundles
 
 
+* Header
+*  - Logo
+*  - Nav Items
+* Body
+*  - Search
+*  - RestaurantContainer
+*    - RestaurantCard
+*      - Img
+*      - Name of Res, Star Rating, cuisine, delery tie
+* Footer
+*  - Copyright
+*  - Links
+*  - Address
+*  - Contact
 
-
-
-/**
- * Header
- *  - Logo
- *  - Nav Items
- * Body
- *  - Search
- *  - RestaurantContainer
- *    - RestaurantCard
- *      - Img
- *      - Name of Res, Star Rating, cuisine, delery tie
- * Footer
- *  - Copyright
- *  - Links
- *  - Address
- *  - Contact
- */
-
-
-
- Two types of Export/Import
+Two types of Export/Import
 
 
 - Default Export/Import
